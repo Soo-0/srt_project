@@ -1,0 +1,70 @@
+@font-face{
+	font-family: 'SpoqaHan';
+	src: url('../fonts/SpoqaHanSansNeo-Light.woff2') format('woff2');
+	src: url('../fonts/SpoqaHanSansNeo-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'SpoqaHan';
+	src: url('../fonts/SpoqaHanSansNeo-Regular.woff2') format('woff2');
+	src: url('../fonts/SpoqaHanSansNeo-Regular.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'SpoqaHan';
+	src: url('../fonts/SpoqaHanSansNeo-Medium.woff2') format('woff2');
+	src: url('../fonts/SpoqaHanSansNeo-Medium.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'SpoqaHan';
+	src: url('../fonts/SpoqaHanSansNeo-Bold.woff2') format('woff2');
+	src: url('../fonts/SpoqaHanSansNeo-Bold.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'SeoulNamsan';
+    src: local(※);
+    src: url('../fonts/SeoulNamsanL.eot') format('embeded-opentype');
+    src: url('../fonts/SeoulNamsanL.woff2') format('woff2');
+    src: url('../fonts/SeoulNamsanL.woff') format('woff');
+    src: url('../fonts/SeoulNamsanL.otf') format('opentype');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'SeoulNamsan';
+    src: local(※);
+    src: url('../fonts/SeoulNamsanM.eot') format('embeded-opentype');
+    src: url('../fonts/SeoulNamsanM.woff2') format('woff2');
+    src: url('../fonts/SeoulNamsanM.woff') format('woff');
+	src: url('../fonts/SeoulNamsanM.otf') format('opentype');
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'SeoulNamsan';
+    src: local(※);
+    src: url('../fonts/SeoulNamsanB.eot') format('embeded-opentype');
+    src: url('../fonts/SeoulNamsanB.woff2') format('woff2');
+    src: url('../fonts/SeoulNamsanB.woff') format('woff');
+	src: url('../fonts/SeoulNamsanB.otf') format('opentype');
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'SeoulNamsan';
+    src: local(※);
+    src: url('../fonts/SeoulNamsanEB.eot') format('embeded-opentype');
+    src: url('../fonts/SeoulNamsanEB.woff2') format('woff2');
+    src: url('../fonts/SeoulNamsanEB.woff') format('woff');
+    src: url('../fonts/SeoulNamsanEB.woff') format('woff');
+	src: url('../fonts/SeoulNamsanEB.otf') format('opentype');
+    font-style: normal;
+    font-weight: 900;
+} */

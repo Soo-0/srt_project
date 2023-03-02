@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="10px" viewBox="0 0 18 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>→</title>
+    <g id="05-환승승차권예매" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="SpoqaHanSansNeo-Bold, Spoqa Han Sans Neo" font-size="18" font-weight="bold" line-spacing="22">
+        <g id="02_MA3100T_승차권보관함_이용내역(환승)" transform="translate(-134.000000, -360.000000)" fill="#000000">
+            <g id="list01" transform="translate(16.000000, 224.000000)">
+                <g id="열차정보" transform="translate(20.000000, 66.000000)">
+                    <g id="열차" transform="translate(0.000000, 36.000000)">
+                        <text id="→">
+                            <tspan x="98" y="50">→</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
