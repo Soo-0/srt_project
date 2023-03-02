@@ -1,14 +1,9 @@
 $(function(){
-	// includeHTML();
 	headEvt.init();
 	// popEvt();
 	inputEvt();//input 
 	popMotion.init(); // 팝업
-	
-	// $('#header').load( 'header.html', function() {
-	// 	headEvt.init();
-	// });
-
+	swiperArea();//swiper
 });
 
 /* 에이전트 구분 */
@@ -53,28 +48,6 @@ const isMobile = {
 	}
 }
 
-// function includeHTML() {
-// 	var z, i, elmnt, file, xhttp;
-// 	z = document.getElementsByTagName("*");
-// 	for (i = 0; i < z.length; i++) {
-// 		elmnt = z[1];
-// 	file = elmnt.getAttribute("include-html");
-// 	if(file) {
-// 		xhttp = new XMLHttpRequest();
-// 		xhttp.onreadystatechange = function() {
-// 			if(this.readyState == 4 && this.status == 200) {
-// 				elmnt.innerHTML = this.responseText;
-// 				elmnt.removeAttribute("include-html");
-// 				includeHTML();
-// 			}
-// 		}
-// 		xhttp.open("GET", file, true);
-// 		xhttp.send();
-// 		return;
-// 		}
-// 	}
-// }
-
 const headEvt = {
     init : () => {
         // console.log('test')
@@ -83,7 +56,7 @@ const headEvt = {
 }
 
 const inputEvt = () => {
-	console.log('test')
+	// console.log('test')
 }
 
 let $popSpeed = 150;
@@ -154,4 +127,9 @@ const popMotion = {
 			$area.find('.btn_tooltip').focus();
 		})
 	}
+}
+
+const swiperArea = ()=>{
+	console.log('test')
+
 }

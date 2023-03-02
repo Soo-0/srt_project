@@ -29,27 +29,12 @@ select, textarea, input{-webkit-appearance:none;-moz-appearance:none;appearance:
 input:-internal-autofill-previewed, input:-internal-autofill-selected {background-color:white !important;box-shadow:0 0 0 52px rgb(255,255,255) inset}
 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none;margin:0;}
 
-/* server */
-/* .chrome {image-rendering: -webkit-optimize-contrast;} */
-
 /*skipNavi*/
 /* #skipNavi {position:relative;display:none}
 #skipNavi a{display:block;position:absolute;left:0;top:-300px;width:300px;text-align:center;color:#fff;background:#000;z-index:200;}
 #skipNavi a:focus, #skipNavi a:hover{top:0px;} */
 
-:root{
-    /* color */
-    --color--basic : #000;
-    --color--red : #DA1D1D;
-    --color--blue1 : #476EFF;
-    --color--blue2 : #3048A2;
-    --color--darkblue1 : #414E7F;
-    --color--darkblue2 : #3D4964;
-    --color--darkblue3 : #1B1F42;
-    --color--purple1 : #DCDCF4;
-    --color--purple2 : #6A44BF;
-}
-::-ms-clear{display:none;}
+::-ms-clear{display:none}
 
 
 /*common*/
@@ -158,8 +143,8 @@ ul.txt_dash > li:before{}
 .ticket_box.srt .ticket_top{background:linear-gradient(90deg, rgba(97,71,143,1) 0%, rgba(103,55,96,1) 90%)}
 .ticket_box.ktx .ticket_top{background:linear-gradient(90deg, rgba(0,129,195,1) 0%, rgba(0,101,179,1) 90%)}
 .ticket_box:after{display:block;content:'';width:100%;height:24px;animation:animateBackground 4s linear infinite forwards}
-.ticket_box.srt:after{background:#70135E url(../images/common/ticket_logo_srt.svg) repeat-x center/46px 9px;}
-.ticket_box.ktx:after{background:#0065B3 url(../images/common/ticket_logo_ktx.svg) repeat-x center/46px 9px;}
+.ticket_box.srt:after{background:#70135E url(../images/common/ticket_logo_srt.svg) repeat-x center/46px 9px}
+/* .ticket_box.ktx:after{background:#0065B3 url(../images/common/ticket_logo_ktx.svg) repeat-x center/46px 9px;} */
 .ticket_top{display:flex;justify-content:space-between;align-items:center;padding:11px 16px 9px;color:#fff}
 .ticket_top .date{font-size:14px;line-height:20px;font-weight:700;}
 .ticket_top .num{font-size:14px;line-height:20px}
