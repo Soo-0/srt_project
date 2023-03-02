@@ -468,7 +468,7 @@ body.pop_open{overflow:hidden}
 /* text */
 .txt_alert{font-size:14px;line-height:20px}
 .txt_alert:before{display:inline-block;content:'';width:16px;height:16px;margin-right:10px;background:url(../images/common/ic_txtalert_red.svg) no-repeat center/14px;vertical-align:middle}
-.txt_alert.red{color:var(--color--red)}
+.txt_alert.red{color:#DA1D1D}
 .txt_alert.red:before{background:url(../images/common/ic_txtalert_red.svg) no-repeat center/14px;}
 
 
