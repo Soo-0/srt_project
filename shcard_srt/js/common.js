@@ -212,9 +212,11 @@ const popMotion = {
 const swiperArea = ()=>{
 	let bannerSwiper = new Swiper('.banner-swiper',{
 		loop: true,
+		slidesPerView: 1,
         pagination: {
             el: ".bann_pagination",
+			clickable: true
         },
-		paginationClickable: true,
+		type: 'bullets',
 	})
 }
