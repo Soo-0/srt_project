@@ -211,8 +211,16 @@ const popMotion = {
 
 const swiperArea = ()=>{
 	let bannerSwiper = new Swiper('.banner-swiper',{
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: false
+		}, 
 		loop: true,
 		slidesPerView: 1,
+		effect : 'fade', 
+		fadeEffect: { 
+			crossFade: true 
+		},
         pagination: {
             el: ".bann_pagination",
 			clickable: true

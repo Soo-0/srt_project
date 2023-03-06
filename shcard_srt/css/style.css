@@ -8,9 +8,9 @@ z-index 정의
 /* hj */
 .banner_wrap{position:relative;text-align:center;overflow:hidden;}
 .banner-swiper{position:relative;width:100%;height:90px;border-radius:8px;margin-bottom:20px;}
-.swiper-slide{display:flex;justify-content:center;align-items:center;font-size:18px;background-color:#EEEEEE;}
-.swiper-slide a{position:relative;display:block;}
-.bann_pagination .swiper-pagination-bullet{width:6px;height:6px;}
-.bann_pagination .swiper-pagination-bullet-active{width:16px;height:6px;border-radius:3px;transition:width .5s;background-color:#383B5A;}
-.swiper-pagination-bullet-active,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{margin:0px 6px 0 0;}
+.swiper-slide{display:flex;justify-content:center;align-items:center;font-size:18px;background-color:#EEEEEE;overflow:hidden;}
+.banner_wrap .swiper-pagination-bullet{width:6px;height:6px;line-height:6px;}
+.banner_wrap .swiper-pagination-horizontal.swiper-pagination-bullets{line-height:6px;}
+.banner_wrap .swiper-pagination-bullet-active,
+.banner_wrap .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{margin:0px 6px 0 0;}
+.banner_wrap .swiper-pagination-bullet-active{width:16px;height:6px;border-radius:3px;transition:width .5s;background-color:#383B5A;}
