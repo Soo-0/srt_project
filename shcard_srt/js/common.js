@@ -210,6 +210,11 @@ const popMotion = {
 }
 
 const swiperArea = ()=>{
-	console.log('test')
-
+	let bannerSwiper = new Swiper('.banner-swiper',{
+		loop: true,
+        pagination: {
+            el: ".bann_pagination",
+        },
+		paginationClickable: true,
+	})
 }
