@@ -59,16 +59,36 @@ const headEvt = {
 
 const formEvt = {
 	init : () => {
-		formEvt.checkAll();
-		formEvt.countEvt();
+		formEvt.inputDel();//input text 삭제
+		formEvt.checkAll();//전체선택
+		formEvt.countEvt();//카운트
     },
 	inputDel : () =>{
-		// $(document).off('click.inputDataDel').on('click.inputDataDel', '.input_wrap .btn_del', function(e) {
-		// 	e.preventDefault();
-		// 	$(this).prev().val('').focus();
-		// 	$(this).prev('a').text(''); // 주소입력값 삭제용
-		// 	$(this).removeClass('on');
-		// });
+		let $inputWarp = $('.input_wrap');
+
+		$inputWarp.each(function(idx, ele){
+			let $thInp = $(ele).find('input'),
+				$thBtn = $thInp.siblings('.btn_del');
+
+			$thInp.on('focus keyup', function(){
+				$(this).next('.btn_del').addClass('on').removeClass($thInp.val().length > 0 ? '':'on');
+				if($(this).next('.btn_del').next().length > 0){
+					let $items = $(this).next('.btn_del').nextAll(),
+						itemsWid = '',
+						totalWid = 0;
+					$items.each(function(e, idx){
+						itemsWid = $(idx).outerWidth();
+						totalWid = totalWid + itemsWid;
+					})
+					$(this).next('.btn_del').css('right', totalWid + 8)
+				}
+			})
+			$thBtn.on('click', function(e){
+				e.preventDefault();
+				$(this).prev().val('').focus();
+				$(this).removeClass('on');
+			})
+		})
 	},
 	checkAll : () =>{
 		let $agreeList = $('.agree_box')
