@@ -1,7 +1,9 @@
 $(function(){
 	headEvt.init();
 	// popEvt();
-	inputEvt();//input 
+	formEvt.init();//input
+	tabEvt();//tab 
+	accoEvt()//아코디언
 	popMotion.init(); // 팝업
 	swiperArea();//swiper
 });
@@ -55,8 +57,86 @@ const headEvt = {
 
 }
 
-const inputEvt = () => {
-	// console.log('test')
+const formEvt = {
+	init : () => {
+		formEvt.checkAll();
+		formEvt.countEvt();
+    },
+	inputDel : () =>{
+		// $(document).off('click.inputDataDel').on('click.inputDataDel', '.input_wrap .btn_del', function(e) {
+		// 	e.preventDefault();
+		// 	$(this).prev().val('').focus();
+		// 	$(this).prev('a').text(''); // 주소입력값 삭제용
+		// 	$(this).removeClass('on');
+		// });
+	},
+	checkAll : () =>{
+		let $agreeList = $('.agree_box')
+
+		$agreeList.each(function(){
+			let $chkAll = $(this).find('.check_all input'),
+				$chkList = $(this).find('.agree_list input[type=checkbox]');
+
+			$chkAll.on('change', function() {
+				if($chkAll.prop('checked')) $chkList.prop('checked', true);
+				else $chkList.prop('checked', false);
+			});
+			$chkList.on('change', function() {
+				if($chkList.filter(':checked').length == $chkList.length) $chkAll.prop('checked', true)
+				else $chkAll.prop('checked', false)
+			})
+		})
+	},
+	countEvt : () =>{
+		let $counterWrap = $('.counter_item');
+	}
+
+}
+
+const tabEvt = () => {
+	let tabWrap = $('.j_ui_tab');
+	if(tabWrap.length > 0){
+		let tabLi = tabWrap.find('li');
+
+		$(document).on('click', '.j_ui_tab a', function(e){
+			e.preventDefault();
+			let tabCont = $(this).attr('href');
+
+			$(this).attr('aria-selected','true').closest('li').addClass('on').siblings('li').removeClass('on').find('a').attr('aria-selected','false');
+			$(tabCont).addClass('on').siblings('.tab_cont').removeClass('on');
+			
+			if($(this).closest(tabWrap).hasClass('tab_seat')){
+				$(this).closest(tabWrap).find('li').removeClass('on');
+				$(this).addClass('on').closest('li').siblings('li').find('a').removeClass('on')
+			}
+			return false;
+		})
+	}
+}
+
+const accoEvt = () => {
+	let $accoWrap = $('.j_ui_acco'),
+		$thBtn = $accoWrap.find('.j_acco_btn');
+
+	if($accoWrap.length > 0){
+		$accoWrap.each(function(){
+			if($thBtn.hasClass('on')) $thBtn.attr('aria-expanded','true');
+			else $thBtn.attr('aria-expanded','false');
+		});
+		
+		$thBtn.on('click', function(e){
+			e.preventDefault();
+			let $thCont = $(this).closest('.acco_tit').siblings('.acco_cont');
+
+			if(!$(this).hasClass('on')){
+				$(this).addClass('on').attr('aria-expanded','true').find('span').text('상세내용 닫기');
+				$thCont.slideDown(200)
+			}else{
+				$(this).removeClass('on').attr('aria-expanded','false').find('span').text('상세내용 열기');
+				$thCont.slideUp(200)
+			}
+		})
+	}
 }
 
 let $popSpeed = 150;

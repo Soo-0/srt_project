@@ -39,38 +39,27 @@
                 <div class="title">퍼블리싱 가이드</div>
                 <button type="button" class="btn_close">닫기</button>
             </div>
-            <!-- <div class="menu">
-                //로그인 후
-                <div class="menu_top">
-                    <p><strong>김신한님</strong> 안녕하세요!</p>
-                    <a href="#" class="logout">로그아웃</a>
-                </div>
-                //로그인 전 
-                <div class="menu_top">
-                    <p><a href="#" class="login"><strong>로그인</strong> 해주세요!</a></p>
-                    <a href="#" class="account">계정생성</a>
-                </div>
-                <div class="menu_cont">
-                    
-                </div>
-                <div class="dim"></div> 
-            </div> -->
         </header>
         <div id="container">
             <div id="contents">
-                <div id="pageTit" class="blind"><strong>guide</strong> 본문 시작</div>
+                <h2 id="pageTit" class="blind">guide 본문 시작</h2>
                 <div class="inner">
                     <h2 class="guide_tit">common</h2>
                     <div>
                         <p>hide (display:none)</p>
                         <p>show (display:block)</p>
+                        <ul class="txt_dot">
+                            <li>.inner : padding : 0 24px</li>
+                            <li>.inner2 : padding : 32px 24px 24px</li>
+                            <li>.inner3 : padding : 32px 16px <br>padding-top:0은 pt0 class 추가</li>
+                        </ul>
                     </div>
                     <h2 class="guide_tit">text</h2>
                     <h3 class="g_txt"><span>#font-color</span></h3>
                     <div>
                         <div class="fc_red">fc_red (#f53851)</div>
                         <div class="fc_purple">fc_purple (#635fff)</div>
-                        <div class="fc_gray">fc_gray (#333)</div>
+                        <!-- <div class="fc_gray">fc_gray (#333)</div> -->
                         <div class="fc_blue">fc_blue (#4265dd)</div>
                         <div class="fc_black">fc_black (#111) : 기본컬러</div>
                     </div>
@@ -120,69 +109,105 @@
                         <div>
                             <ul class="txt_dot">
                                 <li>ul class txt_dot</li>
-                                <li>ul class txt_dot</li>
+                                <li>기본 컬러 #888</li>
                             </ul>
                             <br>
                             <ul class="txt_dash">
                                 <li>ul class txt_dash</li>
-                                <li>ul class txt_dash</li>
+                                <li>기본 컬러 #888</li>
+                            </ul>
+                            <ul class="txt_dash ty2">
+                                <li>ul class txt_dash ty2</li>
+                                <li>#666은 ty2</li>
                             </ul>
                             <div class="source_code">
                                 <button type="button" class="btn_source">소스보기</button>
                                 <pre class="code_view">
                                     <ul class="txt_dot">
-                                        <li>ul class txt_dot</li>
-                                        <li>ul class txt_dot</li>
+                                        <li></li>
+                                        <li></li>
                                     </ul>
-                                
+                                    
                                     <ul class="txt_dash">
-                                        <li>ul class txt_dash</li>
-                                        <li>ul class txt_dash</li>
+                                        <li></li>
+                                        <li></li>
                                     </ul>
+
+                                    <ul class="txt_dash ty2">
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="g_txt"><span>#description list</span></h3>
+                    <div>
+                        <h4 class="g_sub"><span>#기본</span></h4>
+                        <div>
+                            <dl class="dl_list">
+                                <dt>승인번호</dt>
+                                <dd>123123</dd>
+                                <dt>승인번호</dt>
+                                <dd><strong>123123</strong></dd>
+                            </dl>
+                            <div class="source_code">
+                                <button type="button" class="btn_source">소스보기</button>
+                                <pre class="code_view">
+                                    <dl class="dl_list">
+                                        <dt>승인번호</dt>
+                                        <dd>123123</dd>
+                                        <dt>승인번호</dt>
+                                        <dd><strong>123123</strong></dd>
+                                    </dl>
+                                </pre>
+                            </div>
+                        </div>
+                        <h4 class="g_sub"><span>#타이틀이 있을 때</span></h4>
+                        <div>
+                            <h3 class="tit_h3">승인번호</h3>
+                            <dl class="dl_list">
+                                <dt>승인번호</dt>
+                                <dd>123123</dd>
+                                <dt>승인번호</dt>
+                                <dd><strong>123123</strong></dd>
+                            </dl>
+                        </div>
+                        <h4 class="g_sub"><span>#중간에 라인이 있는 경우</span></h4>
+                        <div>
+                            <dl class="dl_list">
+                                <div>
+                                    <dt>주소</dt>
+                                    <dd>123123123</dd>
+                                </div>
+                                <div class="line">
+                                    <dt>주소</dt>
+                                    <dd>서울시 중구 을지로100</dd>
+                                </div>
+                            </dl>
+                            <div class="source_code">
+                                <button type="button" class="btn_source">소스보기</button>
+                                <pre class="code_view">
+                                    <dl class="dl_list">
+                                        <div>
+                                            <dt>주소</dt>
+                                            <dd>123123123</dd>
+                                        </div>
+                                        <div class="line">
+                                            <dt>주소</dt>
+                                            <dd>서울시 중구 을지로100</dd>
+                                        </div>
+                                    </dl>
                                 </pre>
                             </div>
                         </div>
                     </div>
 
                     <h2 class="guide_tit">title</h2>
-                    <h3 class="g_txt"><span>#대 타이틀</span></h3>
                     <div>
                         <h4 class="g_sub"><span>#단독</span></h4>
                         <div>
-                            <h2 class="tit_h2">tit_h2 : h2 타이틀 단독 타이틀 단독 </h2>
-                            <div class="source_code">
-                                <button type="button" class="btn_source">소스보기</button>
-                                <pre class="code_view">
-                                    <h2 class="tit_h2">타이틀</h2>
-                                </pre>
-                            </div>
-                        </div>
-                        <h4 class="g_sub"><span>#혼합</span></h4>
-                        <div>
-                            <div class="tit_h2">
-                                <h2 class="tit">div > h2 타이틀 타이틀 타이틀</h2>
-                                <div class="unit">
-                                    <a href="#" class="button line h32" role="button">버튼</a>
-                                </div>
-                            </div>
-                            <div class="source_code">
-                                <button type="button" class="btn_source">소스보기</button>
-                                <pre class="code_view">
-                                    <div class="tit_h2">
-                                        <h2 class="tit">타이틀</h2>
-                                        <div class="unit">
-                                            <a href="#" class="btn line h32" role="button">버튼</a>
-                                        </div>
-                                    </div>
-                                </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="g_txt"><span>#중 타이틀</span></h3>
-                    <div>
-                        <h4 class="g_sub"><span>#단독</span></h4>
-                        <div>
-                            <h3 class="tit_h3">tit_h3 : h3 타이틀 단독 타이틀 단독 </h3>
+                            <h3 class="tit_h3">tit_h3 : 타이틀 단독 타이틀 단독 </h3>
                             <div class="source_code">
                                 <button type="button" class="btn_source">소스보기</button>
                                 <pre class="code_view">
@@ -193,15 +218,9 @@
                         <h4 class="g_sub"><span>#혼합</span></h4>
                         <div>
                             <div class="tit_h3">
-                                <h3 class="tit">div > h3 타이틀 타이틀 타이틀</h3>
+                                <h3 class="tit">div 타이틀 타이틀 타이틀</h3>
                                 <div class="unit">
                                     <a href="#" class="btn line h32" role="button">버튼</a>
-                                </div>
-                            </div>
-                            <div class="tit_h3">
-                                <h3 class="tit">div > h3 타이틀 타이틀 타이틀</h3>
-                                <div class="unit">
-                                    <span class="price">(단위:원)</span>
                                 </div>
                             </div>
                             <div class="source_code">
@@ -213,13 +232,6 @@
                                             <a href="#" class="btn line h32" role="button">버튼</a>
                                         </div>
                                     </div>
-                                    
-                                    <div class="tit_h3">
-                                        <h3 class="tit">text unit 타이틀</h3>
-                                        <div class="unit">
-                                            <span class="price">(단위:원)</span>
-                                        </div>
-                                    </div>
                                 </pre>
                             </div>
                         </div>
@@ -227,102 +239,108 @@
 
                     <h2 class="guide_tit">Box style</h2>
                     <div>
-                        <h3 class="g_txt"><span>#gray box</span></h3>
+                        <h3 class="g_txt"><span>#div box</span></h3>
                         <div>
-                            <div class="g_box">
-                                <div class="train_info">
-                                    <span class="date">2022.12.16(금)</span>
-                                    <div class="train_item">
-                                        <div class="train_num">
-                                            <span class="num">SRT 651</span>
+                            <h4 class="g_sub"><span>#border-top</span></h4>
+                            <div>
+                                <div class="bdr_t">
+                                    bdr_t : 상단에 border top값 있을 때 (padding-top:16px)
+                                </div>
+                            </div>
+                            <h4 class="g_sub"><span>#gray box</span></h4>
+                            <div>
+                                <div class="box_gray">
+                                    <div class="train_info">
+                                        <span class="date">2022.12.16(금)</span>
+                                        <div class="train_item">
+                                            <div class="train_num">
+                                                <span class="num">SRT 651</span>
+                                            </div>
+                                            <div class="train_station">
+                                                <span><strong>수서</strong><span class="fc_blue">(05:08)</span></span>
+                                                <span><strong>오송</strong><span class="fc_blue">(05:43)</span></span>
+                                            </div>
+                                            <p class="txt">35분 소요</p>
                                         </div>
-                                        <div class="train_station">
-                                            <span><strong>수서</strong><span class="fc_blue">(05:08)</span>
-                                            <span><strong>오송</strong>(05:43)</span>
+                                        <div class="train_item">
+                                            <div class="train_num">
+                                                <span class="badge gray min">후행기차</span>
+                                                <span class="num">SRT 651</span>
+                                            </div>
+                                            <div class="train_station">
+                                                <span><strong>수서</strong>(05:08)</span>
+                                                <span><strong>오송</strong>(05:43)</span>
+                                            </div>
+                                            <p class="txt">35분 소요</p>
                                         </div>
-                                        <p class="txt">35분 소요</p>
                                     </div>
-                                    <div class="train_item">
-                                        <div class="train_num">
-                                            <span class="badge gray min">후행기차</span>
-                                            <span class="num">SRT 651</span>
+                                </div>
+                                <div class="source_code">
+                                    <button type="button" class="btn_source">소스보기</button>
+                                    <pre class="code_view">
+                                        <div class="box_gray">
+                                            <div class="train_info">
+                                                <span class="date">2022.12.16(금)</span>
+                                                <div class="train_item">
+                                                    <div class="train_num">
+                                                        <span class="num">SRT 651</span>
+                                                    </div>
+                                                    <div class="train_station">
+                                                        <span><strong>수서</strong><span class="fc_blue">(05:08)</span>
+                                                        <span><strong>오송</strong>(05:43)</span>
+                                                    </div>
+                                                    <p class="txt">35분 소요</p>
+                                                </div>
+                                                <div class="train_item">
+                                                    <div class="train_num">
+                                                        <span class="badge gray min">후행기차</span>
+                                                        <span class="num">SRT 651</span>
+                                                    </div>
+                                                    <div class="train_station">
+                                                        <span><strong>수서</strong>(05:08)</span>
+                                                        <span><strong>오송</strong>(05:43)</span>
+                                                    </div>
+                                                    <p class="txt">35분 소요</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="train_station">
-                                            <span><strong>수서</strong>(05:08)</span>
-                                            <span><strong>오송</strong>(05:43)</span>
-                                        </div>
-                                        <p class="txt">35분 소요</p>
+                                    </pre>
+                                </div>
+                            </div>
+                            <h4 class="g_sub"><span>#line box</span></h4>
+                            <div>
+                                <div class="box_line">
+                                    <div class="box_info">
+                                        <dl class="dl_list">
+                                            <div>
+                                                <dt>주소</dt>
+                                                <dd>123123123</dd>
+                                            </div>
+                                            <div class="line">
+                                                <dt>주소</dt>
+                                                <dd>서울시 중구 을지로100</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="box_line">
+                                    <div class="box_info">
+                                        <dl class="dl_list">
+                                            <dt>번호</dt>
+                                            <dd>123123123</dd>
+                                            <dt>주소</dt>
+                                            <dd>서울시 중구 을지로100</dd>
+                                        </dl>
                                     </div>
                                 </div>
                             </div>
-                            <div class="source_code">
-                                <button type="button" class="btn_source">소스보기</button>
-                                <pre class="code_view">
-                                    <div class="g_box">
-                                        <div class="train_info">
-                                            <span class="date">2022.12.16(금)</span>
-                                            <div class="train_item">
-                                                <div class="train_num">
-                                                    <span class="num">SRT 651</span>
-                                                </div>
-                                                <div class="train_station">
-                                                    <span><strong>수서</strong><span class="fc_blue">(05:08)</span>
-                                                    <span><strong>오송</strong>(05:43)</span>
-                                                </div>
-                                                <p class="txt">35분 소요</p>
-                                            </div>
-                                            <div class="train_item">
-                                                <div class="train_num">
-                                                    <span class="badge gray min">후행기차</span>
-                                                    <span class="num">SRT 651</span>
-                                                </div>
-                                                <div class="train_station">
-                                                    <span><strong>수서</strong>(05:08)</span>
-                                                    <span><strong>오송</strong>(05:43)</span>
-                                                </div>
-                                                <p class="txt">35분 소요</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </pre>
-                            </div>
                         </div>
-                        <!-- 
-                        <div class="g_box out">
-                            <div class="item_area">
-                                class 이름 g_box<br>
-                                .inner 안에 사용시 margin minus 가 필요할 때 .out 추가
-                            </div>
-                            <div class="item_area">
-                                div.item_area 안에 컨텐츠 내용 나열
-                            </div>
-                        </div>
-                        <br>
-                        <div class="g_box round">
-                            <div class="item_area">
-                                g_box<br>
-                                class 이름 g_box
-                            </div>
-                            <div class="item_area">
-                                div.item_area 안에 컨텐츠 내용 나열
-                            </div>
-                        </div>
-                        <h4 class="g_sub"><span>#line box</span></h4>
-                        <div>
-                            <ul class="box_list">
-                                <li>
-                                    <div class="box_inner">
-
-                                    </div>
-                                </li>
-                            </ul>
-                        </div> -->
                         <h3 class="g_txt"><span>#li box</span></h3>
                         <div>
                             <h4 class="g_sub"><span>#box_list</span></h4>
                             <p class="fz_13">=> 간격이 20일 경우 lim20 class추가(기본 16)</p>
                             <div>
-                                <ul class="box_list">
+                                <ul class="box_line">
                                     <li>
                                         <div class="box_info">
                                             <div class="ticket_num">
@@ -443,27 +461,42 @@
                                 </div>
                             </div>
 
-                            <h4 class="g_sub"><span>#line_list</span></h4>
+                            <h4 class="g_sub"><span>#line_list(padding:21px 0)</span></h4>
                             <ul class="line_list">
                                 <li>
-                                    padding 21px 24px
+                                    <dl class="dl_list">
+                                        <dt>승인번호</dt>
+                                        <dd>123123</dd>
+                                    </dl>
                                 </li>
                                 <li>
-                                    padding 21px 24px
+                                    <div class="inner">
+                                        <dl class="dl_list">
+                                            <dt>승인번호</dt>
+                                            <dd>123123</dd>
+                                        </dl>
+                                    </div>
                                 </li>
                             </ul>
-                            <h4 class="g_sub"><span>#line_list ty2</span></h4>
+                            <h4 class="g_sub"><span>#line_list ty2(padding:32px 0)</span></h4>
                             <ul class="line_list ty2">
                                 <li>
-                                    padding 32px
+                                    <h3 class="tit_h3">승인번호</h3>
+                                    <dl class="dl_list">
+                                        <dt>승인번호</dt>
+                                        <dd>123123</dd>
+                                        <dt>승인번호</dt>
+                                        <dd><strong>123123</strong></dd>
+                                    </dl>
                                 </li>
                                 <li>
-                                    padding 32px
-                                </li>
-                                <li>
-                                    <div class="box_inner">
-                                        line line
-                                    </div>
+                                    <h3 class="tit_h3">승인번호</h3>
+                                    <dl class="dl_list">
+                                        <dt>승인번호</dt>
+                                        <dd>123123</dd>
+                                        <dt>승인번호</dt>
+                                        <dd><strong>123123</strong></dd>
+                                    </dl>
                                 </li>
                             </ul>
                         </div>
@@ -528,6 +561,8 @@
                                 <span class="badge blue">badge blue</span>
                                 <span class="badge purple">badge purple</span>
                                 <span class="badge lightblue">badge green</span>
+                                <span class="badge black">badge black</span>
+                                <span class="badge gray min">badge gray min</span>
                             </div>
                         </div>
                         <h3 class="g_txt"><span>#이미지 아이콘</span></h3>
@@ -536,11 +571,17 @@
                             <div>
                                 <i class="ico ico_20" aria-hidden="true"></i>
                             </div>
+                            <h4 class="g_sub"><span>#ico_48</span></h4>
+                            <div>
+                                <i class="ico ico_48 change" aria-hidden="true"></i>
+                                <div style="display:inline-block;background:#4265dd">
+                                    <i class="ico ico_48 change_w" aria-hidden="true"></i>
+                                </div>
+                            </div>
                             <h4 class="g_sub"><span>#ico_80</span></h4>
                             <div>
                                 <i class="ico ico_80 error" aria-hidden="true"></i>
                             </div>
-                            
                         </div>
                     </div>
 
@@ -679,38 +720,109 @@
                     </div>
                     <h3 class="g_txt"><span>#checkbox / radio</span></h3>
                     <div>
-                        <label class="checkbox">
-                            <input type="checkbox" title="선택">
-                            <i></i>
-                            <span>선택</span>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" title="선택" checked>
-                            <i></i>
-                            <span>checked</span>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" title="선택" disabled>
-                            <i></i>
-                            <span>disabled</span>
-                        </label>
-                        
-                        <br>
-                        <label class="radio">
-                            <input type="radio" name="radio" title="선택">
-                            <i></i>
-                            <span>선택</span>
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="radio" title="선택" checked>
-                            <i></i>
-                            <span>선택</span>
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="radio" title="선택" disabled>
-                            <i></i>
-                            <span>선택</span>
-                        </label>
+                        <h4 class="g_sub"><span>#기본</span></h4>
+                        <div>
+                            <label class="checkbox">
+                                <input type="checkbox" title="선택">
+                                <i></i>
+                                <span>checkbox</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" title="선택" checked>
+                                <i></i>
+                                <span>checked</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" title="선택" disabled>
+                                <i></i>
+                                <span>disabled</span>
+                            </label>
+                            
+                            <br>
+                            <label class="radio">
+                                <input type="radio" name="radio" title="선택">
+                                <i></i>
+                                <span>선택</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="radio" title="선택" checked>
+                                <i></i>
+                                <span>선택</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="radio" title="선택" disabled>
+                                <i></i>
+                                <span>선택</span>
+                            </label>
+                        </div>
+                        <h4 class="g_sub"><span># type2</span></h4>
+                        <div>
+                            <label class="checkbox ty2">
+                                <input type="checkbox" title="선택">
+                                <i></i>
+                                <span>checkbox ty2</span>
+                            </label>
+                            <label class="checkbox ty2">
+                                <input type="checkbox" title="선택" checked>
+                                <i></i>
+                                <span>checkbox ty2</span>
+                            </label>
+                            <label class="checkbox ty2">
+                                <input type="checkbox" title="선택" disabled>
+                                <i></i>
+                                <span>checkbox ty2</span>
+                            </label>
+                        </div>
+                        <h4 class="g_sub"><span>#count</span></h4>
+                        <div>
+                            <div class="counter_item">
+                                <button type="button" class="btn_count minus"><span class="blind">빼기</span></button>
+                                <input type="text" value="10" class="num">
+                                <button type="button" class="btn_count plus"><span class="blind">더하기</span></button>
+                            </div>
+                        </div>
+                        <h4 class="g_sub"><span>#기차 좌석</span></h4>
+                        <div>
+                            <label class="chk_seat ty1">
+                                <input type="checkbox" title="선택">
+                                <span>00B</span>
+                            </label>
+                            <label class="chk_seat ty2">
+                                <input type="checkbox" title="선택" checked>
+                                <span>00A</span>
+                            </label>
+                            <label class="chk_seat ty1">
+                                <input type="checkbox" title="선택" disabled>
+                                <span>00B</span>
+                            </label>
+                            <br><br>
+                            <div class="seat_area">
+                                <label class="chk_seat ty1">
+                                    <input type="radio" name="seat" title="선택">
+                                    <span>00B</span>
+                                </label>
+                                <label class="chk_seat ty2">
+                                    <input type="radio" name="seat" title="선택" checked>
+                                    <span>00A</span>
+                                </label>
+                                <label class="chk_seat ty1">
+                                    <input type="radio" name="seat" title="선택">
+                                    <span>101A</span>
+                                </label>
+                                <label class="chk_seat ty2">
+                                    <input type="radio" name="seat" title="선택">
+                                    <span>00A</span>
+                                </label>
+                                <label class="chk_seat ty1">
+                                    <input type="radio" name="seat" title="선택">
+                                    <span>080A</span>
+                                </label>
+                                <label class="chk_seat ty1">
+                                    <input type="radio" name="seat" title="선택">
+                                    <span>00A</span>
+                                </label>
+                            </div>
+                        </div>
                     </div>
 
                     <h2 class="guide_tit">Button</h2>
@@ -722,10 +834,14 @@
                                 a link type : <a href="#" class="btn" role="button">btn</a>
                             </pre>
                         </div>
+                        <h3 class="g_txt"><span>#넓이</span></h3>
+                        <div>
+                            <button type="button" class="btn line ty2 h40 min">btn min : h40</button>
+                        </div>
                         <h3 class="g_txt"><span>#높이</span></h3>
                         <div>
                             <button type="button" class="btn gray">btn 기본48</button>
-                            <button type="button" class="btn navy h40">btn h40</button>
+                            <button type="button" class="btn navy h40 round">btn h40 round</button>
                             <button type="button" class="btn gray h40">btn h40</button>
                             <button type="button" class="btn gray h38">btn h38</button>
                             <button type="button" class="btn blue h32">btn h32</button>
@@ -752,12 +868,21 @@
                         <div>
                             <button type="button" class="btn blue line">btn blue line</button>
                             <button type="button" class="btn line">btn line</button>
+                            <button type="button" class="btn line ty2">btn line ty2</button>
                             
                             <h4 class="g_sub"><span>#비활성화</span></h4>
                             <div>
                                 <button type="button" class="btn line blue" disabled>btn line[disabled]</button>
                                 <a href="#" class="btn blue line disabled" role="button">btn line disabled</a>
                             </div>
+                        </div>
+                        <h3 class="g_txt"><span>#텍스트</span></h3>
+                        <div>
+                            <a href="#" class="btn_link" role="button">btn_link</a> <br>
+                            <a href="#" class="btn_link" role="button"><strong>btn_link</strong></a> <br>
+                            <a href="#" class="btn_link ty2" role="button">btn_link ty2</a><br>
+                            <a href="#" class="btn_link arr" role="button">btn_link arr</a><br>
+                            <a href="#" class="btn_link map" role="button">btn_link map</a>
                         </div>
                         <h3 class="g_txt"><span>#group</span></h3>
                         <div>
@@ -818,25 +943,22 @@
                                     </pre>
                                 </div>
                             </div>
-                            <br><br>
-                            <!-- <h4 class="g_sub"><span>#flex type3</span></h4>
+                            <h4 class="g_sub"><span>#fixed</span></h4>
                             <div>
-                                <div class="btn_wrap flex type3">
-                                    <a href="#" class="btn blue min" role="button">btn min : w 120px 고정</a>
-                                    <a href="#" class="btn gray" role="button">btn gray</a>
+                                <div class="btn_wrap flex btm_fixed">
                                     <a href="#" class="btn blue" role="button">btn blue</a>
+                                    <a href="#" class="btn gray" role="button">btn gray</a>
                                 </div>
                                 <div class="source_code">
                                     <button type="button" class="btn_source">소스보기</button>
                                     <pre class="code_view">
-                                        <div class="btn_wrap flex type3">
-                                            <a href="#" class="btn blue min" role="button">btn min : w 120px 고정</a>
-                                            <a href="#" class="btn gray" role="button">btn gray</a>
+                                        <div class="btn_wrap flex fixed">
                                             <a href="#" class="btn blue" role="button">btn blue</a>
+                                            <a href="#" class="btn gray" role="button">btn gray</a>
                                         </div>
                                     </pre>
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                     
@@ -984,9 +1106,294 @@
                         </div>
                     </div>
 
+                    <h2 class="guide_tit">Tab</h2>
+                    <div>
+                        <div>
+                            <div class="tab_wrap j_ui_tab">
+                                <ul class="tab_list" role="tablist">
+                                    <li class="on"><a href="#tab1" role="tab" aria-selected="true">메뉴명</a></li>
+                                    <li><a href="#tab2"  role="tab" aria-selected="false">메뉴명</a></li>
+                                </ul>
+                            </div>
+                            <div id="tab1" class="tab_cont on" role="tabpanel">
+                                #tab1 : .tab_cont
+                            </div>
+                            <div id="tab2" class="tab_cont" role="tabpanel">
+                                #tab2 : .tab_cont
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tab_wrap j_ui_tab">
+                                <ul class="tab_list ty2" role="tablist">
+                                    <li class="on"><a href="#tab3" role="tab" aria-selected="true">메뉴명</a></li>
+                                    <li><a href="#tab4"  role="tab" aria-selected="false">메뉴명</a></li>
+                                </ul>
+                            </div>
+                            <div id="tab3" class="tab_cont on" role="tabpanel">
+                                #tab3 : .tab_cont
+                            </div>
+                            <div id="tab4" class="tab_cont" role="tabpanel">
+                                #tab4 : .tab_cont
+                            </div>
+                        </div>
+                        <div class="source_code">
+                            <button type="button" class="btn_source">소스보기</button>
+                            <pre class="code_view">
+                                <div class="tab_wrap j_ui_tab">
+                                    <ul class="tab_list" role="tablist">
+                                        <li class="on"><a href="#tab1" role="tab" aria-selected="true">메뉴명</a></li>
+                                        <li><a href="#tab2"  role="tab" aria-selected="false">메뉴명</a></li>
+                                    </ul>
+                                </div>
+                                <div id="tab1" class="tab_cont on" role="tabpanel">
+                                    #tab1 : .tab_cont
+                                </div>
+                                <div id="tab2" class="tab_cont" role="tabpanel">
+                                    #tab2 : .tab_cont
+                                </div>
+                                --------------------------------------------
+                                <div class="tab_wrap j_ui_tab">
+                                    <ul class="tab_list ty2" role="tablist">
+                                        <li class="on"><a href="#tab3" role="tab" aria-selected="true">메뉴명</a></li>
+                                        <li><a href="#tab4"  role="tab" aria-selected="false">메뉴명</a></li>
+                                    </ul>
+                                </div>
+                                <div id="tab3" class="tab_cont on" role="tabpanel">
+                                    #tab3 : .tab_cont
+                                </div>
+                                <div id="tab4" class="tab_cont" role="tabpanel">
+                                    #tab4 : .tab_cont
+                                </div>
+                            </pre>
+                        </div>
+                        <h4 class="g_sub"><span>#기차 좌석 (tab)</span></h4>
+                        <div>
+                            <div class="tab_seat j_ui_tab">
+                                <ul role="tablist">
+                                    <li><a href="#seat1" class="seat_item ty1 on" role="tab" aria-selected="true">0001</a></li>
+                                    <li><a href="#seat2" class="seat_item ty1" role="tab" aria-selected="false">0002</a></li>
+                                    <li><a href="#seat3" class="seat_item ty2" role="tab" aria-selected="false">0003</a></li>
+                                </ul>
+                            </div>
+                            <div id="seat1" class="tab_cont on" role="tabpanel">
+                                #seat1 : .tab_cont
+                            </div>
+                            <div id="seat2" class="tab_cont" role="tabpanel">
+                                #seat2 : .tab_cont
+                            </div>
+                            <div id="seat3" class="tab_cont" role="tabpanel">
+                                #seat3 : .tab_cont
+                            </div>
+
+                            <div class="source_code">
+                                <button type="button" class="btn_source">소스보기</button>
+                                <pre class="code_view">
+                                    <div class="tab_seat j_ui_tab">
+                                        <ul role="tablist">
+                                            <li><a href="#seat1" class="seat_item ty1 on" role="tab" aria-selected="true">0001</a></li>
+                                            <li><a href="#seat2" class="seat_item ty1" role="tab" aria-selected="false">0002</a></li>
+                                            <li><a href="#seat3" class="seat_item ty2" role="tab" aria-selected="false">0003</a></li>
+                                        </ul>
+                                    </div>
+                                    <div id="seat1" class="tab_cont on" role="tabpanel">
+                                        #seat1 : .tab_cont
+                                    </div>
+                                    <div id="seat2" class="tab_cont" role="tabpanel">
+                                        #seat2 : .tab_cont
+                                    </div>
+                                    <div id="seat3" class="tab_cont" role="tabpanel">
+                                        #seat3 : .tab_cont
+                                    </div>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+
                     <h2 class="guide_tit">Accordion</h2>
                     <div>
+                        <h4 class="g_sub"><span>#기본</span></h4>
+                        <div>
+                            <div class="acco_list j_ui_acco">
+                                <div class="acco_tit">
+                                    <span class="tit">아코디언 타이틀 입력</span>
+                                    <a href="javascript:;" role="button" class="acco_btn j_acco_btn"><span class="blind">상세내용 열기</span></a>
+                                </div>
+                                <div class="acco_cont">
+                                    감싸는 wrap에 j_ui_acco<br>
+                                    버튼에 j_acco_btn
+                                </div>
+                            </div>
+                            <div class="source_code">
+                                <button type="button" class="btn_source">소스보기</button>
+                                <pre class="code_view">
+                                    <div class="acco_list j_ui_acco">
+                                        <div class="acco_tit">
+                                            <span class="tit">아코디언 타이틀 입력</span>
+                                            <a href="javascript:;" role="button" class="acco_btn j_acco_btn"><span class="blind">상세내용 열기</span></a>
+                                        </div>
+                                        <div class="acco_cont">
+                                            cont
+                                        </div>
+                                    </div>
+                                </pre>
+                            </div>
+                        </div>
 
+                        <h4 class="g_sub"><span>#list 타입</span></h4>
+                        <div>
+                            <ul class="line_list">
+                                <li>
+                                    <div class="acco_list j_ui_acco">
+                                        <div class="acco_tit">
+                                            <dl class="dl_list ty3">
+                                                <dt><span class="tit">승인번호</span> <a href="javascript:;" role="button" class="acco_btn j_acco_btn"><span class="blind">상세내용 열기</span></a></dt>
+                                                <dd>123123</dd>
+                                            </dl> 
+                                        </div>
+                                        <div class="acco_cont">
+                                            <div class="bdr_tbox">
+                                                <dl class="dl_list">
+                                                    <dt>국가유공자</dt>
+                                                    <dd><span>-2,000</span> 원</dd>
+                                                    <dt>국가유공자</dt>
+                                                    <dd><span>-2,000</span> 원</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="acco_list j_ui_acco">
+                                        <div class="acco_tit">
+                                            <dl class="dl_list ty3">
+                                                <dt><span class="tit">결제금액</span> <a href="javascript:;" role="button" class="acco_btn j_acco_btn"><span class="blind">상세내용 열기</span></a></dt>
+                                                <dd>123123</dd>
+                                            </dl> 
+                                        </div>
+                                        <div class="acco_cont">
+                                            <div class="bdr_tbox">
+                                                <dl class="dl_list">
+                                                    <dt>국가유공자</dt>
+                                                    <dd><span>-2,000</span> 원</dd>
+                                                    <dt>국가유공자</dt>
+                                                    <dd><span>-2,000</span> 원</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="source_code">
+                                <button type="button" class="btn_source">소스보기</button>
+                                <pre class="code_view">
+                                    <ul class="line_list">
+                                        <li>
+                                            <div class="acco_list j_ui_acco">
+                                                <div class="acco_tit">
+                                                    <dl class="dl_list ty3">
+                                                        <dt><span class="tit">승인번호</span> <a href="javascript:;" role="button" class="acco_btn j_acco_btn"><span class="blind">상세내용 열기</span></a></dt>
+                                                        <dd>123123</dd>
+                                                    </dl> 
+                                                </div>
+                                                <div class="acco_cont">
+                                                    <div class="bdr_tbox">
+                                                        <dl class="dl_list">
+                                                            <dt>국가유공자</dt>
+                                                            <dd><span>-2,000</span> 원</dd>
+                                                            <dt>국가유공자</dt>
+                                                            <dd><span>-2,000</span> 원</dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="acco_list j_ui_acco">
+                                                <div class="acco_tit">
+                                                    <dl class="dl_list ty3">
+                                                        <dt><span class="tit">결제금액</span> <a href="javascript:;" role="button" class="acco_btn j_acco_btn"><span class="blind">상세내용 열기</span></a></dt>
+                                                        <dd>123123</dd>
+                                                    </dl> 
+                                                </div>
+                                                <div class="acco_cont">
+                                                    <div class="bdr_tbox">
+                                                        <dl class="dl_list">
+                                                            <dt>국가유공자</dt>
+                                                            <dd><span>-2,000</span> 원</dd>
+                                                            <dt>국가유공자</dt>
+                                                            <dd><span>-2,000</span> 원</dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="guide_tit">약관</h2>
+                    <div>
+                        <div class="agree_box">
+                            <div class="checkall">
+                                <label class="checkbox check_all">
+                                    <input type="checkbox" name="chk_agree" title="필수 약관 전체 동의">
+                                    <i></i>
+                                    <span>전체 동의</span>
+                                </label>
+                            </div>
+                            <ul class="agree_list">
+                                <li>
+                                    <label class="checkbox ty2">
+                                        <input type="checkbox" name="chk_agree" title="[필수] 취소 환불 규정 동의">
+                                        <i></i>
+                                        <span>[필수] 취소 환불 규정 동의</span>
+                                    </label>
+                                    <a href="#" class="arr" role="button"><span class="blind">약관보기</span></a>
+                                </li>
+                                <li>
+                                    <label class="checkbox ty2">
+                                        <input type="checkbox" name="chk_agree" title="[필수] 취소 환불 규정 동의">
+                                        <i></i>
+                                        <span>[필수] 취소 환불 규정 동의</span>
+                                    </label>
+                                    <a href="#" class="arr" role="button"><span class="blind">약관보기</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="source_code">
+                            <button type="button" class="btn_source">소스보기</button>
+                            <pre class="code_view">
+                                <div class="agree_box">
+                                    <div class="checkall">
+                                        <label class="checkbox check_all">
+                                            <input type="checkbox" name="chk_agree" title="필수 약관 전체 동의">
+                                            <i></i>
+                                            <span>전체 동의</span>
+                                        </label>
+                                    </div>
+                                    <ul class="agree_list">
+                                        <li>
+                                            <label class="checkbox ty2">
+                                                <input type="checkbox" name="chk_agree" title="[필수] 취소 환불 규정 동의">
+                                                <i></i>
+                                                <span>[필수] 취소 환불 규정 동의</span>
+                                            </label>
+                                            <a href="#" class="arr" role="button"><span class="blind">약관보기</span></a>
+                                        </li>
+                                        <li>
+                                            <label class="checkbox ty2">
+                                                <input type="checkbox" name="chk_agree" title="[필수] 취소 환불 규정 동의">
+                                                <i></i>
+                                                <span>[필수] 취소 환불 규정 동의</span>
+                                            </label>
+                                            <a href="#" class="arr" role="button"><span class="blind">약관보기</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </pre>
+                        </div>
                     </div>
 
                     <h2 class="guide_tit">Swiper</h2>
