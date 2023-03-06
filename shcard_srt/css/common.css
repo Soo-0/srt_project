@@ -297,6 +297,7 @@ div.box_line + div.box_line{margin-top:12px}
 .tab_list.ty2 > li.on > a:after{left:50%;right:auto;bottom:-1px;transform:translateX(-50%);width:24px;height:3px}
 .tab_cont{display:none}
 .tab_cont.on{display:block}
+.tab_cont .inner{padding-top:24px}
 .tab_seat > ul{display:flex;overflow-x:scroll;margin:0 -24px;padding:0 24px}
 .tab_seat > ul > li + li{margin-left:12px}
 
