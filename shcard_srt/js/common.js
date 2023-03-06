@@ -95,13 +95,13 @@ const formEvt = {
 
 			$btnCount.on('click', function(e){
 				e.preventDefault();
-				let $numVal = +$("#originalnum").val();
+				let $numVal = +$textVal.val()
 				if($(this).hasClass('minus')){
-					$textVal.val(+$textVal.val() - 1);
+					$textVal.val($numVal - 1);
 					if($textVal.val() == 0) $(this).attr('disabled', 'disabled')
-				}else{
-					$textVal.val(+$textVal.val() + 1);
-					if($textVal.val() > 0) $(this).attr('disabled', 'disabled')
+				}else if($(this).hasClass('plus')){
+					$textVal.val($numVal + 1);
+					if($textVal.val() > 0) console.log($($btnCount).hasClass('.minus'))
 				}
 			})
 			console.log($btnCount)
@@ -228,16 +228,8 @@ const popMotion = {
 
 const swiperArea = ()=>{
 	let bannerSwiper = new Swiper('.banner-swiper',{
-		autoplay: {
-			delay: 4000,
-			disableOnInteraction: false
-		}, 
 		loop: true,
 		slidesPerView: 1,
-		effect : 'fade', 
-		fadeEffect: { 
-			crossFade: true 
-		},
         pagination: {
             el: ".bann_pagination",
 			clickable: true
