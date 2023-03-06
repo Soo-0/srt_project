@@ -89,9 +89,9 @@ const formEvt = {
 	},
 	countEvt : () =>{
 		let $counterWrap = $('.counter_item');
-		$counterWrap.each(function(){
-			let $btnCount = $(this).find('.btn_count'),
-				$textVal = $(this).find('.num');
+		$counterWrap.each(function(idx, ele){
+			let $btnCount = $(ele).find('.btn_count'),
+				$textVal = $(ele).find('.num');
 
 			$btnCount.on('click', function(e){
 				e.preventDefault();
@@ -101,10 +101,9 @@ const formEvt = {
 					if($textVal.val() == 0) $(this).attr('disabled', 'disabled')
 				}else if($(this).hasClass('plus')){
 					$textVal.val($numVal + 1);
-					if($textVal.val() > 0) console.log($($btnCount).hasClass('.minus'))
+					if($textVal.val() > 0) $(ele).find('.btn_count.minus').removeAttr('disabled')
 				}
 			})
-			console.log($btnCount)
 		})
 	}
 
