@@ -89,6 +89,23 @@ const formEvt = {
 	},
 	countEvt : () =>{
 		let $counterWrap = $('.counter_item');
+		$counterWrap.each(function(){
+			let $btnCount = $(this).find('.btn_count'),
+				$textVal = $(this).find('.num');
+
+			$btnCount.on('click', function(e){
+				e.preventDefault();
+				let $numVal = +$("#originalnum").val();
+				if($(this).hasClass('minus')){
+					$textVal.val(+$textVal.val() - 1);
+					if($textVal.val() == 0) $(this).attr('disabled', 'disabled')
+				}else{
+					$textVal.val(+$textVal.val() + 1);
+					if($textVal.val() > 0) $(this).attr('disabled', 'disabled')
+				}
+			})
+			console.log($btnCount)
+		})
 	}
 
 }
