@@ -269,10 +269,12 @@ div.box_line + div.box_line{margin-top:12px}
 .btn_link.map:before{display:inline-block;content:'';width:12px;height:12px;margin-right:7px;background:url(../images/common/ic_btn_map.svg) no-repeat 0 -1px/12px;vertical-align:middle}
 .btn_close{display:inline-block;position:absolute;top:50%;right:0;transform:translateY(-50%);width:24px;height:24px;background:url(../images/common/ic_close.svg) no-repeat 0 0}
 .btn_del{display:none;position:absolute;top:50%;right:0;transform:translateY(-50%);width:20px;height:20px;background:url(../images/common/btn_del.svg) no-repeat 0 0/20px}
+.btn_del.on{display:block}
 .btn_search{position:absolute;top:50%;right:0;transform:translateY(-50%);width:28px;height:28px;background:url(../images/common/btn_search.svg) no-repeat center/21px 22px}
-.btn_count{display:inline-block;width:24px;height:24px;border:1px solid red}
-.btn_count.minus{}
-.btn_count.plus{}
+.btn_count{display:inline-block;width:24px;height:24px;background-position:0 0;background-size:24px;background-repeat:no-repeat}
+.btn_count.minus{background-image:url(../images/common/btn_count_minus.svg)}
+.btn_count.minus:disabled{background-image:url(../images/common/btn_count_minus_dis.svg)}
+.btn_count.plus{background-image:url(../images/common/btn_count_plus.svg)}
 
 
 /*table*/
