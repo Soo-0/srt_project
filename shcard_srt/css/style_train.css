@@ -16,4 +16,32 @@ z-index 정의
 .banner_wrap .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{margin:0px 6px 0 0;}
 .banner_wrap .swiper-pagination-bullet-active{width:16px;height:6px;border-radius:3px;transition:width .5s;background-color:#383B5A;}
 
-/* 내 승차권 */
+/* 승차권보관함_내승차권 */
+.mt24{margin-top:24px !important;}
+
+.travel_type{position:relative;height:20px;margin-bottom:16px;}
+.travel_type span{display:block;position:absolute;top:0;left:calc(50% - 26px/2 + 23px);font-size:14px;font-weight:700;line-height:20px;}
+.travel_type span:before{content:"";position:absolute;top:3px;right:25px;width:45px;height:11px;background:url("../images/contents_train/srt_black.svg") no-repeat 0 0 / 100%;}
+.my_travel{display:flex;justify-content:space-evenly;}
+.my_travel > div{display:flex;flex-direction:column;align-items:center;}
+.my_travel > div > span:first-child{line-height:30px;padding-bottom:6px;}
+.travel_place{line-height:20px;font-size:22px;font-weight:900;}
+.travel_time{font-size:14px;font-weight:700;color:#476EFF;}
+.travel_duration{line-height:21px;font-size:12px;font-weight:500;color:#888888;}
+.boarding_pass{margin-bottom:40px;}
+.boarding_number{display:flex;justify-content:space-between;height:20px;line-height:20px; font-size:14px;}
+.boarding_detail{width:100%;margin:8px 0;border:1px solid #EEEEEE;border-radius:4px;}
+.my_pass_top{display:flex;justify-content:space-between;padding:9px 12px 7px;font-size:14px;border-bottom:1px solid #EEEEEE;background-color:#F6F6F6;}
+.my_pass_top span{color:#888888;}
+.my_pass_bottom{display:flex;height:88px;}
+.my_pass_bottom li{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;width:calc(100% / 3);}
+.my_pass_bottom li + li{border-left:1px solid #EEEEEE;}
+.my_pass_bottom li > span + span{margin-top:5px;}
+.seating_info1{height:16px;font-size:12px;color:#888888;}
+.seating_info2{height:34px;font-weight:700;font-size:24px;}
+.my_pass_bottom img{width:72px;height:72px;}
+.boarding_type{display:flex;justify-content:space-between;align-items:center;height:16px;line-height:14px;font-size:14px;}
+.boarding_type .btn_link{color:#666666;}
+.ticket_btn_wrap button{width:100%;}
+.double_btn_wrap{display:flex;margin-bottom:8px;}
+.double_btn_wrap button + button{margin-left:8px;}

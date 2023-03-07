@@ -20,14 +20,111 @@
         <header id="header">
             <div class="inner">
                 <button type="button" class="btn_back">이전으로 가기</button>
-                <div class="title">타이틀 입력</div>
+                <div class="title">승차권 보관함</div>
                 <button type="button" class="btn_close">닫기</button>
             </div>
         </header>
         <div id="container">
             <div id="contents">
                 <h2 id="pageTit" class="blind">승차권 보관함 본문 시작</h2>
-                test
+                <div class="tab_wrap j_ui_tab">
+                    <ul class="tab_list" role="tablist">
+                        <li class="on"><a href="#tab1" role="tab" aria-selected="true">내 승차권</a></li>
+                        <li><a href="#tab2" role="tab" aria-selected="false">이용내역</a></li>
+                    </ul>
+                </div>
+                <div id="tab1" class="tab_cont on" role="tabpanel">
+                    <div class="inner">
+                        <div class="ticket_box srt">
+                            <div class="ticket_top">
+                                <span class="date">2022.11.30(수)</span>
+                                <span class="num">1매</span>
+                            </div>
+                            <div class="ticket_cont">
+                                <div class="ticket_travel">
+                                    <div class="travel_type">
+                                        <span>000</span>
+                                    </div>
+                                    <div class="my_travel">
+                                        <div>
+                                            <span class="travel_place">수서</span>
+                                            <span class="travel_time">13:00</span>
+                                        </div>
+                                        <div>
+                                            <span><img src="../../images/contents_train/station_arrow.svg" alt="이동방향_오른쪽"></span>
+                                            <p class="travel_duration">2시간 34분</p>
+                                        </div>
+                                        <div>
+                                            <span class="travel_place">부산</span>
+                                            <span class="travel_time">15:34</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ticket_info">
+                                    <div class="ticket_detail">
+                                        <div class="boarding_pass">
+                                            <div class="boarding_number">
+                                                <span>승차권 번호</span>
+                                                <p>83128-1108-10784-01</p>
+                                            </div>
+                                            <div class="boarding_detail">
+                                                <div class="my_pass_top">
+                                                    <span>타는 곳</span>
+                                                    <p>출발 15분 전 표시</p>
+                                                </div>
+                                                <ul class="my_pass_bottom">
+                                                    <li>
+                                                        <span class="seating_info1">호차</span>
+                                                        <span class="seating_info2">2호차</span>
+                                                    </li>
+                                                    <li >
+                                                        <span class="seating_info1">좌석</span>
+                                                        <span class="seating_info2">8A</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../../images/contents_train/seat_qrcode.svg" alt="">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="boarding_type">
+                                                <span>어른/일반실</span>
+                                                <a href="#" class="btn_link" role="button">영수증</a>
+                                            </div>
+                                        </div>
+                                        <div class="ticket_btn_wrap">
+                                            <div class="double_btn_wrap">
+                                                <button type="button" class="btn line ty2 h38">승차권 환불</button>
+                                                <button type="button" class="btn line ty2 h38">선물하기</button>
+                                            </div>
+                                            <button type="button" class="btn gray h38">철도범죄신고</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner_wrap mt24">
+                            <div class="swiper banner-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#none">배너 영역1</a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#none">배너 영역2</a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#none">배너 영역3</a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#none">배너 영역4</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bann_pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab2" class="tab_cont" role="tabpanel"></div>
+                
             </div>
         </div>
     </div>   
