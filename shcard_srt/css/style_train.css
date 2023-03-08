@@ -8,53 +8,53 @@ z-index 정의
 /* hj */
 /* 배너 스와이퍼 */
 .banner_wrap{position:relative;text-align:center;overflow:hidden;}
-.banner-swiper{position:relative;width:100%;height:90px;border-radius:8px;margin-bottom:20px;}
-.swiper-slide{display:flex;justify-content:center;align-items:center;font-size:18px;background-color:#EEEEEE;overflow:hidden;}
-.banner_wrap .swiper-pagination-bullet{width:6px;height:6px;line-height:6px;}
-.banner_wrap .swiper-pagination-horizontal.swiper-pagination-bullets{line-height:6px;}
+.banner-swiper{position:relative;width:100%;height:9.0rem;border-radius:.8rem;margin-bottom:2.0rem;}
+.swiper-slide{display:flex;justify-content:center;align-items:center;font-size:1.8rem;background-color:#EEEEEE;overflow:hidden;}
+.banner_wrap .swiper-pagination-bullet{width:.6rem;height:.6rem;line-height:.6rem;}
+.banner_wrap .swiper-pagination-horizontal.swiper-pagination-bullets{line-height:.6rem;}
 .banner_wrap .swiper-pagination-bullet-active,
-.banner_wrap .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{margin:0px 6px 0 0;}
-.banner_wrap .swiper-pagination-bullet-active{width:16px;height:6px;border-radius:3px;transition:width .5s;background-color:#383B5A;}
+.banner_wrap .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{margin:.0rem .6rem 0 0;}
+.banner_wrap .swiper-pagination-bullet-active{width:1.6rem;height:.6rem;border-radius:.3rem;transition:width .5s;background-color:#383B5A;}
 
 /* 승차권보관함_내승차권 */
-.mt24{margin-top:24px !important;}
-.no_header{padding:24px 0 40px !important;}
+.mt24{margin-top:2.4rem !important;}
+.no_header{padding:2.4rem 0 4.0rem !important;}
 .complete_area.ticket_page .txt{font-size:16px;}
 
 .ticket_cont.transfer_ver{}
-.travel_type{position:relative;height:20px;margin-bottom:16px;}
-.travel_type span{display:block;position:absolute;top:0;left:calc(50% - 26px/2 + 23px);font-size:14px;font-weight:700;line-height:20px;}
-.travel_type span:before{content:"";position:absolute;top:3px;right:25px;width:45px;height:11px;background:url("../images/contents_train/srt_black.svg") no-repeat 0 0 / 100%;}
+.travel_type{position:relative;height:2.0rem;margin-bottom:1.6rem;}
+.travel_type span{display:block;position:absolute;top:0;left:calc(50% - 2.6rem/2 + 2.3rem);font-size:1.4rem;font-weight:700;line-height:2.0rem;}
+.travel_type span:before{content:"";position:absolute;top:.3rem;right:2.5rem;width:4.5rem;height:1.1rem;background:url("../images/contents_train/srt_black.svg") no-repeat 0 0 / 100%;}
 
 .my_travel{display:flex;justify-content:space-evenly;}
 .my_travel > div{display:flex;flex-direction:column;align-items:center;}
-.my_travel > div > span:first-child{line-height:30px;padding-bottom:6px;}
-.travel_place{line-height:20px;font-size:22px;font-weight:900;}
-.travel_time{font-size:14px;font-weight:700;}
+.my_travel > div > span:first-child{line-height:3.0rem;padding-bottom:.6rem;}
+.travel_place{line-height:2.0rem;font-size:2.2rem;font-weight:900;}
+.travel_time{font-size:1.4rem;font-weight:700;}
 .travel_time.ready{color:#476EFF;}
-.travel_duration{line-height:26px;font-size:12px;font-weight:500;color:#888888;}
+.travel_duration{line-height:2.6rem;font-size:1.2rem;font-weight:500;color:#888888;}
 
-.my_travel.transfer .travel_place{line-height:20px;font-size:18px;font-weight:900;}
-.my_travel.transfer > div > span:first-child{line-height:20px;padding-bottom:6px;}
+.my_travel.transfer .travel_place{line-height:2.0rem;font-size:1.8rem;font-weight:900;}
+.my_travel.transfer > div > span:first-child{line-height:2.0rem;padding-bottom:.6rem;}
 
-.ticket_info .badge.lightblue{margin-bottom:16px;}
-.boarding_number{display:flex;justify-content:space-between;height:20px;line-height:20px;font-size:14px;}
-.boarding_detail{width:100%;margin:8px 0;border:1px solid #EEEEEE;border-radius:4px;}
-.my_pass_top{display:flex;justify-content:space-between;padding:9px 12px 7px;font-size:14px;border-bottom:1px solid #EEEEEE;background-color:#F6F6F6;}
+.ticket_info .badge.lightblue{margin-bottom:1.6rem;}
+.boarding_number{display:flex;justify-content:space-between;height:2.0rem;line-height:2.0rem;font-size:1.4rem;}
+.boarding_detail{width:100%;margin:.8rem 0;border:.1rem solid #EEEEEE;border-radius:.4rem;}
+.my_pass_top{display:flex;justify-content:space-between;padding:.9rem 1.2rem .7rem;font-size:1.4rem;border-bottom:.1rem solid #EEEEEE;background-color:#F6F6F6;}
 .my_pass_top span{color:#888888;}
-.my_pass_bottom{display:flex;height:88px;}
+.my_pass_bottom{display:flex;height:8.8rem;}
 .my_pass_bottom li{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;width:calc(100% / 3);}
-.my_pass_bottom li + li{border-left:1px solid #EEEEEE;}
-.my_pass_bottom li > span + span{margin-top:5px;}
-.seating_info1{height:16px;font-size:12px;color:#888888;}
-.seating_info2{height:34px;font-weight:700;font-size:24px;}
-.my_pass_bottom img{width:72px;height:72px;}
-.boarding_type{display:flex;justify-content:space-between;align-items:center;height:16px;line-height:14px;font-size:14px;}
+.my_pass_bottom li + li{border-left:.1rem solid #EEEEEE;}
+.my_pass_bottom li > span + span{margin-top:.5rem;}
+.seating_info1{height:1.6rem;font-size:1.2rem;color:#888888;}
+.seating_info2{height:3.4rem;font-weight:700;font-size:2.4rem;}
+.my_pass_bottom img{width:7.2rem;height:7.2rem;}
+.boarding_type{display:flex;justify-content:space-between;align-items:center;height:1.6rem;line-height:1.4rem;font-size:1.4rem;}
 .boarding_type .btn_link.unused{color:#666666;}
-.ticket_btn_wrap{margin:40px 0 24px;}
+.ticket_btn_wrap{margin:4.0rem 0 2.4rem;}
 .ticket_btn_wrap button{width:100%;}
-.ticket_btn_wrap > button + button{margin-top:8px;}
-.double_btn_wrap{display:flex;margin-bottom:8px;}
-.double_btn_wrap > button + button{margin-left:8px;}
-.purchase_date{display:flex;height:20px;font-size:14px;color:#BBBBBB;}
-.purchase_date span + span{margin-left:7px;}
+.ticket_btn_wrap > button + button{margin-top:.8rem;}
+.double_btn_wrap{display:flex;margin-bottom:.8rem;}
+.double_btn_wrap > button + button{margin-left:.8rem;}
+.purchase_date{display:flex;height:2.0rem;font-size:1.4rem;color:#BBBBBB;}
+.purchase_date span + span{margin-left:.7rem;}

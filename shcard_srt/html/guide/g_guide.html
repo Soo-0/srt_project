@@ -755,7 +755,7 @@
                                 <span>선택</span>
                             </label>
                         </div>
-                        <h4 class="g_sub"><span># type2</span></h4>
+                        <h4 class="g_sub"><span>#type2</span></h4>
                         <div>
                             <label class="checkbox ty2">
                                 <input type="checkbox" title="선택">
@@ -772,6 +772,30 @@
                                 <i></i>
                                 <span>checkbox ty2</span>
                             </label>
+                        </div>
+                        <h4 class="g_sub"><span>#box input</span></h4>
+                        <div>
+                            <div class="inpchk_box">
+                                <input type="checkbox" id="card_chk1" title="[어린이] 5호차(일반실) 11A 선택" name="card_chk"><!-- [D] input id값과 label for값 일치해야함. -->
+                                <div class="txt_box">
+                                    <i class="chk"></i>
+                                    <div class="txt_wrap">
+                                        <label for="card_chk1" class="tit"><span>[어린이] 5호차(일반실) 11A 선택</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inpchk_box">
+                                <input type="checkbox" id="card_chk1" title="[어린이] 5호차(일반실) 11A 선택" name="card_chk"><!-- [D] input id값과 label for값 일치해야함. -->
+                                <div class="txt_box">
+                                    <i class="chk"></i>
+                                    <div class="txt_wrap">
+                                        <dl class="dl_list ty2">
+                                            <dt><label for="card_chk1" class="tit"><span>[어린이] 5호차(일반실) 11A 선택</span></label></dt>
+                                            <dd><strong>81,600 원</strong></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <h4 class="g_sub"><span>#count</span></h4>
                         <div>
@@ -1347,7 +1371,7 @@
                                     <span>전체 동의</span>
                                 </label>
                             </div>
-                            <ul class="agree_list">
+                            <ul class="agree_list"><!-- 사이간격 margin-top:10px 일 경우 mt10 class 추가 -->
                                 <li>
                                     <label class="checkbox ty2">
                                         <input type="checkbox" name="chk_agree" title="[필수] 취소 환불 규정 동의">
