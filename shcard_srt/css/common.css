@@ -176,19 +176,20 @@ div.box_line + div.box_line{margin-top:1.2rem}
 .ticket_box.srt .ticket_top{background:linear-gradient(90deg, rgba(97,71,143,1) 0%, rgba(103,55,96,1) 90%)}
 .ticket_box.ktx .ticket_top{background:linear-gradient(90deg, rgba(0,129,195,1) 0%, rgba(0,101,179,1) 90%)}
 .ticket_box:after{display:block;content:'';width:100%;height:2.4rem;animation:animateBackground 4s linear infinite forwards}
-.ticket_box.srt:after{background:#70135E url(../images/common/ticket_logo_srt.svg) repeat-x center/4.6rem .9rem}
+.ticket_box.srt:after{background:#70135E url(../images/common/ticket_btn_srt.gif) no-repeat center/cover}
 .ticket_box.ktx:after{background:#0065B3 url(../images/common/ticket_logo_ktx.svg) repeat-x center/4.6rem .9rem;}
 .ticket_top{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 1.6rem .9rem;color:#fff}
 .ticket_top .date{font-size:1.4rem;line-height:2.0rem;font-weight:500;}
 .ticket_top .num{font-size:1.4rem;line-height:2.0rem}
-.ticket_cont{padding:1.6rem 1.6rem;border:solid #EAEAEA;border-width:0 .1rem 0}
-.ticket_info{position:relative}
+.ticket_cont{border:solid #EAEAEA;border-width:0 .1rem 0}
+.ticket_travel{display:flex;flex-shrink:1;flex-flow:column wrap;justify-content:center;align-items:center;width:100%;max-width:100%;min-height:13rem}
+.ticket_info{position:relative;padding:1.6rem 1.6rem}
 .ticket_info:before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%)}
 .ticket_info:before, .ticket_info:after{content:'';position:absolute;top:0;width:1.4rem;height:3.6rem;background:no-repeat center/1.4rem 3.6rem}
-.ticket_info:before{left:-1.0rem;background-image:url(../images/common/ticket_line_left.svg)}
-.ticket_info:after{right:-1.7rem;background-image:url(../images/common/ticket_line_right.svg)}
-.ticket_info .ticket_detail:first-child{padding-top:5.8rem}
-.ticket_info .ticket_detail:first-child:before{top:1.8rem;width:calc(100% - 1.4rem);margin-top:0;padding:0 1.0rem;}
+.ticket_info:before{left:.6rem;background-image:url(../images/common/ticket_line_left.svg)}
+.ticket_info:after{right:-.1rem;background-image:url(../images/common/ticket_line_right.svg)}
+.ticket_info .ticket_detail:first-child{margin-top:0;padding-top:4rem}
+.ticket_info .ticket_detail:first-child:before{width:calc(100% - 1.1rem)}
 .ticket_detail{position:relative;margin-top:2.4rem;padding-top:2.4rem}
 .ticket_detail:before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:100%;border-top:.1rem dashed #eee}
 
@@ -312,7 +313,6 @@ div.box_line + div.box_line{margin-top:1.2rem}
 .btn_count.minus{background-image:url(../images/common/btn_count_minus.svg)}
 .btn_count.minus:disabled{background-image:url(../images/common/btn_count_minus_dis.svg)}
 .btn_count.plus{background-image:url(../images/common/btn_count_plus.svg)}
-
 
 /*table*/
 .tbl{position:relative;border-top:.1rem solid #2C3548;}
@@ -488,9 +488,19 @@ body.pop_open{overflow:hidden}
 /* title */
 [class*=tit_h]{position:relative}
 div[class*=tit_h]{display:flex;justify-content:space-between;align-items:center}
-/* .tit_h3{margin-top:3.5rem} */
 .tit_h3:not(div), div.tit_h3 .tit{font-size:2.0rem;line-height:2.8rem;color:#000}
 .unit .price{font-size:1.3rem;color:#767676}
+
+
+/* 기차예매 */
+.mycart_area{display:flex;position:absolute;top:0;right:0;}
+.mycart_area > .btn_myitem{}
+.btn_myitem{position:relative;}
+.btn_myitem:before{display:block;content:'';width:2.8rem;height:2.8rem;margin:0 auto .6rem;background-size:2.8rem 2.8rem;background-repeat:no-repeat}
+.btn_myitem .new{position:absolute;top:0;right:0;}
+.btn_myitem.cart:before{background-image:url(../images/common/ico_cart.svg)}
+.btn_myitem.ticket:before{background-image:url(../images/common/ico_ticket.svg)}
+.btn_myitem .txt{font-size:1.2rem;line-height:1.4rem;font-weight:700}
 
 
 @media only screen and (max-width:320px){
