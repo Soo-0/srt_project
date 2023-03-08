@@ -40,6 +40,9 @@ z-index 정의
 .my_travel.transfer .travel_place{line-height:2.0rem;font-size:1.8rem;font-weight:900;}
 .my_travel.transfer .travel_time + .travel_time{margin-top:rem;}
 
+.gray_info_box{position:relative;display:flex;justify-content:space-between;margin:0 -1.6rem 0;line-height:1.6rem;font-size:1.2rem;color:#3D4964;}
+.gray_info_box .right_side{font-weight:700;}
+
 .ticket_info .badge.lightblue{margin-bottom:1.6rem;}
 .boarding_number{display:flex;justify-content:space-between;height:2.0rem;line-height:2.0rem;font-size:1.4rem;}
 .boarding_detail{width:100%;margin:.8rem 0;border:.1rem solid #EEEEEE;border-radius: .4rem;}
