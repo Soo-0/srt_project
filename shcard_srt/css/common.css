@@ -480,10 +480,11 @@ body.pop_open{overflow:hidden}
 #contents{position:relative;height:100%}
 
 /*layout*/
-.inner{position:relative;width:100%;padding:0 2.4rem;box-sizing:border-box}
+.inner{position:relative;width:100%;padding:2.4rem 2.4rem 0;box-sizing:border-box}
+.inner.pt0{padding-top:0}
+.inner.pt16{padding-top:1.6rem}
 .inner2{padding:3.2rem 2.4rem 2.4rem}
 .inner3{padding:3.2rem 1.6rem 2.4rem}
-.inner.pt0{padding-top:0}
 
 /* title */
 [class*=tit_h]{position:relative}
@@ -493,13 +494,13 @@ div[class*=tit_h]{display:flex;justify-content:space-between;align-items:center}
 
 
 /* 기차예매 */
-.mycart_area{display:flex;position:absolute;top:0;right:0;}
+.mycart_area{display:flex;position:absolute;top:0;right:2.4rem;}
 .mycart_area > .btn_myitem{}
 .btn_myitem{position:relative;}
-.btn_myitem:before{display:block;content:'';width:2.8rem;height:2.8rem;margin:0 auto .6rem;background-size:2.8rem 2.8rem;background-repeat:no-repeat}
-.btn_myitem .new{position:absolute;top:0;right:0;}
+.btn_myitem:before{display:block;content:'';width:2.8rem;height:2.8rem;margin:0 auto .2rem;background-size:2.8rem;background-repeat:no-repeat;background-position:center}
 .btn_myitem.cart:before{background-image:url(../images/common/ico_cart.svg)}
 .btn_myitem.ticket:before{background-image:url(../images/common/ico_ticket.svg)}
+.btn_myitem .new{position:absolute;top:-.4rem;right:.3rem;min-width:1.8rem;height:1.8rem;padding:.1rem .5rem;background:#ff4b44;font-size:1.2rem;line-height:1.8rem;font-weight:700;color:#fff;text-align:center;border-radius:100%}
 .btn_myitem .txt{font-size:1.2rem;line-height:1.4rem;font-weight:700}
 
 
