@@ -157,6 +157,7 @@ div.box_line + div.box_line{margin-top:1.2rem}
 .train_item + .train_item{margin-top:1.6rem;padding-top:1.6rem;border-top:.1rem dashed #eee}
 .train_item .train_station{margin-top:1.0rem;font-size:0}
 .train_item .train_station span{display:inline-block;position:relative;font-size:1.8rem;line-height:2.6rem;vertical-align:middle}
+.train_item .train_station span strong{font-weight:700;}
 .train_item .train_station span + span{margin-left:2.6rem}
 .train_item .train_station span + span:before{content:'';position:absolute;top:0;left:-2.2rem;width:1.8rem;height:2.2rem;background:url(../images/common/ico_train_arr.svg) no-repeat 0 0/1.8rem 1.6rem}
 .train_item .txt{margin-top:.4rem;font-size:1.4rem;line-height:2.0rem;color:#888}

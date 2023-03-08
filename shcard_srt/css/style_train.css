@@ -44,8 +44,8 @@ z-index 정의
 .gray_info_box .right_side{font-weight:700;}
 
 .ticket_info .badge.lightblue{margin-bottom:1.6rem;}
-.boarding_number{display:flex;justify-content:space-between;height:2.0rem;line-height:2.0rem;font-size:1.4rem;}
-.boarding_detail{width:100%;margin:.8rem 0;border:.1rem solid #EEEEEE;border-radius: .4rem;}
+.boarding_number{display:flex;justify-content:space-between;height:2.0rem;line-height:2rem;font-size:1.4rem;}
+.boarding_detail{width:100%;margin:.8rem 0;border:.1rem solid #EEEEEE;border-radius:.4rem;}
 .my_pass_top{display:flex;justify-content:space-between;padding:.9rem 1.2rem .7rem;font-size:1.4rem;border-bottom:.1rem solid #EEEEEE;background-color:#F6F6F6;}
 .my_pass_top span{color:#888888;}
 .my_pass_bottom{display:flex;height:8.8rem;}
@@ -68,4 +68,4 @@ z-index 정의
 /* 승차권보관함(이용내역tab) */
 .filter_date{display:flex;justify-content:space-between;align-items:center;padding:1.8rem 2.4rem;font-size:1.4rem;background-color:#F8F8F8;}
 .filter_date .filter_tit{line-height:2rem;color:#666666;}
-.filter_date a{line-height:2rem;}
+.filter_date > a{padding-right:1.6rem;line-height:2rem;}
