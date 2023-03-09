@@ -343,7 +343,7 @@ div.box_line + div.box_line{margin-top:1.2rem}
 .tab_swich > li a{display:block;padding:1rem .8rem;font-size:1.4rem;line-height:2rem;font-weight:500;border-radius:2rem}
 .tab_swich > li.on{}
 .tab_swich > li.on a{background:#fff}
-.tab_wrap.swich + .tab_cont{padding-top:2.2rem}
+.tab_wrap.swich ~ .tab_cont{padding-top:2.2rem}
 .tab_cont{display:none}
 .tab_cont.on{display:block}
 .tab_seat > ul{display:flex;overflow-x:scroll;margin:0 -2.4rem;padding:0 2.4rem}
