@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no">
     <meta name="keywords" content="신한 SRT, 신한">
-    <title>퍼블 가이드 | Srt</title>
+    <title>기차 예매 | Srt</title>
     <script src="../../js/shinsrt.css.js"></script>
 	<script src="../../js/shinsrt.ui.js"></script>
 </head>
@@ -20,14 +20,114 @@
         <header id="header">
             <div class="inner">
                 <button type="button" class="btn_back">이전으로 가기</button>
-                <div class="title">타이틀 입력</div>
+                <div class="title">기차 예매</div>
                 <button type="button" class="btn_close">닫기</button>
             </div>
         </header>
         <div id="container">
             <div id="contents">
-                <h2 id="pageTit" class="blind"> 본문 시작</h2>
-                
+                <h2 id="pageTit" class="blind">기차예매 본문 시작</h2>
+                <div class="inner main">
+                    <div class="mycart_area">
+                        <a href="#" role="button" class="btn_myitem cart">
+                            <span class="new">2+<span class="blind">개</span></span><!-- D : 새로운 내용이 없을 경우 new 전체 삭제 -->
+                            <span class="txt">장바구니</span>
+                        </a>
+                        <a href="#" role="button" class="btn_myitem ticket">
+                            <span class="new">1<span class="blind">개</span></span>
+                            <span class="txt">내 승차권</span>
+                        </a>
+                    </div>
+                    <div class="tab_wrap swich j_ui_tab">
+                        <ul class="tab_swich" role="tablist">
+                            <li class="on"><a href="#ticketing_way1" role="tab" aria-selected="true">편도</a></li>
+                            <li><a href="#ticketing_way2"  role="tab" aria-selected="false">왕복</a></li>
+                        </ul>
+                    </div>
+                    <div id="ticketing_way1" class="tab_cont on" role="tabpanel">
+                        <div class="boarding_info">
+                            <div class="boarding_item">
+                                <span>출발역</span>
+                                <strong>수서</strong>
+                            </div>
+                            <button type="button" class="btn_change white"></button>
+                            <div class="boarding_item">
+                                <span>도착역</span>
+                                <strong>수서</strong>
+                            </div>
+                        </div>
+                        <div class="match_area">
+                            <strong class="tit_h4">최근 예매 구간</strong>
+                            <div class="quick_match">
+                                <button type="button" class="destination_item button">
+                                    <span>수서</span>
+                                    <span>동대구</span>
+                                </button>
+                                <button type="button" class="destination_item button">
+                                    <span>천안아산</span>
+                                    <span>울산(통도사)</span>
+                                </button>
+                                <button type="button" class="destination_item button">
+                                    <span>천안아산</span>
+                                    <span>울산(통도사)</span>
+                                </button>
+                            </div>
+                            <ul class="box_line rez">
+                                <li>
+                                    <div class="box_info">
+                                        <dl class="dl_list">
+                                            <dt>번호</dt>
+                                            <dd>123123123</dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box_info">
+                                        <dl class="dl_list">
+                                            <dt>번호</dt>
+                                            <dd>123123123</dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="btn_wrap">
+                                <button type="button" class="btn blue full" disabled>기차 조회하기</button><!-- D : 활성화 시 disabled 삭제 -->
+                                <button type="button" class="btn line full" disabled>빠른 기차 예매하기</button>
+                            </div>
+                        </div>
+                        <div class="noti_evt">
+                            <a href="#" role="button" class="btn_link_noti">철도노조 태업 관련 이용 안내 (22.11.24)</a>
+                            <div class="banner_wrap">
+                                <div class="swiper banner-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#none">배너 영역1</a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#none">배너 영역2</a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#none">배너 영역3</a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#none">배너 영역4</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bann_pagination"></div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <a href="#" class="btn_link ty2">신한pLay 예매 서비스 이용약관</a>
+                            <div class="box_gray ty2">
+                                <p class="txt">신한카드는 통신판매중개자로, 통신판매의 당사자가 아닙니다.<br>예매 및 환불 등 거래에 대한 의무와 책임은 거래 당사자인<br>한국철도공사에 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ticketing_way2" class="tab_cont" role="tabpanel">
+                        teste
+                    </div>
+                </div>
             </div>
         </div>
     </div>   
