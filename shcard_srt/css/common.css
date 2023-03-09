@@ -13,7 +13,7 @@ html {height:100%;font-size:62.5%}
 body {-webkit-text-size-adjust: none;-ms-user-select: none;-moz-user-select: -moz-none;-webkit-user-select: none;user-select: none;}
 body input, body textarea, body div[contenteditable="true"], body code {-webkit-text-size-adjust: text;-ms-user-select: text;-moz-user-select: -moz-text;-webkit-user-select: text;user-select: text;}
 body, div, p, span, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select, header, footer, main, article, section, aside {margin: 0;padding: 0;-webkit-box-sizing: border-box;box-sizing: order-box;word-break:keep-all;-webkit-touch-callout:none;-webkit-text-size-adjust:none;text-size-adjust:none}
-body, input, textarea, select, button, table {font-size:1.6rem;font-family:"Spoqa Han Sans Neo", sans-serif;line-height:1.4;color:#000}
+body, input, textarea, select, button, table {font-size:1.6rem;font-family:"Spoqa Han Sans Neo", sans-serif;font-weight:400;line-height:1.4;color:#000}
 img, fieldset {border: 0}
 a {color: #000;text-decoration: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0.05)}
 a:active, a:hover, a:focus {color: #000}
@@ -48,7 +48,7 @@ b, strong {font-weight:500}
 em {font-style:inherit;}
 sup {line-height:0}
 hr {margin: 0}
-:focus {outline:0;outline-color: transparent;outline-style: none;}
+/* :focus {outline:0;outline-color: transparent;outline-style: none;} */
 
 @media (max-width: 320px) {html {font-size:9px}}
 
@@ -127,6 +127,8 @@ ul.txt_dot > li, ul.txt_dash > li{margin-top:.8rem}
 /* box */
 .bdr_t{padding-top:1.6rem;border-top:.1rem solid #ccc}
 .box_gray{position:relative;padding:3.2rem 2.4rem;background:#f8f8f8}
+.box_gray.ty2{padding:2rem 2.4rem;text-align:center}
+.box_gray .txt{}
 
 /* list */
 .box_line{}
@@ -135,6 +137,8 @@ div.box_line + div.box_line{margin-top:1.2rem}
 .box_line > li + li{margin-top:1.6rem}
 .box_line.lim20 > li + li{margin-top:2.0rem}
 .box_line .box_info{padding:2.0rem 2.0rem}
+.box_line + .btn_wrap{margin-top:2.4rem}
+.box_line.rez li + li{margin-top:1.2rem}
 .box_info .price{overflow:hidden;margin-top:2.0rem;border-top:.1rem solid #eee}
 .box_info .price dt:first-of-type, .box_info .price dd:first-of-type{padding-top:1.6rem}
 .box_info .price dt{float:left;padding-top:.8rem;font-size:1.6rem;line-height:2.2rem}
@@ -157,7 +161,6 @@ div.box_line + div.box_line{margin-top:1.2rem}
 .train_item + .train_item{margin-top:1.6rem;padding-top:1.6rem;border-top:.1rem dashed #eee}
 .train_item .train_station{margin-top:1.0rem;font-size:0}
 .train_item .train_station span{display:inline-block;position:relative;font-size:1.8rem;line-height:2.6rem;vertical-align:middle}
-.train_item .train_station span strong{font-weight:700;}
 .train_item .train_station span + span{margin-left:2.6rem}
 .train_item .train_station span + span:before{content:'';position:absolute;top:0;left:-2.2rem;width:1.8rem;height:2.2rem;background:url(../images/common/ico_train_arr.svg) no-repeat 0 0/1.8rem 1.6rem}
 .train_item .txt{margin-top:.4rem;font-size:1.4rem;line-height:2.0rem;color:#888}
@@ -199,13 +202,10 @@ div.box_line + div.box_line{margin-top:1.2rem}
     to{background-position:left 50%}
 }
 
-
 /* icon */
 .ico{display:inline-block;overflow:hidden;background:center no-repeat;font-size:.1rem;color:transparent;vertical-align:middle}
 .ico_20{width:2.0rem;height:2.0rem;background-size:2.0rem}
 .ico_48{width:4.8rem;height:4.8rem;background-size:4.8rem}
-.ico_48.change{background-image:url(../images/common/btn_change.svg)}
-.ico_48.change_w{background-image:url(../images/common/btn_change_w.svg)}
 .ico_80{width:8.0rem;height:8.0rem}
 .ico_80.error{background-image:url(../images/common/ico80_error.svg);background-size:6.0rem 6.0rem}
 
@@ -314,6 +314,8 @@ div.box_line + div.box_line{margin-top:1.2rem}
 .btn_count.minus{background-image:url(../images/common/btn_count_minus.svg)}
 .btn_count.minus:disabled{background-image:url(../images/common/btn_count_minus_dis.svg)}
 .btn_count.plus{background-image:url(../images/common/btn_count_plus.svg)}
+.btn_change{display:inline-block;overflow:hidden;width:4.8rem;height:4.8rem;background:url(../images/common/btn_change.svg) no-repeat center/4.8rem}
+.btn_change.white{background:url(../images/common/btn_change_w.svg) no-repeat center/4.8rem}
 
 /*table*/
 .tbl{position:relative;border-top:.1rem solid #2C3548;}
@@ -341,6 +343,7 @@ div.box_line + div.box_line{margin-top:1.2rem}
 .tab_swich > li a{display:block;padding:1rem .8rem;font-size:1.4rem;line-height:2rem;font-weight:500;border-radius:2rem}
 .tab_swich > li.on{}
 .tab_swich > li.on a{background:#fff}
+.tab_wrap.swich + .tab_cont{padding-top:2.2rem}
 .tab_cont{display:none}
 .tab_cont.on{display:block}
 .tab_seat > ul{display:flex;overflow-x:scroll;margin:0 -2.4rem;padding:0 2.4rem}
@@ -445,6 +448,7 @@ body.pop_open{overflow:hidden}
 .pop_wrap.modal .popup{border-radius:1.0rem 1.0rem 0 0}
 .pop_wrap.modal .pop_head{padding:1.0rem 3.5rem}
 .pop_wrap.modal .pop_head .pop_tit{font-size:1.8rem}
+.pop_wrap.modal .pop_cont{max-height:540px}
 .pop_wrap.alert{padding:0 1.5rem}
 .pop_wrap.alert .popup{border-radius:1.0rem;text-align:center}
 .pop_wrap.alert .pop_head{}
@@ -482,7 +486,7 @@ body.pop_open{overflow:hidden}
 
 /*contents*/
 #wrap{min-height:100vh;box-sizing:border-box}
-#container{position:relative;min-height:100vh;height:100%;padding:5.6rem 0 8.0rem;box-sizing:border-box}
+#container{position:relative;min-height:100vh;height:100%;padding:5.6rem 0 4rem;box-sizing:border-box}
 #contents{position:relative;height:100%}
 
 /*layout*/
@@ -495,13 +499,13 @@ body.pop_open{overflow:hidden}
 [class*=tit_h]{position:relative}
 div[class*=tit_h]{display:flex;justify-content:space-between;align-items:center}
 .tit_h3:not(div), div.tit_h3 .tit{font-size:2.0rem;line-height:2.8rem;color:#000}
+.tit_h4{font-size:1.4rem;line-height:2rem;color:#888}
 .unit .price{font-size:1.3rem;color:#767676}
 
 
 /* 기차예매 */
-.mycart_area{display:flex;position:absolute;top:1.6rem;right:2.4rem;}
+.mycart_area{display:flex;position:absolute;top:1rem;right:2.4rem;}
 .mycart_area > .btn_myitem{}
-.main_wrap .btn_myitem{}
 .btn_myitem{position:relative;width:6rem;padding:.4rem 0;text-align:center}
 .btn_myitem + .btn_myitem{margin-left:.8rem}
 .btn_myitem:before{display:block;content:'';width:2.8rem;height:2.8rem;margin:0 auto .2rem;background-size:2.8rem;background-repeat:no-repeat;background-position:center}
@@ -509,6 +513,21 @@ div[class*=tit_h]{display:flex;justify-content:space-between;align-items:center}
 .btn_myitem.ticket:before{background-image:url(../images/common/ico_ticket.svg)}
 .btn_myitem .new{position:absolute;top:0;right:.8rem;min-width:1.8rem;height:1.8rem;padding:.1rem .5rem;background:#ff4b44;font-size:1.2rem;line-height:1.8rem;font-weight:700;color:#fff;text-align:center;border-radius:100%}
 .btn_myitem .txt{font-size:1.2rem;line-height:1.4rem;font-weight:700}
+.boarding_info{display:flex;justify-content:space-evenly;align-items:center;padding:2.2rem 0;background:#3d4964;border-radius:.8rem;text-align:center}
+.boarding_item > span{display:block;font-size:1.3rem;line-height:1.8rem;color:#bbb}
+.boarding_item > strong{display:block;margin-top:.6rem;font-size:2.4rem;line-height:3.4rem;font-weight:700;color:#fff}
+.match_area{margin-top:2rem}
+.quick_match{display:flex;align-items:center;overflow-x:auto;margin-right:-2.4rem;padding-right:2.4rem}
+.quick_match .destination_item{width:50px}
+.quick_match .destination_item + .destination_item{margin-left:.6rem}
+.destination_item{display:flex;align-items:center}
+.destination_item span{position:relative;font-size:1.2rem;line-height:1.6rem;color:#494f60}
+.destination_item span + span{padding-left:1.6rem}
+.destination_item span + span:before{content:'';position:absolute;top:-.2rem;left:0;width:1.2rem;height:1.6rem;margin:0 .2rem;background:url(../images/common/ico_boarding_arr.svg) no-repeat 0 0;background-size:1.2rem 1.6rem}
+.destination_item.button{padding:1.1rem 1.4rem;background:#eff0f5;border-radius:.2rem}
+.destination_item.button span{font-size:1.4rem;line-height:1.6rem}
+.destination_item.button span + span{padding-left:2rem}
+.destination_item.button span + span:before{top:-.1rem;width:1.6rem;background-size:1.6rem 1.6rem}
 
 
 @media only screen and (max-width:320px){
