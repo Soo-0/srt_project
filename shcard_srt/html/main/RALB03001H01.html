@@ -26,13 +26,13 @@
         </header>
         <div id="container">
             <div id="contents">
-                <h2 id="pageTit" class="blind">승차권 보관함(받은선물) 본문 시작</h2>
-                <div class="tab_wrap j_ui_tab">
+                <h2 id="pageTit" class="blind">승차권 보관함(내승차권(직통)) 본문 시작</h2>
+                <divㅠ무 class="tab_wrap j_ui_tab">
                     <ul class="tab_list" role="tablist">
                         <li class="on"><a href="#tab1" role="tab" aria-selected="true">내 승차권</a></li>
                         <li><a href="#tab2" role="tab" aria-selected="false">이용내역</a></li>
                     </ul>
-                </div>
+                </divㅠ무>
                 <div id="tab1" class="tab_cont on" role="tabpanel">
                     <div class="inner">
                         <div class="ticket_box srt">
@@ -42,9 +42,7 @@
                             </div>
                             <div class="ticket_cont">
                                 <div class="ticket_travel">
-                                    <div class="travel_type">
-                                        <span>000</span>
-                                    </div>
+                                    <span class="travel_by srt">000</span>
                                     <div class="my_travel">
                                         <div>
                                             <span class="travel_place">수서</span>
@@ -62,7 +60,6 @@
                                 </div>
                                 <div class="ticket_info">
                                     <div class="ticket_detail">
-                                        <span class="badge lightblue">받은 선물</span>
                                         <div class="boarding_pass">
                                             <div class="boarding_number">
                                                 <span>승차권 번호</span>
@@ -93,9 +90,9 @@
                                             </div>
                                         </div>
                                         <div class="ticket_btn_wrap">
-                                            <div class="double_btn_wrap">
-                                                <button type="button" class="btn line ty2 h38">승차권 환불</button>
-                                                <button type="button" class="btn line ty2 h38">선물하기</button>
+                                            <div class="btn_wrap flex">
+                                                <button type="button" class="btn line h38">승차권 환불</button>
+                                                <button type="button" class="btn line h38">선물하기</button>
                                             </div>
                                             <button type="button" class="btn gray h38">철도범죄신고</button>
                                         </div>
@@ -108,9 +105,89 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- 배너 스와이퍼 -->
+                        <div class="event_banner">
+                            <div class="banner_mainvisual">
+                                <div class="swiper evtBanner-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="slide_cont">
+                                                <a href="#none">
+                                                    <div class="txt_area">
+                                                        <div class="slide_txt1">신한카드<br>pLay 앱으로<br>기차 예매를…</div>
+                                                    </div>
+                                                    <div class="img_area img01"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide_cont">
+                                                <a href="#none">
+                                                    <div class="txt_area">
+                                                        <div class="slide_txt1">신한카드<br>pLay 앱으로<br>기차 예매를…</div>
+                                                    </div>
+                                                    <div class="img_area"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide_cont">
+                                                <a href="#none">
+                                                    <div class="txt_area">
+                                                        <div class="slide_txt1">신한카드<br>pLay 앱으로<br>기차 예매를…</div>
+                                                    </div>
+                                                    <div class="img_area"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide_cont">
+                                                <a href="#none">
+                                                    <div class="txt_area">
+                                                        <div class="slide_txt1">신한카드<br>pLay 앱으로<br>기차 예매를…</div>
+                                                    </div>
+                                                    <div class="img_area"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide_cont">
+                                                <a href="#none">
+                                                    <div class="txt_area">
+                                                        <div class="slide_txt1">신한카드<br>pLay 앱으로<br>기차 예매를…</div>
+                                                    </div>
+                                                    <div class="img_area"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide_cont">
+                                                <a href="#none">
+                                                    <div class="txt_area">
+                                                        <div class="slide_txt1">신한카드<br>pLay 앱으로<br>기차 예매를…</div>
+                                                    </div>
+                                                    <div class="img_area"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>   
+                            </div>
+                            <div class="swiper_btn_wrap">
+                                <button class="swiper-btn-prev"><span class="blind">이전</span></button>
+                                <button class="swiper-btn-next"><span class="blind">다음</span></button>
+                            </div>
+                            <div class="swiper_cntrl_wrap">
+                                <!-- <button type="button" class="swiper-btn-play"><span class="blind">재생</span></button> -->
+                                <button type="button" class="swiper-btn-pause"><span class="blind">정지</span></button>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <!-- // 배너 스와이퍼 -->
                     </div>
                 </div>
                 <div id="tab2" class="tab_cont" role="tabpanel"></div>
+                
             </div>
         </div>
     </div>   

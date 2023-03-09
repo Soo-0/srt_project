@@ -246,13 +246,21 @@ const popMotion = {
 }
 
 const swiperArea = ()=>{
-	let bannerSwiper = new Swiper('.banner-swiper',{
+	let bannerSwiper = new Swiper('.evtBanner-swiper',{
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: false,
+		},
 		loop: true,
 		slidesPerView: 1,
+		navigation: {
+			prevEl: ' .swiper-btn-prev',
+			nextEl: ' .swiper-btn-next',
+		},
         pagination: {
-            el: ".bann_pagination",
-			clickable: true
-        },
+			el: ' .swiper-pagination',
+			clickable:true,
+		},
 		type: 'bullets',
 	})
 }

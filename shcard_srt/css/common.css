@@ -117,7 +117,7 @@ ul.txt_dot > li, ul.txt_dash > li{margin-top:.8rem}
 .dl_list > .line{margin-top:1.6rem;padding-top:1.6rem;border-top:.1rem solid #eee}
 .dl_list dt:first-of-type, .dl_list dd:first-of-type{padding-top:0}
 .dl_list dt{float:left;padding-top:1.2rem;font-size:1.4rem;line-height:2.0rem;color:#666}
-.dl_list dd{float:right;padding-top:1.2rem;font-size:1.4rem;line-height:2.0rem;color:#000}
+.dl_list dd{float:right;padding-top:1.2rem;text-align:right;font-size:1.4rem;line-height:2.0rem;color:#000}
 .dl_list dd + dt{clear:both}
 .dl_list.ty2 dt, .dl_list.ty2 dd{color:#000}
 .dl_list.ty3 dt, .dl_list.ty3 dd{font-size:1.6rem;line-height:2.2rem;color:#000}
@@ -170,6 +170,7 @@ div.box_line + div.box_line{margin-top:1.2rem}
 .line_list > li:last-child{border-bottom:.1rem solid #eee}
 .line_list.ty2 >li:first-child{border-top:0}
 .line_list.ty2 > li{padding:3.2rem 0}
+.line_list + .txt_dot{margin-top:2.3rem}
 
 /* ticket */
 .ticket_box{position:relative;overflow:hidden;border-radius:1.2rem}

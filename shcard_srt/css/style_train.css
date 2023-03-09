@@ -6,24 +6,13 @@ z-index 정의
 */
 
 /* hj */
-/* 배너 스와이퍼 */
-.banner_wrap{position:relative;text-align:center;overflow:hidden;}
-.banner-swiper{position:relative;width:100%;height:9.0rem;border-radius:.8rem;margin-bottom:2.0rem;}
-.swiper-slide{display:flex;justify-content:center;align-items:center;font-size:1.8rem;background-color:#EEEEEE;overflow:hidden;}
-.banner_wrap .swiper-pagination-bullet{width:.6rem;height:.6rem;line-height:.6rem;}
-.banner_wrap .swiper-pagination-horizontal.swiper-pagination-bullets{line-height:.6rem;}
-.banner_wrap .swiper-pagination-bullet-active,
-.banner_wrap .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{margin:.0rem .6rem 0 0;}
-.banner_wrap .swiper-pagination-bullet-active{width:1.6rem;height:.6rem;border-radius:.3rem;transition:width .5s;background-color:#383B5A;}
-
-/* 승차권보관함_내승차권 */
+/* 승차권보관함쉅_내승차권 */
 .mt24{margin-top:2.4rem !important;}
 .no_header{padding:2.4rem 0 4.0rem !important;}
 .complete_area.ticket_page .txt{font-size:16px;}
 
-.travel_type{position:relative;display:block;height:2rem;margin-bottom:1.6rem;}
-.travel_type span{line-height:2rem;font-size:1.4rem;}
-.srt .travel_type::before{content:"srt";display:inline-block;width:4.5rem;height:1.1rem;margin-top:-0.2rem;vertical-align:middle;font-size:0;background:url("../images/contents_train/srt_black.svg") no-repeat 0 0 / 100%;}
+.travel_by{margin-bottom:1.6rem;line-height:2rem;font-size:1.4rem;font-weight:500;}
+.travel_by.srt::before{content:"srt";display:inline-block;width:4.5rem;height:1.1rem;margin:-0.3rem 0.1rem 0 0;vertical-align:middle;font-size:0;background:url("../images/contents_train/logo_srt_black.svg") no-repeat 0 0 / 100%;}
 
 .ticket_cont .travel_type{text-align:center;}
 .my_travel{display:flex;justify-content:space-evenly;width:100%}
@@ -36,12 +25,15 @@ z-index 정의
 
 .transfer_ver .last_lt .travel_duration,
 .transfer_ver .arrival .travel_time{padding-top:2rem;}
-.my_travel.transfer > div > span:first-child{line-height:2.0rem;padding-bottom:2.3rem;}
+.my_travel.transfer > div > span:first-child{line-height:2.6rem;padding-bottom:2.3rem;}
 .my_travel.transfer .travel_place{line-height:2.0rem;font-size:1.8rem;font-weight:900;}
 .my_travel.transfer .travel_time + .travel_time{margin-top:rem;}
 
-.gray_info_box{position:relative;display:flex;justify-content:space-between;margin:0 -1.6rem 0;line-height:1.6rem;font-size:1.2rem;color:#3D4964;}
+.gray_info_box{position:relative;display:flex;justify-content:space-between;align-items:center;margin:0 -1.6rem 2.4rem;padding:0.8rem 1.6rem;line-height:1.6rem;font-size:1.2rem;color:#3D4964;background:rgba(61,73,100,0.1);}
 .gray_info_box .right_side{font-weight:700;}
+.gray_info_box .left_side span{font-weight:500;}
+.gray_info_box .travel_by{display:inline;margin:0;}
+.gray_info_box .travel_by.srt::before{content:"srt";display:inline-block;width:4.5rem;height:1.1rem;margin:-0.3rem 0.1rem 0 0;vertical-align:middle;font-size:0;background:url("../images/contents_train/logo_srt_color.svg") no-repeat 0 0 / 100%;}
 
 .ticket_info .badge.lightblue{margin-bottom:1.6rem;}
 .boarding_number{display:flex;justify-content:space-between;height:2.0rem;line-height:2rem;font-size:1.4rem;}
@@ -57,15 +49,49 @@ z-index 정의
 .my_pass_bottom img{width:7.2rem;height:7.2rem;}
 .boarding_type{display:flex;justify-content:space-between;align-items:center;height:1.6rem;line-height:1.4rem;font-size:1.4rem;}
 .boarding_type .btn_link.unused{color:#666666;}
+
 .ticket_btn_wrap{margin:4.0rem 0 2.4rem;}
 .ticket_btn_wrap button{width:100%;}
 .ticket_btn_wrap > button + button{margin-top:.8rem;}
-.double_btn_wrap{display:flex;margin-bottom:.8rem;}
-.double_btn_wrap > button + button{margin-left:.8rem;}
+.ticket_btn_wrap > .btn_wrap{margin-bottom:0.8rem;}
+
 .purchase_date{display:flex;height:2.0rem;font-size:1.4rem;color:#BBBBBB;}
 .purchase_date span + span{margin-left:.7rem;}
+
+/* 메인 배너 swiper */
+.ticket_box + .event_banner{ margin-top:2.4rem;}
+.event_banner{position:relative;margin:0;}
+.banner_mainvisual{position:relative;height:auto;overflow:visible;background-color:#fff;}
+.event_banner .swiper-slide{padding-right:3rem;}
+.event_banner .slide_cont{position:relative;height:14rem;border-radius:8px;transition: all .2s ease-in-out;background-color:#f9f9f9 !important;}
+.event_banner .slide_cont a{display:block;}
+.event_banner .txt_area{position:absolute;width:calc(100% - 0.9rem);left:0;top:50%;transform:translateY(-50%);padding-left:2.7rem;color:#000;max-height:8.4rem;overflow:hidden;-webkit-line-clamp:3;display:-webkit-box;-webkit-box-orient:vertical;text-overflow:ellipsis;}
+.event_banner .txt_area .slide_txt1{font-weight:700;font-size:1.7rem;line-height:2.4rem;transition:all .4s ease-in-out}/*transition:all .4s ease-in-out*/
+.event_banner .img_area{position:absolute;right:-30px;top:50%;width:13rem;height:12rem;transform:translateY(-50%);transition:all .4s ease-in-out;}
+.event_banner .img_area.img01{background:url("../images/contents_train/banner_img01.png") no-repeat 0 0 / 100%;}
+.event_banner .swiper-btn-prev{position:absolute;top:5.8rem;left:-0.8rem;width:2.4rem;height:2.4rem;background:url("../images/contents_train/swiper_arrow_left.svg") no-repeat 0 0 / 100%;}
+.event_banner .swiper-btn-next{position:absolute;top:5.8rem;right:-0.8rem;width:2.4rem;height:2.4rem;background:url("../images/contents_train/swiper_arrow_right.svg") no-repeat 0 0 / 100%;}
+.event_banner .swiper-btn-prev,.event_banner .swiper-btn-next{cursor:pointer;z-index:1;}
+.event_banner .swiper-button-prev::after,.event_banner .swiper-button-next::after{display:none;}
+.event_banner .swiper_cntrl_wrap{margin-top:0.8rem; text-align:center;}
+.event_banner .swiper-pagination{position:relative;display:inline-block;width:auto;left:inherit;right:inherit;bottom:inherit;vertical-align:middle;}
+.event_banner .swiper-pagination-bullet{width:0.6rem;height:0.6rem;border-radius:0.3rem;background:#ddd;opacity:1;transition:all .4s ease-in-out;transform-origin:left;}
+.event_banner .swiper-pagination-bullet-active{width:1.6rem;background:#383b5a;}
+.event_banner .swiper-pagination span + span{margin-left:0.6rem;}
+.event_banner .swiper-btn-pause{width:2rem;height:1.8rem;vertical-align:middle;background:url("../images/contents_train/swiper_pause.svg") no-repeat 0 0 / 100%;}
 
 /* 승차권보관함(이용내역tab) */
 .filter_date{display:flex;justify-content:space-between;align-items:center;padding:1.8rem 2.4rem;font-size:1.4rem;background-color:#F8F8F8;}
 .filter_date .filter_tit{line-height:2rem;color:#666666;}
 .filter_date > a{padding-right:1.6rem;line-height:2rem;}
+
+/* 결제 정보 확인 */
+.txt_list{margin-top:1.6rem;}
+.txt_list_tit{font-size:1.8rem;line-height:2.6rem;font-weight:500;}
+.txt_list li{display:block;}
+.txt_list > li{padding-top:3.2rem;}
+.txt_list li + li{padding-top:0.8rem;}
+.txt_list li + .btn.line{width:100%;margin-top:2.4rem;font-size:1.4rem;}
+.txt_list + .line_list{margin-top:4rem;}
+.line_list + .checkbox{padding-top:1.6rem;}
+
