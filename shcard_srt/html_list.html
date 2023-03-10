@@ -33,7 +33,7 @@
     em {font-style:inherit;}
     /******/
     #g_wrap{position:relative;height:100%}
-    #g_header{position:fixed;top:0;left:0;right:0;z-index:10;padding:10px 20px;background:#4d62e8}
+    #g_header{position:fixed;top:0;left:0;right:0;z-index:10;padding:10px 20px;background:#8a9aff}
     #g_header>h1{font-size:24px;color:#fff}
     #g_container{position:relative;margin-top:56px;margin-bottom:-60px;padding:35px 20px 40px}
     #g_container>h2{font-size:24px;font-weight:bold;color:#111}
@@ -44,7 +44,7 @@
     .g_menu > li.on a{background:#353535;color:#fff}
     .g_menu:after{display:block;content:'';clear:both}
     .g_tit{padding:5px 15px;background:#d0d0d0;font-size:18px;color:#fff}
-    .g_tit.on{background:#4d62e8}
+    .g_tit.on{background:#8a9aff}
     .g_tit.on + .g_status{color:#fff}
     .g_cont{position:relative;margin-top:20px}
     .g_list{overflow-x:auto;overflow-y:hidden;border-bottom:1px solid #ddd}
@@ -55,7 +55,7 @@
     .g_list tbody tr.del td{background:#eee !important;color:#bbb !important;text-decoration:line-through}
     .g_list tbody td{padding:8px 10px;border:solid #ddd;border-width:1px 1px 0;font-size:13px;text-align:center;word-break:break-all;color:#666}
     .g_list tbody td.url{font-weight:700;color:#333;text-decoration:underline}
-    .g_list tbody td.complete{background:#4d62e8;font-weight:700;color:#fff}
+    .g_list tbody td.complete{background:#8a9aff;font-weight:700;color:#fff}
     .g_list tbody td.modify{background:#ffe1d5;font-weight:700;color:#ff2f2f}
     .g_list.guide{margin-top:30px;border:1px solid #eee}
     .g_list.guide thead th{padding:5px 10px;background:#f9f9f9}
@@ -65,7 +65,7 @@
     .g_project_status > div  + div{margin-left:20px}
     .g_project_status .g_proStatus{width:100px;border:1px solid #e6e6e6;border-radius:5px}
     .g_project_status .g_proStatus .txt{display:block;height:25px;line-height:26px;font-size:14px;border-bottom:1px solid #e6e6e6}
-    .g_project_status .g_proStatus .num{display:block;height:30px;line-height:28px;font-size:20px;font-weight:bold;color:#4d62e8}
+    .g_project_status .g_proStatus .num{display:block;height:30px;line-height:28px;font-size:20px;font-weight:bold;color:#8a9aff}
     .g_project_status .g_project_ing{overflow:hidden;position:relative;z-index:0;width:350px;height:55px;background:#ebebeb;border:1px solid #e6e6e6;border-radius:5px;box-shadow:inset 0 0 20px rgb(0 0 0 / 20%);box-sizing:border-box}
     .g_project_status .g_project_ing .ing{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);z-index:1;color:#fff;text-shadow:1px 1px 1px rgb(0 0 0 / 30%)}
     .g_project_status .g_project_ing .graph{display:block;position:relative;width:100%;height:100%}
@@ -78,7 +78,7 @@
     .g_iframe{width:55px;height:55px;background:#7a8bf8;border-radius:100%;color:#fff;text-align:center;font-weight:900;font-size:14px;line-height:55px}
     .g_iframe .place{position:fixed;right:0;top:60px;z-index:5;width:360px;height:520px;box-shadow:0 4px 8px rgb(0 0 0 / 20%);}
     .g_iframe .btn_iframe{}
-    .btn_top{position:fixed;bottom:30px;right:10px;width:60px;height:60px;background:#4d62e8;border-radius:100%;font-size:14px;font-weight:900;line-height:60px;transition:all .3s ease;color:#fff;text-align:center;cursor:pointer;opacity:0}
+    .btn_top{position:fixed;bottom:30px;right:10px;width:60px;height:60px;background:#8a9aff;border-radius:100%;font-size:14px;font-weight:900;line-height:60px;transition:all .3s ease;color:#fff;text-align:center;cursor:pointer;opacity:0}
 
     @media only screen and (max-width:765px){
         #g_header>h1{font-size:18px}
@@ -122,31 +122,30 @@
                     <tbody>
                         <tr>
                             <td>스타일 가이드</td>
-                            <td class="url"><a href="guide/g_guide.html" target="_blank">g_guide.html</a></td>
+                            <td class="url"><a href="html_guide.html" target="_blank">html_guide.html</a></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>layout</td>
-                            <td class="url"><a href="guide/g_layout.html" target="_blank">g_layout.html</a></td>
+                            <td class="url"><a href="html_layout.html" target="_blank">html_layout.html</a></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>popup</td>
-                            <td class="url"><a href="guide/g_popup.html" target="_blank">g_popup.html</a></td>
+                            <td class="url"><a href="html_popup.html" target="_blank">html_popup.html</a></td>
                             <td></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <ul class="g_menu">
-                <li class="on"><a href="#section1">메인</a></li>
-                <li><a href="#section2">승차권 환불</a></li>
-                <li><a href="#section3">승차권 예매</a></li>
-                <li><a href="#section4">승차권 결제</a></li>
-                <li><a href="#section5">공통</a></li>
+                <li class="on"><a href="#section1">승차권 보관함</a></li>
+                <li><a href="#section2">기차 조회</a></li>
+                <li><a href="#section3">결제 정보 확인</a></li>
+                <li><a href="#section4">공통</a></li>
             </ul>
             <section id="section1" class="g_cont">
-                <h2 class="g_tit">메인</h2>
+                <h2 class="g_tit">승차권 보관함</h2>
                 <div class="g_status">
                     <div class="page_stauts">
                         <span class="total">페이지 : <strong class="num">0</strong></span>
@@ -163,6 +162,7 @@
                             <col style="width:220px">
                             <col style="width:220px">
                             <col style="width:120px">
+                            <col style="width:80px">
                             <col style="width:350px">
                             <col style="width:150px">
                             <col style="width:150px">
@@ -178,6 +178,7 @@
                                 <th scope="col">4depth</th>
                                 <th scope="col">5depth</th>
                                 <th scope="col">유형</th>
+                                <th scope="col">IA 화면ID</th>
                                 <th scope="col">url</th>
                                 <th scope="col">작업자</th>
                                 <th scope="col">완료일</th>
@@ -188,13 +189,14 @@
                         <tbody>
                             <tr>
                                 <td class="no"><!--숫자자동입력됨--></td><!-- 삭제시 del class 추가 -->
-                                <td>메인</td>
                                 <td>기차 예매</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                                 <td>Page</td>
-                                <td class="url"><a href="main/MA1000.html" target="_blank">main/MA1000.html</a></td>
+                                <td>MA1000</td>
+                                <td class="url"><a href="RALB01001H01.html" target="_blank">RALB01001H01.html</a></td>
                                 <td class="name">홍길동</td>
                                 <td class="date">23.02.20</td><!--완료일 적으면 완료카운팅 Up 및 complete class 자동 추가-->
                                 <td class="m_date">22.02.28</td><!--수정일 적으면 modify class 자동 추가-->
@@ -203,12 +205,13 @@
                             <tr>
                                 <td class="no"></td>
                                 <td></td>
-                                <td></td>
                                 <td>빠른 기차 예매 팝업</td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                                 <td>Popup</td>
-                                <td class="url"><a href="main/MA1100BS.html" target="_blank">main/MA1100BS.html</a></td>
+                                <td>MA1100BS</td>
+                                <td class="url"><a href="RALB01002H01.html" target="_blank">RALB01002H01.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
                                 <td class="m_date"></td>
@@ -216,13 +219,14 @@
                             </tr>
                             <tr>
                                 <td class="no"></td>
-                                <td></td>
                                 <td>장바구니</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                                 <td>Page</td>
-                                <td class="url"><a href="main/MA2000.html" target="_blank">main/MA2000.html</a></td>
+                                <td>MA2000</td>
+                                <td class="url"><a href="RALB02001H01.html" target="_blank">RALB02001H01.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
                                 <td class="m_date"></td>
@@ -230,12 +234,13 @@
                             </tr>
                             <tr>
                                 <td class="no"></td>
-                                <td></td>
                                 <td>승차권 보관함</td>
                                 <td>내 승차권(Tab)</td>
                                 <td></td>
                                 <td></td>
+                                <td>직통</td>
                                 <td>Page</td>
+                                <td>MA3000T</td>
                                 <td class="url"><a href="main/MA3000T.html" target="_blank">main/MA3000T.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -247,9 +252,25 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td>환승</td>
+                                <td>Page</td>
+                                <td>MA3000T</td>
+                                <td class="url"><a href="main/MA3000T.html" target="_blank">main/MA3000T.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
                                 <td>승차권 영수증</td>
                                 <td></td>
+                                <td>직통</td>
                                 <td>Page</td>
+                                <td>MA3010</td>
                                 <td class="url"><a href="main/MA3010.html" target="_blank">main/MA3010.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -261,9 +282,25 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td>환승</td>
+                                <td>Page</td>
+                                <td>MA3010</td>
+                                <td class="url"><a href="main/MA3010.html" target="_blank">main/MA3010.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
                                 <td>선물하기</td>
                                 <td></td>
+                                <td></td>
+                                <td>직통</td>
                                 <td>Page</td>
+                                <td>MA3020</td>
                                 <td class="url"><a href="main/MA3020.html" target="_blank">main/MA3020.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -276,8 +313,24 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td>환승</td>
+                                <td>Page</td>
+                                <td>TF1020</td>
+                                <td class="url"><a href="main/MA3020.html" target="_blank">main/MA3020.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td>선물하기 컨펌 팝업</td>
+                                <td></td>
                                 <td>Popup</td>
+                                <td>MA3021P</td>
                                 <td class="url"><a href="main/MA3021P.html" target="_blank">main/MA3021P.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -288,24 +341,26 @@
                                 <td class="no"></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
                                 <td>선물하기 알림톡</td>
                                 <td></td>
+                                <td></td>
                                 <td>Page</td>
+                                <td>MA3030</td>
                                 <td class="url"><a href="main/MA3030.html" target="_blank">main/MA3030.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
                                 <td class="m_date"></td>
-                                <td class="etc"></td>
+                                <td class="etc">개발영역</td>
                             </tr>
                             <tr>
                                 <td class="no"></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
                                 <td>선물받은 승차권</td>
+                                <td></td>
                                 <td>Page</td>
+                                <td>MA3031</td>
                                 <td class="url"><a href="main/MA3031.html" target="_blank">main/MA3031.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -317,9 +372,10 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
                                 <td>선물받은 승차권_조회불가</td>
+                                <td></td>
                                 <td>Page</td>
+                                <td>MA3032</td>
                                 <td class="url"><a href="main/MA3032.html" target="_blank">main/MA3032.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -329,11 +385,12 @@
                             <tr>
                                 <td class="no"></td>
                                 <td></td>
-                                <td></td>
                                 <td>이용내역 (Tab)</td>
                                 <td></td>
                                 <td></td>
+                                <td>직통</td>
                                 <td>Page</td>
+                                <td>MA3100T</td>
                                 <td class="url"><a href="main/MA3100T.html" target="_blank">main/MA3100T.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -345,9 +402,100 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td>조회기간 설정 팝업</td>
+                                <td></td>
+                                <td>환승</td>
+                                <td>Page</td>
+                                <td>MA3100T</td>
+                                <td class="url"><a href="main/MA3100T.html" target="_blank">main/MA3100T.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>조회기간 설정</td>
                                 <td></td>
                                 <td>Popup</td>
+                                <td>MA3110BS</td>
+                                <td class="url"><a href="main/MA3110BS.html" target="_blank">main/MA3110BS.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td>승차권 환불</td>
+                                <td>승차권 환불 안내 팝업</td>
+                                <td></td>
+                                <td>직통</td>
+                                <td>Popup</td>
+                                <td>MA3110BS</td>
+                                <td class="url"><a href="main/MA3110BS.html" target="_blank">main/MA3110BS.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>환승</td>
+                                <td>Popup</td>
+                                <td>MA3110BS</td>
+                                <td class="url"><a href="main/MA3110BS.html" target="_blank">main/MA3110BS.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>승차권 환불 대상 선택</td>
+                                <td></td>
+                                <td></td>
+                                <td>Popup</td>
+                                <td>MA3110BS</td>
+                                <td class="url"><a href="main/MA3110BS.html" target="_blank">main/MA3110BS.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>환불 위약금 안내 팝업</td>
+                                <td></td>
+                                <td></td>
+                                <td>Popup</td>
+                                <td>MA3110BS</td>
+                                <td class="url"><a href="main/MA3110BS.html" target="_blank">main/MA3110BS.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>환불 완료 팝업</td>
+                                <td></td>
+                                <td></td>
+                                <td>Popup</td>
+                                <td>MA3110BS</td>
                                 <td class="url"><a href="main/MA3110BS.html" target="_blank">main/MA3110BS.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -359,7 +507,7 @@
                 </div>
             </section>
             <section id="section2" class="g_cont">
-                <h2 class="g_tit">승차권 환불</h2>
+                <h2 class="g_tit">기차 조회</h2>
                 <div class="g_status">
                     <div class="page_stauts">
                         <span class="total">페이지 : <strong class="num">0</strong></span>
@@ -376,107 +524,7 @@
                             <col style="width:220px">
                             <col style="width:220px">
                             <col style="width:120px">
-                            <col style="width:350px">
-                            <col style="width:150px">
-                            <col style="width:150px">
-                            <col style="width:150px">
-                            <col style="width:320px">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th scope="col">NO</th>
-                                <th scope="col">1depth</th>
-                                <th scope="col">2depth</th>
-                                <th scope="col">3depth</th>
-                                <th scope="col">4depth</th>
-                                <th scope="col">5depth</th>
-                                <th scope="col">유형</th>
-                                <th scope="col">url</th>
-                                <th scope="col">작업자</th>
-                                <th scope="col">완료일</th>
-                                <th scope="col">수정일</th>
-                                <th scope="col">비고</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="no"></td>
-                                <td>승차권 환불</td>
-                                <td></td>
-                                <td>승차권 환불</td>
-                                <td>승차권 환불 안내 팝업</td>
-                                <td></td>
-                                <td>Popup</td>
-                                <td class="url"><a href="refund/RM1100P.html" target="_blank">refund/RM1100P.html</a></td>
-                                <td class="name"></td>
-                                <td class="date"></td>
-                                <td class="m_date"></td>
-                                <td class="etc"></td>
-                            </tr>
-                            <tr>
-                                <td class="no"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>승차권 환불 대상 선택</td>
-                                <td></td>
-                                <td>Page</td>
-                                <td class="url"><a href="refund/RM1110.html" target="_blank">refund/RM1110.html</a></td>
-                                <td class="name"></td>
-                                <td class="date"></td>
-                                <td class="m_date"></td>
-                                <td class="etc"></td>
-                            </tr>
-                            <tr>
-                                <td class="no"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>환불 위약금 안내 팝업</td>
-                                <td></td>
-                                <td>Popup</td>
-                                <td class="url"><a href="refund/RM1120BS.html" target="_blank">refund/RM1120BS.html</a></td>
-                                <td class="name"></td>
-                                <td class="date"></td>
-                                <td class="m_date"></td>
-                                <td class="etc"></td>
-                            </tr>
-                            <tr>
-                                <td class="no"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>환불 완료 팝업</td>
-                                <td></td>
-                                <td>Popup</td>
-                                <td class="url"><a href="refund/RM1130P.html" target="_blank">refund/RM1130P.html</a></td>
-                                <td class="name"></td>
-                                <td class="date"></td>
-                                <td class="m_date"></td>
-                                <td class="etc"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-            <section id="section3" class="g_cont">
-                <h2 class="g_tit">승차권 예매</h2>
-                <div class="g_status">
-                    <div class="page_stauts">
-                        <span class="total">페이지 : <strong class="num">0</strong></span>
-                        <span class="cp_num">완료페이지 : <strong class="num">0</strong></span>
-                    </div>
-                </div>
-                <div class="g_list">
-                    <table>
-                        <colgroup>
                             <col style="width:80px">
-                            <col style="width:220px">
-                            <col style="width:220px">
-                            <col style="width:220px">
-                            <col style="width:220px">
-                            <col style="width:220px">
-                            <col style="width:120px">
                             <col style="width:350px">
                             <col style="width:150px">
                             <col style="width:150px">
@@ -492,6 +540,7 @@
                                 <th scope="col">4depth</th>
                                 <th scope="col">5depth</th>
                                 <th scope="col">유형</th>
+                                <th scope="col">IA 화면ID</th>
                                 <th scope="col">url</th>
                                 <th scope="col">작업자</th>
                                 <th scope="col">완료일</th>
@@ -502,11 +551,26 @@
                         <tbody>
                             <tr>
                                 <td class="no"></td>
-                                <td>승차권 예매</td>
                                 <td>기차 조회</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td>직통</td>
+                                <td>Page</td>
+                                <td rowspan="2">TK1000</td>
+                                <td class="url"><a href="reserve/TK1000.html" target="_blank">reserve/TK1000.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>환승</td>
                                 <td>Page</td>
                                 <td class="url"><a href="reserve/TK1000.html" target="_blank">reserve/TK1000.html</a></td>
                                 <td class="name"></td>
@@ -517,25 +581,12 @@
                             <tr>
                                 <td class="no"></td>
                                 <td></td>
-                                <td>기차 조회_환승</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Page</td>
-                                <td class="url"><a href="reserve/TK1000_trans.html" target="_blank">reserve/TK1000_trans.html</a></td>
-                                <td class="name"></td>
-                                <td class="date"></td>
-                                <td class="m_date"></td>
-                                <td class="etc"></td>
-                            </tr>
-                            <tr>
-                                <td class="no"></td>
-                                <td></td>
-                                <td></td>
                                 <td></td>
                                 <td>환승 기차 예매 팝업</td>
                                 <td></td>
+                                <td></td>
                                 <td>Popup</td>
+                                <td></td>
                                 <td class="url"><a href="reserve/TK1010P.html" target="_blank">reserve/TK1010P.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -546,10 +597,11 @@
                                 <td class="no"></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
                                 <td>휠체어석 이용 동의 팝업</td>
                                 <td></td>
+                                <td></td>
                                 <td>Page</td>
+                                <td></td>
                                 <td class="url"><a href="reserve/TK1020BS.html" target="_blank">reserve/TK1020BS.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -559,11 +611,12 @@
                             <tr>
                                 <td class="no"></td>
                                 <td></td>
-                                <td></td>
                                 <td>승차권 예매</td>
                                 <td></td>
                                 <td></td>
+                                <td>직통</td>
                                 <td>Page</td>
+                                <td></td>
                                 <td class="url"><a href="reserve/TK1100.html" target="_blank">reserve/TK1100.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -575,9 +628,25 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td>환승</td>
+                                <td>Page</td>
+                                <td></td>
+                                <td class="url"><a href="reserve/TK1100.html" target="_blank">reserve/TK1100.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
                                 <td>운행시간 팝업</td>
                                 <td></td>
+                                <td>직통</td>
                                 <td>Popup</td>
+                                <td></td>
                                 <td class="url"><a href="reserve/TK1110BS.html" target="_blank">reserve/TK1110BS.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -589,10 +658,26 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td>환승</td>
+                                <td>Popup</td>
+                                <td></td>
+                                <td class="url"><a href="reserve/TK1110BS.html" target="_blank">reserve/TK1110BS.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
                                 <td>운임요금 팝업</td>
                                 <td></td>
+                                <td>직통</td>
                                 <td>Popup</td>
-                                <td class="url"><a href="reserve/TK1120BS.html" target="_blank">reserve/TK1120BS.html</a></td>
+                                <td></td>
+                                <td class="url"><a href="reserve/TK1110BS.html" target="_blank">reserve/TK1110BS.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
                                 <td class="m_date"></td>
@@ -603,9 +688,25 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td>환승</td>
+                                <td>Popup</td>
+                                <td></td>
+                                <td class="url"><a href="reserve/TK1110BS.html" target="_blank">reserve/TK1110BS.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
                                 <td>자동배정 확인 팝업</td>
                                 <td></td>
+                                <td></td>
                                 <td>Popup</td>
+                                <td></td>
                                 <td class="url"><a href="reserve/TK1130P.html" target="_blank">reserve/TK1130P.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -616,10 +717,11 @@
                                 <td class="no"></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
                                 <td>왕복 기차 예매 팝업</td>
                                 <td></td>
+                                <td></td>
                                 <td>Popup</td>
+                                <td></td>
                                 <td class="url"><a href="reserve/TK1140P.html" target="_blank">reserve/TK1140P.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -630,10 +732,11 @@
                                 <td class="no"></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
                                 <td>SRT 환승기차 자동배정 팝업</td>
                                 <td></td>
+                                <td></td>
                                 <td>Popup</td>
+                                <td></td>
                                 <td class="url"><a href="reserve/TK1150P.html" target="_blank">reserve/TK1150P.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -643,11 +746,12 @@
                             <tr>
                                 <td class="no"></td>
                                 <td></td>
-                                <td></td>
                                 <td>예매 고객정보 입력</td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                                 <td>Page</td>
+                                <td></td>
                                 <td class="url"><a href="reserve/TK1200.html" target="_blank">reserve/TK1200.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -658,10 +762,11 @@
                                 <td class="no"></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
                                 <td>약관 동의</td>
                                 <td></td>
+                                <td></td>
                                 <td>Popup</td>
+                                <td></td>
                                 <td class="url"><a href="reserve/TK1210BS.html" target="_blank">reserve/TK1210BS.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -673,9 +778,10 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
                                 <td>개인정보 수집 및 이용 동의</td>
+                                <td></td>
                                 <td>Popup</td>
+                                <td></td>
                                 <td class="url"><a href="terms/TK1211FP.html" target="_blank">terms/TK1211FP.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -687,9 +793,10 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
                                 <td>개인정보 제공 동의</td>
+                                <td></td>
                                 <td>Popup</td>
+                                <td></td>
                                 <td class="url"><a href="terms/TK1212FP.html" target="_blank">terms/TK1212FP.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -701,9 +808,10 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
                                 <td>제3자 개인정보 제공 동의</td>
+                                <td></td>
                                 <td>Popup</td>
+                                <td></td>
                                 <td class="url"><a href="terms/TK1213FP.html" target="_blank">terms/TK1213FP.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -715,9 +823,10 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
                                 <td>마케팅 정보 수신 동의</td>
+                                <td></td>
                                 <td>Popup</td>
+                                <td></td>
                                 <td class="url"><a href="terms/TK1214FP.html" target="_blank">terms/TK1214FP.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -732,189 +841,8 @@
                                 <td>추가 예매 컨펌 팝업</td>
                                 <td></td>
                                 <td>Popup</td>
+                                <td></td>
                                 <td class="url"><a href="reserve/TK1220P.html" target="_blank">reserve/TK1220P.html</a></td>
-                                <td class="name"></td>
-                                <td class="date"></td>
-                                <td class="m_date"></td>
-                                <td class="etc"></td>
-                            </tr>
-                            <tr>
-                                <td class="no"></td>
-                                <td></td>
-                                <td>결제 정보 확인</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Page</td>
-                                <td class="url"><a href="reserve/TK2000.html" target="_blank">reserve/TK2000.html</a></td>
-                                <td class="name"></td>
-                                <td class="date"></td>
-                                <td class="m_date"></td>
-                                <td class="etc"></td>
-                            </tr>
-                            <tr>
-                                <td class="no"></td>
-                                <td></td>
-                                <td></td>
-                                <td>할인 적용</td>
-                                <td></td>
-                                <td></td>
-                                <td>Page</td>
-                                <td class="url"><a href="reserve/TK2100.html" target="_blank">reserve/TK2100.html</a></td>
-                                <td class="name"></td>
-                                <td class="date"></td>
-                                <td class="m_date"></td>
-                                <td class="etc"></td>
-                            </tr>
-                            <tr>
-                                <td class="no"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>국가유공자 할인</td>
-                                <td></td>
-                                <td>Page</td>
-                                <td class="url"><a href="reserve/TK2110.html" target="_blank">reserve/TK2110.html</a></td>
-                                <td class="name"></td>
-                                <td class="date"></td>
-                                <td class="m_date"></td>
-                                <td class="etc"></td>
-                            </tr>
-                            <tr>
-                                <td class="no"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>국가유공자 약관 동의</td>
-                                <td>Popup</td>
-                                <td class="url"><a href="terms/TK2111BS.html" target="_blank">terms/TK2111BS.html</a></td>
-                                <td class="name"></td>
-                                <td class="date"></td>
-                                <td class="m_date"></td>
-                                <td class="etc"></td>
-                            </tr>
-                            <tr>
-                                <td class="no"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>개인정보 수집 및 이용 동의 상세</td>
-                                <td>Popup</td>
-                                <td class="url"><a href="terms/TK2112FP.html" target="_blank">terms/TK2112FP.html</a></td>
-                                <td class="name"></td>
-                                <td class="date"></td>
-                                <td class="m_date"></td>
-                                <td class="etc"></td>
-                            </tr>
-                            <tr>
-                                <td class="no"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>개인정보 제공 동의 상세</td>
-                                <td>Popup</td>
-                                <td class="url"><a href="terms/TK2113FP.html" target="_blank">terms/TK2113FP.html</a></td>
-                                <td class="name"></td>
-                                <td class="date"></td>
-                                <td class="m_date"></td>
-                                <td class="etc"></td>
-                            </tr>
-                            <tr>
-                                <td class="no"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>할인쿠폰 적용</td>
-                                <td>할인쿠폰 목록</td>
-                                <td>Page</td>
-                                <td class="url"><a href="reserve/TK2120T.html" target="_blank">reserve/TK2120T.html</a></td>
-                                <td class="name"></td>
-                                <td class="date"></td>
-                                <td class="m_date"></td>
-                                <td class="etc"></td>
-                            </tr>
-                            <tr>
-                                <td class="no"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>할인쿠폰 등록</td>
-                                <td>Page</td>
-                                <td class="url"><a href="reserve/TK2121T.html" target="_blank">reserve/TK2121T.html</a></td>
-                                <td class="name"></td>
-                                <td class="date"></td>
-                                <td class="m_date"></td>
-                                <td class="etc"></td>
-                            </tr>
-                            <tr>
-                                <td class="no"></td>
-                                <td></td>
-                                <td></td>
-                                <td>승차권 발권 동의</td>
-                                <td>승차권 발권 동의(SRT)</td>
-                                <td></td>
-                                <td>Popup</td>
-                                <td class="url"><a href="reserve/TK2200BS.html" target="_blank">reserve/TK2200BS.html</a></td>
-                                <td class="name"></td>
-                                <td class="date"></td>
-                                <td class="m_date"></td>
-                                <td class="etc"></td>
-                            </tr>
-                            <tr>
-                                <td class="no"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>약관 동의</td>
-                                <td></td>
-                                <td>Popup</td>
-                                <td class="url"><a href="reserve/TK2300BS.html" target="_blank">reserve/TK2300BS.html</a></td>
-                                <td class="name"></td>
-                                <td class="date"></td>
-                                <td class="m_date"></td>
-                                <td class="etc"></td>
-                            </tr>
-                            <tr>
-                                <td class="no"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>취소 환불 규정</td>
-                                <td>Popup</td>
-                                <td class="url"><a href="terms/TK2310FP.html" target="_blank">terms/TK2310FP.html</a></td>
-                                <td class="name"></td>
-                                <td class="date"></td>
-                                <td class="m_date"></td>
-                                <td class="etc"></td>
-                            </tr>
-                            <tr>
-                                <td class="no"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>여객운송 약관 및 부속 약관</td>
-                                <td>Popup</td>
-                                <td class="url"><a href="terms/TK2320FP.html" target="_blank">terms/TK2320FP.html</a></td>
-                                <td class="name"></td>
-                                <td class="date"></td>
-                                <td class="m_date"></td>
-                                <td class="etc"></td>
-                            </tr>
-                            <tr>
-                                <td class="no"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>신한pLay 예매 서비스 이용약관</td>
-                                <td>Popup</td>
-                                <td class="url"><a href="terms/TK2330FP.html" target="_blank">terms/TK2330FP.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
                                 <td class="m_date"></td>
@@ -924,8 +852,8 @@
                     </table>
                 </div>
             </section>
-            <section id="section4" class="g_cont">
-                <h2 class="g_tit">승차권 결제</h2>
+            <section id="section3" class="g_cont">
+                <h2 class="g_tit">결제 정보 확인</h2>
                 <div class="g_status">
                     <div class="page_stauts">
                         <span class="total">페이지 : <strong class="num">0</strong></span>
@@ -942,6 +870,7 @@
                             <col style="width:220px">
                             <col style="width:220px">
                             <col style="width:120px">
+                            <col style="width:80px">
                             <col style="width:350px">
                             <col style="width:150px">
                             <col style="width:150px">
@@ -957,6 +886,7 @@
                                 <th scope="col">4depth</th>
                                 <th scope="col">5depth</th>
                                 <th scope="col">유형</th>
+                                <th scope="col">IA 화면ID</th>
                                 <th scope="col">url</th>
                                 <th scope="col">작업자</th>
                                 <th scope="col">완료일</th>
@@ -967,12 +897,238 @@
                         <tbody>
                             <tr>
                                 <td class="no"></td>
-                                <td>승차권 결제</td>
+                                <td>결제 정보 확인</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>직통</td>
+                                <td>Page</td>
+                                <td></td>
+                                <td class="url"><a href="reserve/TK2000.html" target="_blank">reserve/TK2000.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>환승</td>
+                                <td>Page</td>
+                                <td></td>
+                                <td class="url"><a href="reserve/TK2000.html" target="_blank">reserve/TK2000.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td>할인 적용</td>
+                                <td></td>
+                                <td></td>
+                                <td>직통</td>
+                                <td>Page</td>
+                                <td></td>
+                                <td class="url"><a href="reserve/TK2100.html" target="_blank">reserve/TK2100.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>환승</td>
+                                <td>Page</td>
+                                <td></td>
+                                <td class="url"><a href="reserve/TK2100.html" target="_blank">reserve/TK2100.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>국가유공자 할인</td>
+                                <td></td>
+                                <td></td>
+                                <td>Page</td>
+                                <td></td>
+                                <td class="url"><a href="reserve/TK2110.html" target="_blank">reserve/TK2110.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>국가유공자 약관 동의</td>
+                                <td></td>
+                                <td>Popup</td>
+                                <td></td>
+                                <td class="url"><a href="terms/TK2111BS.html" target="_blank">terms/TK2111BS.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>개인정보 수집 및 이용 동의 상세</td>
+                                <td></td>
+                                <td>Popup</td>
+                                <td></td>
+                                <td class="url"><a href="terms/TK2112FP.html" target="_blank">terms/TK2112FP.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>개인정보 제공 동의 상세</td>
+                                <td></td>
+                                <td>Popup</td>
+                                <td></td>
+                                <td class="url"><a href="terms/TK2113FP.html" target="_blank">terms/TK2113FP.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>할인쿠폰 적용</td>
+                                <td>할인쿠폰 목록</td>
+                                <td></td>
+                                <td>Page</td>
+                                <td></td>
+                                <td class="url"><a href="reserve/TK2120T.html" target="_blank">reserve/TK2120T.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>할인쿠폰 등록</td>
+                                <td></td>
+                                <td>Page</td>
+                                <td></td>
+                                <td class="url"><a href="reserve/TK2121T.html" target="_blank">reserve/TK2121T.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>승차권 발권 동의(SRT)</td>
+                                <td></td>
+                                <td>Popup</td>
+                                <td></td>
+                                <td class="url"><a href="reserve/TK2200BS.html" target="_blank">reserve/TK2200BS.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>약관 동의</td>
+                                <td></td>
+                                <td></td>
+                                <td>Popup</td>
+                                <td></td>
+                                <td class="url"><a href="reserve/TK2300BS.html" target="_blank">reserve/TK2300BS.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>취소 환불 규정</td>
+                                <td></td>
+                                <td>Popup</td>
+                                <td></td>
+                                <td class="url"><a href="terms/TK2310FP.html" target="_blank">terms/TK2310FP.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>여객운송 약관 및 부속 약관</td>
+                                <td></td>
+                                <td>Popup</td>
+                                <td></td>
+                                <td class="url"><a href="terms/TK2320FP.html" target="_blank">terms/TK2320FP.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>신한pLay 예매 서비스 이용약관</td>
+                                <td></td>
+                                <td>Popup</td>
+                                <td></td>
+                                <td class="url"><a href="terms/TK2330FP.html" target="_blank">terms/TK2330FP.html</a></td>
+                                <td class="name"></td>
+                                <td class="date"></td>
+                                <td class="m_date"></td>
+                                <td class="etc"></td>
+                            </tr>
+                            <tr>
+                                <td class="no"></td>
                                 <td>신한pLay 간편결제</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                                 <td>Popup</td>
+                                <td></td>
                                 <td class="url"><a href="payment/PM1000FP.html" target="_blank">payment/PM1000FP.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -987,6 +1143,7 @@
                                 <td></td>
                                 <td></td>
                                 <td>Popup</td>
+                                <td></td>
                                 <td class="url"><a href="payment/PM1100P.html" target="_blank">payment/PM1100P.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -1001,6 +1158,7 @@
                                 <td></td>
                                 <td></td>
                                 <td>Popup</td>
+                                <td></td>
                                 <td class="url"><a href="payment/PM1200P.html" target="_blank">payment/PM1200P.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -1011,7 +1169,7 @@
                     </table>
                 </div>
             </section>
-            <section id="section5" class="g_cont">
+            <section id="section4" class="g_cont">
                 <h2 class="g_tit">공통</h2>
                 <div class="g_status">
                     <div class="page_stauts">
@@ -1029,6 +1187,7 @@
                             <col style="width:220px">
                             <col style="width:220px">
                             <col style="width:120px">
+                            <col style="width:80px">
                             <col style="width:350px">
                             <col style="width:150px">
                             <col style="width:150px">
@@ -1044,6 +1203,7 @@
                                 <th scope="col">4depth</th>
                                 <th scope="col">5depth</th>
                                 <th scope="col">유형</th>
+                                <th scope="col">IA 화면ID</th>
                                 <th scope="col">url</th>
                                 <th scope="col">작업자</th>
                                 <th scope="col">완료일</th>
@@ -1054,12 +1214,13 @@
                         <tbody>
                             <tr>
                                 <td class="no"></td>
-                                <td>공통</td>
                                 <td>역 선택</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                                 <td>Page</td>
+                                <td></td>
                                 <td class="url"><a href="common/CO1000.html" target="_blank">common/CO1000.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -1068,12 +1229,13 @@
                             </tr>
                             <tr class="del">
                                 <td class="no"></td>
-                                <td></td>
                                 <td>지도로 찾기</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                                 <td>Page</td>
+                                <td></td>
                                 <td class="url"><a href="common/CO1100.html" target="_blank">common/CO1100.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -1082,12 +1244,13 @@
                             </tr>
                             <tr>
                                 <td class="no"></td>
-                                <td></td>
                                 <td>일시 선택</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                                 <td>Popup</td>
+                                <td></td>
                                 <td class="url"><a href="common/CO2000BS.html" target="_blank">common/CO2000BS.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -1096,12 +1259,13 @@
                             </tr>
                             <tr>
                                 <td class="no"></td>
-                                <td></td>
                                 <td>인원 선택</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                                 <td>Popup</td>
+                                <td></td>
                                 <td class="url"><a href="common/CO3100BS.html" target="_blank">common/CO3100BS.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -1116,6 +1280,7 @@
                                 <td></td>
                                 <td></td>
                                 <td>Popup</td>
+                                <td></td>
                                 <td class="url"><a href="common/CO3100BS.html" target="_blank">common/CO3100BS.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>
@@ -1124,12 +1289,13 @@
                             </tr>
                             <tr>
                                 <td class="no"></td>
-                                <td></td>
                                 <td>약관 확인</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                                 <td>Popup</td>
+                                <td></td>
                                 <td class="url"><a href="common/CO5000FP.html" target="_blank">common/CO5000FP.html</a></td>
                                 <td class="name"></td>
                                 <td class="date"></td>

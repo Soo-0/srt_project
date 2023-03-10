@@ -130,6 +130,7 @@ ul.txt_dot > li, ul.txt_dash > li{margin-top:.8rem}
 .box_gray{position:relative;padding:3.2rem 2.4rem;background:#f8f8f8}
 .box_gray.ty2{padding:2rem 2.4rem;text-align:center}
 .box_gray.btm{margin:1.6rem -2.4rem -4rem}
+.box_gray.full{margin:0 -2.4rem}
 .box_gray .txt{font-size:1.1rem;line-height:1.4rem;color:#999}
 
 /* list */
@@ -454,8 +455,8 @@ body.pop_open{overflow:hidden}
 .pop_wrap.full .popup{height:100%}
 .pop_wrap.modal{align-items:flex-end}
 .pop_wrap.modal .popup{border-radius:1.0rem 1.0rem 0 0}
-.pop_wrap.modal .pop_head{padding:1.0rem 3.5rem}
-.pop_wrap.modal .pop_head .pop_tit{font-size:1.8rem}
+.pop_wrap.modal .pop_head{padding:2.3rem 6.4rem .9rem 2.4rem}
+.pop_wrap.modal .pop_head .pop_tit{text-align:left}
 .pop_wrap.modal .pop_cont{max-height:540px}
 .pop_wrap.alert{padding:0 1.5rem}
 .pop_wrap.alert .popup{border-radius:1.0rem;text-align:center}
@@ -464,12 +465,14 @@ body.pop_open{overflow:hidden}
 .pop_wrap.toast{align-items:flex-end;margin:0 1.5rem 3.0rem;background:transparent}
 .pop_wrap.toast .popup{overflow:hidden;background:rgba(0,0,0,0.7);border-radius:.9rem}
 .pop_wrap.toast .pop_cont{position:relative;padding:1.5rem 0 1.4rem;font-size:1.4rem;text-align:center;color:#fff;white-space:nowrap}
-.pop_wrap .pop_head{position:relative;padding:1.7rem 3.5rem;box-shadow:0 .4rem .8rem rgb(0 0 0 / 7%);}
-.pop_wrap .pop_head .pop_tit{line-height:1.2;text-align:center}
-.pop_wrap .pop_cont{flex:1 1 auto;overflow:hidden auto;padding:2.4rem 2.4rem 1.6rem}
+.pop_wrap .pop_head{position:relative;padding:1.6rem 4.2rem}
+.pop_wrap .pop_head .pop_tit{font-size:1.8rem;line-height:2.2rem;text-align:center}
+.pop_wrap .pop_cont{flex:1 1 auto;overflow:hidden auto;padding:2.4rem 2.4rem 4rem}
+.pop_wrap .pop_cont .box_gray.full{margin-top:-1.6rem}
 .pop_wrap .pop_btn{padding:1.6rem 1.6rem}
 .pop_wrap .pop_btn .btn{}
-.pop_wrap .btn_close{}
+.pop_wrap .btn_close{right:1.9rem}
+.pop_wrap.modal .btn_close{top:2.1rem;transform:translateY(0)}
 .tooltip_area{display:inline-block;vertical-align:middle;line-height:1.2;}
 .tooltip_area .btn_tooltip{display:inline-block;width:1.4rem;height:1.4rem;background:url(../images/common/ic_tooltip.svg) no-repeat 0 0/1.4rem;}
 .tooltip_area .tooltip_cont{display:none;position:absolute;z-index:10;max-width:21.6rem;margin-top:1.2rem;margin-left:.5rem;padding:1.6rem 3.4rem 1.6rem 1.6rem;background:#3D4964;border-radius:0 .8rem .8rem;box-shadow:.5rem .6rem 1.2rem rgb(0 0 0 / 3%);transition:all .3s ease;opacity:0}

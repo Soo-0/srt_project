@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="../../css/libs/jquery-ui.min.css" media="all" />
     <link rel="stylesheet" href="../../css/font.css" media="all" />
     <link rel="stylesheet" href="../../css/datepicker.css" media="all" />
-    <link rel="stylesheet" href="../../css/common.css" media="all" />
+    <link rel="stylesheet" href="../../css/r.css" media="all" />
+
     <link rel="stylesheet" href="../../css/train_operation.css" media="all" /><!-- 운영 css -->
     <script src="../../js/libs/jquery-3.6.3.min.js"></script>
     <script src="../../js/libs/jquery-ui.min.js"></script>
@@ -264,5 +265,44 @@
         </div>
     </div>   
     <!-- // #wrap -->
+
+    <!-- popup -->
+    <div id="modalPop" class="pop_wrap modal is_visible is_active" aria-hidden="true"><!-- 활성화 시 is_visible is_active class 추가 -->
+        <article class="popup">
+            <div class="pop_head">
+                <h1 class="pop_tit">빠른 기차 예매 확인</h1>
+                <a href="#" class="btn_close j_pop_close" role="button"><span class="blind">팝업창 닫기</span></a>
+            </div>
+            <div class="pop_cont">
+                <div class="box_gray full">
+                    <div class="train_info">
+                        <span class="date">2022.12.16(금)</span>
+                        <div class="train_item">
+                            <div class="train_num">
+                                <span class="num">SRT 651</span>
+                            </div>
+                            <div class="train_station">
+                                <span><strong>수서</strong>(05:08)</span>
+                                <span><strong>오송</strong>(05:43)</span>
+                            </div>
+                            <p class="txt">35분 소요</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <strong>총 2명</strong>
+                    <span>어른 1명, 어린이 1명</span>
+                </div>
+                <div class="bdr_t">
+                    위 기차로 예매를 진행하시겠습니까?<br>(취소 시 바로 예약 취소됩니다.)
+                </div>
+            </div>
+            <div class="pop_btn btn_wrap flex">
+                <a href="#" class="btn gray j_pop_close">취소</a>
+                <a href="#" class="btn blue j_pop_close">확인</a>
+            </div> 
+        </article>
+    </div>
+    <!-- //popup -->
 </body>
 </html>
