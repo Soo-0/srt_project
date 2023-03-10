@@ -23,6 +23,10 @@ z-index 정의
 .travel_time.ready{color:#476EFF;}
 .travel_duration{line-height:2rem;font-size:1.2rem;font-weight:400;color:#888888;}
 
+.station_arrow{position:relative;}
+.station_arrow::after{content:"이동방향";display:inline-block;width:2.8rem;height:1.2rem;font-size:0;background:url("../images/contents_train/station_arrow.svg") no-repeat 0 0 / 100%;}
+.station_arrow.transfer::after{content:"이동방향";display:inline-block;width:2.8rem;height:1.2rem;font-size:0;background:url("../images/contents_train/station_arrow_transfer.svg") no-repeat 0 0 / 100%;}
+/* 승차권보관함쉅_내승차권(환승) */
 .transfer_ver .last_lt .travel_duration,
 .transfer_ver .arrival .travel_time{padding-top:2rem;}
 .my_travel.transfer > div > span:first-child{line-height:2.6rem;padding-bottom:2.3rem;}
