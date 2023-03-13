@@ -191,8 +191,8 @@ const formEvt = {
 		$agreeList.each(function(){
 			let $chkAll = $(this).find('.check_all input'),
 				$chkList = $(this).find('input[type=checkbox]').not($chkAll)
-			console.log($chkList)
-			$chkAll.on('change', function() {
+			
+				$chkAll.on('change', function() {
 				if($chkAll.prop('checked')) $chkList.prop('checked', true);
 				else $chkList.prop('checked', false);
 			});
