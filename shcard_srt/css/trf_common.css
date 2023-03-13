@@ -161,13 +161,9 @@ ul.txt_dot > li, ul.txt_dash > li{margin-top:.8rem}
 .dl_list dt{float:left;padding-top:1.2rem;font-size:1.4rem;line-height:2rem;color:#666}
 .dl_list dd{float:right;padding-top:1.2rem;font-size:1.4rem;line-height:2rem;color:#000;text-align:right}
 .dl_list dd + dt{clear:both}
-
-/* .tit_h3 + .dl_list{margin-top:2.4rem}
 .dl_list > .line{margin-top:1.6rem;padding-top:1.6rem;border-top:.1rem solid #eee}
-.dl_list.ty2 dt, .dl_list.ty2 dd{color:#000}
-.dl_list.ty3 dt, .dl_list.ty3 dd{font-size:1.6rem;line-height:2.2rem;color:#000}
-.box_line .dl_list dt, .box_line .dl_list dd{font-size:1.6rem;line-height:2.2rem} */
-
+.dl_list.bdr_t dt, .dl_list.bdr_t dd{color:#000}
+.dl_list.ty2 dt, .dl_list.ty2 dd{font-size:1.6rem;line-height:2.2rem;color:#000}
 
 /* box */
 .bdr_t{padding-top:1.6rem;border-top:.1rem solid #ccc}
@@ -256,7 +252,6 @@ div.box_line + div.box_line{margin-top:1.2rem}
 .ico_48{width:4.8rem;height:4.8rem;background-size:4.8rem}
 .ico_80{width:8.0rem;height:8.0rem}
 .ico_80.error{background-image:url(../images/common/ico80_error.svg);background-size:6.0rem 6.0rem}
-
 
 /* badge */
 .badge{display:inline-block;padding:.6rem 1.0rem .4rem;border-radius:.2rem;font-size:1.2rem;line-height:1.6rem;font-weight:500;vertical-align:middle}
@@ -552,12 +547,12 @@ body.pop_open{overflow:hidden}
 .inner.main{padding:1.6rem 2.4rem 0}
 
 /* title */
-[class*=tit_h]{position:relative}
-div[class*=tit_h]{display:flex;justify-content:space-between;align-items:center}
-.tit_h3:not(div), div.tit_h3 .tit{font-size:2.0rem;line-height:2.8rem;color:#000}
-.tit_h4{}
-.tit_h5{display:block;margin-bottom:.8rem;font-size:1.4rem;line-height:2rem;color:#888}
-.unit .price{font-size:1.3rem;color:#767676}
+[class*=tit_h]{display:block;position:relative}
+.tit_wrap{display:flex;justify-content:space-between;align-items:center}
+.tit_wrap .unit{font-size:1.3rem;color:#767676}
+.tit_h3{font-size:2rem;line-height:2.8rem;font-weight:500}
+.tit_h4{font-size:1.6rem;line-height:2.2rem}
+.tit_h5{margin-bottom:.8rem;font-size:1.4rem;line-height:2rem;color:#888}
 
 
 /* 기차예매 */
