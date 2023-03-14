@@ -172,6 +172,7 @@ ul.txt_dot > li, ul.txt_dash > li{margin-top:.8rem}
 .box_gray.btm{margin:1.6rem -2.4rem -4rem}
 .box_gray.full{margin:0 -2.4rem}
 .box_gray .txt{font-size:1.1rem;line-height:1.4rem;color:#999}
+.box_gray + .inner{padding-top:4rem}
 
 /* list */
 [class^="tit_"] + .line_list{margin-top:1.2rem}
