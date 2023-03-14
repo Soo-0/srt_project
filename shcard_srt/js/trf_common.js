@@ -67,6 +67,23 @@ const headEvt = {
 				let btnH = $('.btm_fixed').outerHeight(true);
 				$container.css('padding-bottom',btnH + 16);
 			}
+
+			// 컨텐츠 높이가 적어서 contents가 줄어들 때
+			// if($('#header, #footer .inner').is(':visible') == false || $('#footer .inner').is(':visible') == false){	//header footer 없을 때
+			// 					if(winH > $containerH){
+			// 						$('.bg_gray.last').css('padding-bottom',0);
+			// 					}
+			// 					winShortPage.fixedBtn();
+			
+			// 					var division = $('.division_wrap:not(.wh)'),
+			// 					diviGray = division.find('.ly_box.gray');
+			
+			// 					if(diviGray.length > 0){
+			// 						$('#wrap').css({'background':'#f3f4f8'});
+			// 					}
+			// 				}else{
+			// 					winShortPage.fixedBtnType2();
+			// 				}
 		})
 		
 
@@ -76,60 +93,6 @@ const headEvt = {
 }
 
 // var winShortPage = {
-// 	load : function(){
-// 		//$(window).on('load',function(){
-// 		$(document).ready(function(){
-
-// 			var $bgGray = $('.bg_gray.last:not(.btm)');	//bg_gray상단에 컨텐츠 덩어리 있을 때, btm : 예시page(AUS2500.html)
-// 				$bgH = $bgGray.outerHeight(true),
-// 				$dviCont = $('.division_wrap'),
-// 				$dviH = $dviCont.outerHeight(true);
-
-// 			if(winH > $cntH || winH > $dviH){
-// 				$container.css({'min-height':'auto'});
-// 				//if($('#footer').is(':visible') == false){
-// 					if(winW > 1024){
-// 						$bgGray.css({'min-height':'calc(100vh - 160px)'});
-// 					}else{
-// 						$bgGray.css({'min-height':'calc(100vh - 95px)'});
-// 					}
-// 				//}
-// 			}
-// 			//컨텐츠 높이가 적어서 contents가 줄어들 때
-// 			if(winW > 1024){
-// 				if($('#header, #footer').is(':visible') == false){ //header footer 없을 때
-// 					if(winH > $cntH){
-// 						$('#container, .bg_gray.last').css('padding-bottom',0);
-// 					}
-// 				}else{
-// 					if($dviCont.length > 0){
-// 						$('#container').css('padding-bottom','auto');
-// 					}else{
-// 						if($winContH > $cntH + 100){
-// 							//$('#container').css('padding-bottom',0);
-// 						}
-// 					}
-// 				}
-// 			}else{
-// 				if($('#header, #footer .inner').is(':visible') == false || $('#footer .inner').is(':visible') == false){	//header footer 없을 때
-// 					if(winH > $containerH){
-// 						$('.bg_gray.last').css('padding-bottom',0);
-// 					}
-// 					winShortPage.fixedBtn();
-
-// 					var division = $('.division_wrap:not(.wh)'),
-// 					diviGray = division.find('.ly_box.gray');
-
-// 					if(diviGray.length > 0){
-// 						$('#wrap').css({'background':'#f3f4f8'});
-// 					}
-// 				}else{
-// 					winShortPage.fixedBtnType2();
-// 				}
-
-// 			}
-// 		});
-// 	},
 // 	fixedBtn : function(){ //fixed버튼 있을 때, container padding-bottom조절 (header footer 없을 때)
 // 		if($('.btn_wrap.fixed').length > 0){
 // 			// console.log(1);
