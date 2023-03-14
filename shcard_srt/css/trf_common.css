@@ -176,7 +176,8 @@ ul.txt_dot > li, ul.txt_dash > li{margin-top:.8rem}
 
 /* list */
 [class^="tit_"] + .line_list{margin-top:1.2rem}
-[class^="tit_"] + .txt_list{margin-top:1.6rem}
+/* [class^="tit_"] + .txt_list{margin-top:1.6rem} */
+[class^="tit_"] + .txt_list{margin-top:3.2rem}
 .line_list > li{padding:2rem 0;border-bottom:.1rem solid #eee}
 .line_list.pd32 > li{padding:3.2rem 0}
 .line_list.pd32 > li:first-child{padding-top:0}
@@ -189,6 +190,7 @@ ul.txt_dot > li, ul.txt_dash > li{margin-top:.8rem}
 .box_item .txt_alert{margin-top:2.4rem}
 .box_item .btn_wrap{margin-top:.8rem}
 .txt_list > li + li{margin-top:1.5rem;padding-top:1.5rem;border-top:1px dashed #ccc}
+.txt_list + .btn_wrap, div.txt_box + .btn_wrap{margin-top:2.4rem}
 div.txt_box{margin:3.2rem 0 2.4rem}
 div.txt_box.ty2{margin:0 0 1.6rem}
 .txt_box .tit{font-size:1.8rem;line-height:2.6rem;font-weight:700}
