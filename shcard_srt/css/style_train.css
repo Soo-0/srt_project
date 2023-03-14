@@ -88,13 +88,4 @@ z-index 정의
 .filter_date .filter_tit{line-height:2rem;color:#666666;}
 .filter_date > a{padding-right:1.6rem;line-height:2rem;}
 
-/* 결제 정보 확인 */
-.txt_list{margin-top:1.6rem;}
-.txt_list_tit{font-size:1.8rem;line-height:2.6rem;font-weight:500;}
-.txt_list li{display:block;}
-.txt_list > li{padding-top:3.2rem;}
-.txt_list li + li{padding-top:0.8rem;}
-.txt_list li + .btn.line{width:100%;margin-top:2.4rem;font-size:1.4rem;}
-.txt_list + .line_list{margin-top:4rem;}
-.line_list + .checkbox{padding-top:1.6rem;}
 
