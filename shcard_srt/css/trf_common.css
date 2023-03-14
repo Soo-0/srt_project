@@ -443,6 +443,8 @@ div.txt_box.ty2{margin:0 0 1.6rem}
 .acco_list{position:relative}
 .acco_list .acco_tit .tit{display:inline-block;font-size:1.6rem;line-height:2.2rem;vertical-align:middle}
 .acco_list .acco_btn{display:inline-block;width:2.0rem;height:2.0rem;margin-left:.6rem;background:url(../images/common/btn_acco.svg) no-repeat center -.1rem/2.0rem;vertical-align:middle;transition:transform .3s ease}
+.acco_list .acco_btn:after{}
+.acco_list .acco_btn.on:after{}
 .acco_list .acco_btn.on{transform:rotate(180deg)}
 .acco_list .acco_cont{display:none;margin-top:2rem;padding-top:2rem;border-top:1px solid #eee}
 .acco_list .acco_cont.dashed{border-top:.1rem dashed #ccc}
@@ -525,6 +527,7 @@ body.pop_open{overflow:hidden}
 .tit_h3{font-size:2rem;line-height:2.8rem;font-weight:500}
 .tit_h4{font-size:1.8rem;line-height:2.6rem}
 .tit_h5{margin-bottom:.8rem;font-size:1.4rem;line-height:2rem;color:#888}
+.btn_wrap + [class*=tit_h]{margin-top:4rem}
 
 /* box item in */
 .ticket_num{font-size:0}
