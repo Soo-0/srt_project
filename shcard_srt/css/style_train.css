@@ -90,11 +90,6 @@ z-index 정의
 .swiper_cntrl_wrap.is_stopped .swiper-btn-pause {display:none;}
 .swiper_cntrl_wrap.is_stopped .swiper-btn-play {display:inline-block;}
 
-/* 승차권보관함(이용내역tab) */
-.filter_date{display:flex;justify-content:space-between;align-items:center;padding:1.8rem 2.4rem;font-size:1.4rem;background-color:#F8F8F8;}
-.filter_date .filter_tit{line-height:2rem;color:#666666;}
-.filter_date > a{padding-right:1.6rem;line-height:2rem;}
-
 /* 결제정보확인 */
 .btn_wrap + .tit_h4{margin-top:4rem;}
 .line_list + .checkbox{margin-top:1rem;}

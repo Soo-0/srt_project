@@ -97,8 +97,9 @@
                                 <ul class="txt_dash">
                                     <li>inner : 2.4rem 2.4rem 0</li>
                                     <li>inner.pt0 : 0 2.4rem 0 </li>
-                                    <li>inner2 : 3.2rem 2.4rem 0</li>
-                                    <li>inner3 : 3.2rem 1.6rem 0</li>
+                                    <li>inner.ty2 : 2.4rem 1.6rem 0</li>
+                                    <!-- <li>inner.ty3 : 3.2rem 2.4rem 0</li>
+                                    <li>inner.ty4 : 3.2rem 1.6rem 0</li> -->
                                 </ul>
                             </div>
                         </div>
@@ -232,6 +233,26 @@
                                     <span class="g_noti">* ty2 / font-size: 1.6rem, line-height: 2.2rem color:#000</span>
                                     <div>
                                         <dl class="dl_list ty2">
+                                            <dt>승인번호</dt>
+                                            <dd><strong>123123</strong></dd>
+                                            <dt>승인번호</dt>
+                                            <dd><strong>123123</strong></dd>
+                                        </dl>
+                                        <div class="source_code">
+                                            <button type="button" class="btn_source">소스보기</button>
+                                            <textarea class="code_view" rows={1} wrap="hard" readonly >
+                                                <dl class="dl_list ty2">
+                                                    <dt>승인번호</dt>
+                                                    <dd>123123</dd>
+                                                    <dt>승인번호</dt>
+                                                    <dd><strong>123123</strong></dd>
+                                                </dl>
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                    <span class="g_noti">* ty3 / font-size: 1.6rem, line-height: 2.2rem  / dt : #888, dd : #000</span>
+                                    <div>
+                                        <dl class="dl_list ty3">
                                             <dt>승인번호</dt>
                                             <dd><strong>123123</strong></dd>
                                             <dt>승인번호</dt>
@@ -1204,7 +1225,7 @@
                         <h2 class="guide_tit">Box</h2>
                         <div>
                             <h3 class="g_txt">#gray</h3>
-                            <h4 class="g_sub"><span>#box_gray</span></h4>
+                            <h4 class="g_sub"><span>#box_gray (.box_gray)</span></h4>
                             <div>
                                 <div class="box_gray">
                                     <div class="train_info">
@@ -1221,6 +1242,31 @@
                                             </div>
                                             <p class="txt">2시간 35분 소요</p>
                                         </div>
+                                    </div>
+                                </div>
+                                <span class="g_noti">ty2 : padding 2rem 2.4rem; text-align:center</span>
+                                <div class="box_gray ty2">
+                                    text
+                                    <p class="txt">p.txt : size:1.1; height:1.4rem; color:#999</p>
+                                </div>
+                            </div>
+                            <h4 class="g_sub"><span>#border-box(box_item)</span></h4>
+                            <div>
+                                <div class="box_item">
+                                    padding:2rem
+                                </div>
+                            </div>
+                            <h4 class="g_sub"><span>#boarding_info</span></h4>
+                            <div>
+                                <div class="boarding_info">
+                                    <div class="boarding_item">
+                                        <span>출발역</span>
+                                        <strong>수서</strong>
+                                    </div>
+                                    <button type="button" class="btn_change white"></button>
+                                    <div class="boarding_item">
+                                        <span>도착역</span>
+                                        <strong>수서</strong>
                                     </div>
                                 </div>
                             </div>
@@ -1308,6 +1354,7 @@
                                 </div>
                             </div>
                             <h3 class="g_txt">#박스형</h3>
+                            <span class="g_noti">* 사이간격 1.2rem인 경우 pd12 class 추가 ( 기본 1.6rem )</span>
                             <div>
                                 <ul class="box_list">
                                     <li>
