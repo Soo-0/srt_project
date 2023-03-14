@@ -52,10 +52,25 @@ const isMobile = {
 
 const headEvt = {
     init : () => {
-		if($('.btm_fixed').length > 0){
-			
-		}
-        // console.log('test')
+		$(window).on('load', function(){
+			let winW = $(window).width(),
+				winH = $(window).height();
+
+			let $container = $('#container'),
+				$contents = $('#contents'),
+				$cntH = $contents.outerHeight(true),
+				$containerH = $container.outerHeight(true),
+				$headerH = $('#header').outerHeight(true);
+				// $winContH = winH-$headerH;
+
+			if($('.btm_fixed').length > 0){
+				let btnH = $('.btm_fixed').outerHeight(true);
+				$container.css('padding-bottom',btnH + 16);
+			}
+		})
+		
+
+		
     }
 
 }
@@ -64,17 +79,6 @@ const headEvt = {
 // 	load : function(){
 // 		//$(window).on('load',function(){
 // 		$(document).ready(function(){
-
-// 			var winW = $(window).width(),
-// 				winH = $(window).height();
-// 			var $contents = $('#contents'),
-// 				$container = $('#container'),
-// 				$cntH = $contents.outerHeight(true),
-// 				$containerH = $container.outerHeight(true),
-// 				$headerH = $('#header').outerHeight(true),
-// 				$footerH = $('#footer').outerHeight(true);
-// 				$winContH = winH-$headerH-$footerH,
-// 				$noHeader = 'calc(100vh -' + $headerH + ')';
 
 // 			var $bgGray = $('.bg_gray.last:not(.btm)');	//bg_gray상단에 컨텐츠 덩어리 있을 때, btm : 예시page(AUS2500.html)
 // 				$bgH = $bgGray.outerHeight(true),
