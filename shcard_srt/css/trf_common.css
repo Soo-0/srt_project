@@ -174,8 +174,11 @@ ul.txt_dot > li, ul.txt_dash > li{margin-top:.8rem}
 .box_gray .txt{font-size:1.1rem;line-height:1.4rem;color:#999}
 
 /* list */
+[class^="tit_"] + .line_list{margin-top:1.2rem}
+[class^="tit_"] + .txt_list{margin-top:1.6rem}
 .line_list > li{padding:2rem 0;border-bottom:.1rem solid #eee}
 .line_list.pd32 > li{padding:3.2rem 0}
+.line_list.pd32 > li:first-child{padding-top:0}
 .line_list.bdr_t{border-top:.1rem solid #2C3548}
 .line_list.ty2 >li:first-child{border-top:.1rem solid #eee}
 .line_list.ty2 > li{padding:2rem 2.4rem}
@@ -301,7 +304,7 @@ ul.txt_dot > li, ul.txt_dash > li{margin-top:.8rem}
 .tab_wrap.swich ~ .tab_cont{padding-top:2.2rem}
 .tab_cont{display:none}
 .tab_cont.on{display:block}
-.tab_seat > ul{display:flex;overflow-x:scroll;margin:0 -2.4rem;padding:0 2.4rem}
+.tab_seat > ul{display:flex;overflow-x:auto;margin:0 -2.4rem;padding:0 2.4rem}
 .tab_seat > ul > li + li{margin-left:1.2rem}
 
 /* input */
@@ -512,8 +515,7 @@ body.pop_open{overflow:hidden}
 /* box item in */
 .ticket_num{font-size:0}
 .ticket_num .number{display:inline-block;margin-left:.8rem;font-size:1.4rem;line-height:2.0rem;color:#888;vertical-align:middle}
-.ticket_num + .train_info{margin-top:2.0rem}
-.train_info{margin-bottom:2rem}
+.ticket_num + .train_info, .train_info + .dl_list{margin-top:2rem}
 .train_info .date{display:inline-block;font-size:1.6rem;line-height:2.2rem}
 .train_info .date_area{display:flex;justify-content:space-between;align-items:center}
 .train_info .date_area .date{font-size:1.4rem;line-height:2.0rem}
@@ -549,13 +551,12 @@ body.pop_open{overflow:hidden}
 .quick_match .destination_item{flex:0 0 auto}
 .quick_match .destination_item + .destination_item{margin-left:.6rem}
 .destination_item{display:flex;align-items:center}
-.destination_item span{position:relative;font-size:1.2rem;line-height:1.6rem;color:#494f60}
-.destination_item span + span{padding-left:1.6rem}
-.destination_item span + span:before{content:'';position:absolute;top:-.2rem;left:0;width:1.2rem;height:1.6rem;margin:0 .2rem;background:url(../images/common/ico_boarding_arr.svg) no-repeat 0 0;background-size:1.2rem 1.6rem}
-.destination_item.button{padding:1.1rem 1.4rem;background:#eff0f5;border-radius:.2rem}
-.destination_item.button span{font-size:1.4rem;line-height:1.6rem}
-.destination_item.button span + span{padding-left:2rem}
-.destination_item.button span + span:before{top:-.1rem;width:1.6rem;background-size:1.6rem 1.6rem}
+.destination_item span{position:relative;font-size:1.2rem;line-height:1.6rem;font-weight:700;color:#494f60}
+.destination_item span + span{padding-left:2rem}
+.destination_item span + span:before{content:'';position:absolute;top:-.1rem;left:0;width:1.6rem;height:1.6rem;margin:0 .2rem;background:url(../images/common/ico_boarding_arr_bold.svg) no-repeat 0 0;background-size:1.6rem 1.6rem}
+.destination_item.box{padding:1.1rem 1.4rem;background:#eff0f5;border-radius:.2rem}
+.destination_item.box span{font-size:1.4rem;line-height:1.6rem;font-weight:500}
+.destination_item.box span + span:before{background:url(../images/common/ico_boarding_arr.svg) no-repeat 0 0}
 .main_noti_area{margin-top:4.8rem}
 .main_noti_area .event_banner{margin-top:1.6rem}
 .main_noti_area + .btn_wrap{margin-top:4rem}

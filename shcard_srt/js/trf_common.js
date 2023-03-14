@@ -53,7 +53,7 @@ const isMobile = {
 const headEvt = {
     init : () => {
 		if($('.btm_fixed').length > 0){
-			console.log('test')
+			
 		}
         // console.log('test')
     }
