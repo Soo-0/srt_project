@@ -442,10 +442,9 @@ div.txt_box.ty2{margin:0 0 1.6rem}
 /* 아코디언 */
 .acco_list{position:relative}
 .acco_list .acco_tit .tit{display:inline-block;font-size:1.6rem;line-height:2.2rem;vertical-align:middle}
-.acco_list .acco_btn{display:inline-block;width:2.0rem;height:2.0rem;margin-left:.6rem;background:url(../images/common/btn_acco.svg) no-repeat center -.1rem/2.0rem;vertical-align:middle;transition:transform .3s ease}
-.acco_list .acco_btn:after{}
-.acco_list .acco_btn.on:after{}
-.acco_list .acco_btn.on{transform:rotate(180deg)}
+.acco_list .acco_btn{display:inline-block;position:relative;width:2rem;height:2rem;margin-top:-.2rem;margin-left:.6rem;vertical-align:middle}
+.acco_list .acco_btn:after{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%, -50%) rotate(0);width:1.1rem;height:.6rem;background:url(../images/common/btn_acco.svg) no-repeat 0 0/1.1rem .6rem;transition:transform .3s ease}
+.acco_list .acco_btn.on:after{transform:translate(-50%, -50%) rotate(180deg)}
 .acco_list .acco_cont{display:none;margin-top:2rem;padding-top:2rem;border-top:1px solid #eee}
 .acco_list .acco_cont.dashed{border-top:.1rem dashed #ccc}
 
