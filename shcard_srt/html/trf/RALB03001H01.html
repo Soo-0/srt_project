@@ -39,6 +39,7 @@
                         <li><a href="#tab2" role="tab" aria-selected="false">이용내역</a></li>
                     </ul>
                 </div>
+                <!-- 내 승차권 tab -->
                 <div id="tab1" class="tab_cont on" role="tabpanel">
                     <div class="inner">
                         <!-- s : 내승차권 보관함(일반) -->
@@ -369,7 +370,7 @@
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <div class="slide_cont">
-                                                <a href="#none" role="button">
+                                                <a href="javascript:;" role="button">
                                                     <div class="txt_area">
                                                         <div class="slide_txt1">신한카드<br>pLay 앱으로<br>기차 예매를…</div>
                                                     </div>
@@ -381,7 +382,7 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="slide_cont">
-                                                <a href="#none" role="button">
+                                                <a href="#javascript:;" role="button">
                                                     <div class="txt_area">
                                                         <div class="slide_txt1">신한카드<br>pLay 앱으로<br>기차 예매를…</div>
                                                     </div>
@@ -392,7 +393,7 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="slide_cont">
-                                                <a href="#none" role="button">
+                                                <a href="#javascript:;" role="button">
                                                     <div class="txt_area">
                                                         <div class="slide_txt1">신한카드<br>pLay 앱으로<br>기차 예매를…</div>
                                                     </div>
@@ -402,7 +403,7 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="slide_cont">
-                                                <a href="#none" role="button">
+                                                <a href="#javascript:;" role="button">
                                                     <div class="txt_area">
                                                         <div class="slide_txt1">신한카드<br>pLay 앱으로<br>기차 예매를…</div>
                                                     </div>
@@ -414,15 +415,16 @@
                                 </div>   
                             </div>
                             <div class="swiper_btn_wrap">
-                                <button type="button" class="swiper-btn-prev"><span class="blind">이전</span></button>
-                                <button type="button" class="swiper-btn-next"><span class="blind">다음</span></button>
+                                <button type="button" class="swiper-btn-prev" aria-label="슬라이더 이전"><span class="blind">이전</span></button>
+                                <button type="button" class="swiper-btn-next" aria-label="슬라이더 다음"><span class="blind">다음</span></button>
                             </div>
                             <div class="swiper_cntrl_wrap">
-                                <button type="button" class="swiper-btn-play"><span class="blind">재생</span></button>
-                                <button type="button" class="swiper-btn-pause"><span class="blind">정지</span></button>
+                                <button type="button" class="swiper-btn-play" aria-label="자동 재생 재생"><span class="blind">재생</span></button>
+                                <button type="button" class="swiper-btn-pause" aria-label="자동 재생 일시 정지"><span class="blind">정지</span></button>
                                 <div class="swiper-pagination"></div>
                             </div>
                         </div>
+                        <!-- // 이벤트 swiper -->
                     </div>
                 </div>
                 <div id="tab2" class="tab_cont" role="tabpanel">
@@ -430,7 +432,7 @@
                         <span class="filter_tit">조회기간</span>
                         <a href="#" class="btn_link arr" role="button"><span>2022.06.08 ~ 2022.12.08</span></a>
                     </div>
-                    <div class="inner">
+                    <div class="inner ty2">
                         <ul class="box_list">
                             <li>
                                 <div class="box_item">

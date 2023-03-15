@@ -310,20 +310,37 @@ const popMotion = {
 
 const swiperArea = ()=>{
 	let bannerSwiper = new Swiper('.evtBanner-swiper',{
+		slidesPerView: 1,
+		loop: true,
 		autoplay: {
 			delay: 4000,
 			disableOnInteraction: false,
 		},
-		loop: true,
-		slidesPerView: 1,
 		navigation: {
 			prevEl: ' .swiper-btn-prev',
 			nextEl: ' .swiper-btn-next',
 		},
         pagination: {
-			el: ' .swiper-pagination',
-			clickable:true,
+			el: '.swiper-pagination',
+			clickable: true,
+			type: 'bullets',
 		},
-		type: 'bullets',
+		a11y: {
+			prevSlideMessage: '이전 슬라이드',
+			nextSlideMessage: '다음 슬라이드',
+			slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+		},
 	})
+	$('.swiper-btn-play').on('click', function() {
+		$(this).hide();
+		$(this).siblings('.swiper-btn-pause').show();
+		bannerSwiper.autoplay.start();
+		return false;
+	  });
+	  $('.swiper-btn-pause').on('click', function() {
+		$(this).hide();
+		$(this).siblings('.swiper-btn-play').show();
+		bannerSwiper.autoplay.stop();
+		return false;
+	  });
 }
