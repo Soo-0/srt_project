@@ -240,6 +240,7 @@ const accoEvt = () => {
 let $popSpeed = 150;
 const popMotion = {
 	init : () => {
+		let $openBtn;
 		if($('.pop_wrap').hasClass('is_active')) popMotion.popOpen($('.pop_wrap.is_active'))
 		else $('.pop_wrap').attr('aria-hidden', 'true');
 
@@ -248,6 +249,7 @@ const popMotion = {
 		$(document).on('click','.j_pop_open', function(e){
 			e.preventDefault();
 			let $pop = $(this).attr('href');
+			$openBtn = $(this);
 			popMotion.popOpen($pop);
 		})
 
@@ -255,7 +257,7 @@ const popMotion = {
 			e.preventDefault();
 			let $pop = $(this).closest('.pop_wrap');
 			popMotion.popClose($pop);
-
+			$openBtn.focus(); // $("a[href='#" + $id + "']").focus();
 			if($('.pop_wrap').length > 1){
 				$('.pop_wrap.is_active .popup').attr('tabindex','0').focus();
 			}
@@ -277,7 +279,6 @@ const popMotion = {
 			$id = $tar.attr('id');
 		$tar.removeClass('is_active').find('.pop_cont').scrollTop(0);
 		setTimeout(function(){$tar.removeClass('is_visible')}, $popSpeed);
-		$("a[href='#" + $id + "']").focus();
 		$('#wrap').attr('aria-hidden','false');
 		$('body').removeClass('pop_open')
 	},
