@@ -249,6 +249,7 @@ div.txt_box{margin:3.2rem 0 2.4rem}
 .ticket_info .ticket_detail:first-child:before{width:calc(100% - 1.1rem)}
 .ticket_detail{position:relative;margin-top:2.4rem;padding-top:2.4rem}
 .ticket_detail:before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:100%;border-top:.1rem dashed #eee}
+.ticket_detail .badge{margin-bottom:1.6rem;}
 .ticket_box + .event_banner{ margin-top:2.4rem}
 .station_arrow{position:relative;}
 .station_arrow::after{content:"이동방향";display:inline-block;width:2.8rem;height:1.2rem;font-size:0;background:url("../images/contents_train/station_arrow.svg") no-repeat 0 0 / 100%;}
@@ -265,6 +266,19 @@ div.txt_box{margin:3.2rem 0 2.4rem}
 .travel_time{font-size:1.4rem;font-weight:500;}
 .travel_time.ready{color:#476EFF}
 .travel_duration{line-height:2rem;font-size:1.2rem;font-weight:400;color:#888;}
+.boarding_number{display:flex;justify-content:space-between;height:2.0rem;line-height:2rem;font-size:1.4rem;}
+.boarding_detail{width:100%;margin:.8rem 0;border:.1rem solid #EEEEEE;border-radius:.4rem;}
+.boarding_type{display:flex;justify-content:space-between;align-items:center;height:1.6rem;line-height:1.4rem;font-size:1.4rem;}
+.my_pass_top{display:flex;justify-content:space-between;padding:.9rem 1.2rem .7rem;font-size:1.4rem;border-bottom:.1rem solid #EEEEEE;background-color:#F6F6F6;}
+.my_pass_top span{color:#888888;}
+.my_pass_bottom{display:flex;height:8.8rem;}
+.my_pass_bottom li{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;width:calc(100% / 3);}
+.my_pass_bottom li + li{border-left:.1rem solid #EEEEEE;}
+.my_pass_bottom li > span + span{margin-top:.5rem;}
+.my_pass_bottom img{width:7.2rem;height:7.2rem;}
+.my_pass_bottom .seating_info1{height:1.6rem;font-size:1.2rem;color:#888888;}
+.my_pass_bottom .seating_info2{height:3.4rem;font-weight:500;font-size:2.4rem;}
+
 
 /* icon */
 .ico{display:inline-block;overflow:hidden;background:center no-repeat;font-size:.1rem;color:transparent;vertical-align:middle}
@@ -320,6 +334,7 @@ div.txt_box{margin:3.2rem 0 2.4rem}
 .btn_link.alarm{display:block;font-size:1.4rem;line-height:2rem;font-weight:500;text-decoration:none}
 .btn_link.alarm:before{display:inline-block;content:'';width:2rem;height:2rem;margin-right:.8rem;background:url(../images/common/ico_noti_alarm.svg) no-repeat 0 0/2rem;vertical-align:middle;}
 .btn_link.alarm:after{content:'';position:absolute;top:50%;right:0;transform:translateY(-50%);width:2rem;height:2rem;background:url(../images/common/ic_link_arr2.svg) no-repeat 0 0/2rem}
+.btn_link.unused{color:#666}
 .btn_close{display:inline-block;position:absolute;top:50%;right:0;transform:translateY(-50%);width:2.4rem;height:2.4rem;background:url(../images/common/ic_close.svg) no-repeat 0 0}
 .btn_del{display:none;position:absolute;top:50%;right:0;transform:translateY(-50%);width:2.0rem;height:2.0rem;background:url(../images/common/btn_del.svg) no-repeat 0 0/2.0rem}
 .btn_del.on{display:block}
@@ -620,7 +635,7 @@ body.pop_open{overflow:hidden}
 .event_banner .slide_cont{position:relative;height:14rem;border-radius:8px;transition: all .2s ease-in-out;background-color:#f9f9f9 !important;}
 .event_banner .slide_cont a{display:block;}
 .event_banner .txt_area{position:absolute;width:calc(100% - 0.9rem);left:0;top:50%;transform:translateY(-50%);padding-left:2.7rem;color:#000;max-height:8.4rem;overflow:hidden;-webkit-line-clamp:3;display:-webkit-box;-webkit-box-orient:vertical;text-overflow:ellipsis;}
-.event_banner .txt_area .slide_txt1{font-weight:700;font-size:1.7rem;line-height:2.4rem;transition:all .4s ease-in-out}/*transition:all .4s ease-in-out*/
+.event_banner .txt_area .slide_txt1{font-weight:700;font-size:1.7rem;line-height:2.4rem;transition:all .4s ease-in-out}
 .event_banner .img_area{position:absolute;right:-30px;top:50%;width:13rem;height:13rem;transform:translateY(-50%);transition:all .4s ease-in-out;}
 .event_banner .img_area img{width:13rem;height:13rem;}
 .event_banner .swiper-btn-prev{position:absolute;top:5.8rem;left:-0.8rem;width:2.4rem;height:2.4rem;background:url("../images/contents_train/swiper_arrow_left.svg") no-repeat 0 0 / 100%;}
