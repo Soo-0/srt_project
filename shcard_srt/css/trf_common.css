@@ -188,8 +188,12 @@ ul.txt_dot > li, ul.txt_dash > li{margin-top:.8rem}
 .box_gray .txt{font-size:1.1rem;line-height:1.4rem;color:#999}
 .box_gray + .inner{padding-top:4rem}
 .boarding_info{display:flex;justify-content:space-evenly;align-items:center;padding:2.2rem 0;background:#3d4964;border-radius:.8rem;text-align:center}
+.boarding_info.ty2{background:#fff;box-shadow:0 .4rem 2.4rem rgb(0 0 0 / 8%)}
+.boarding_info.ty2 span{color:#888}
+.boarding_info.ty2 strong{color:#bbb}
 .boarding_item > span{display:block;font-size:1.3rem;line-height:1.8rem;color:#bbb}
 .boarding_item > strong{display:block;margin-top:.6rem;font-size:2.4rem;line-height:3.4rem;font-weight:700;color:#fff}
+.boarding_item.on > strong{color:#476EFF}
 
 /* list */
 [class^="tit_"] + .line_list{margin-top:1.2rem}
