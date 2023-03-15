@@ -239,7 +239,6 @@ div.txt_box{margin:3.2rem 0 2.4rem}
 .ticket_top .date{font-size:1.4rem;line-height:2.0rem;font-weight:500;}
 .ticket_top .num{font-size:1.4rem;line-height:2.0rem}
 .ticket_cont{border:solid #EAEAEA;border-width:0 .1rem 0}
-/* .ticket_travel{display:flex;flex-shrink:1;flex-flow:column wrap;justify-content:center;align-items:center;width:100%;max-width:100%;min-height:13rem} */
 .ticket_travel{display:flex;flex-flow:column wrap;justify-content:center;align-items:center;width:100%;max-width:100%;min-height:13rem}
 .ticket_info{position:relative;padding:1.6rem 1.6rem}
 .ticket_info:before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%)}
@@ -251,6 +250,21 @@ div.txt_box{margin:3.2rem 0 2.4rem}
 .ticket_detail{position:relative;margin-top:2.4rem;padding-top:2.4rem}
 .ticket_detail:before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:100%;border-top:.1rem dashed #eee}
 .ticket_box + .event_banner{ margin-top:2.4rem}
+.station_arrow{position:relative;}
+.station_arrow::after{content:"이동방향";display:inline-block;width:2.8rem;height:1.2rem;font-size:0;background:url("../images/contents_train/station_arrow.svg") no-repeat 0 0 / 100%;}
+.station_arrow.transfer::after{content:"이동방향";display:inline-block;width:2.8rem;height:1.2rem;font-size:0;background:url("../images/contents_train/station_arrow_transfer.svg") no-repeat 0 0 / 100%;}
+.my_travel{display:flex;justify-content:space-evenly;width:100%;margin-top:1.6rem}
+.my_travel > div{display:flex;flex-direction:column;align-items:center;}
+.my_travel > div > span:first-child{line-height:3.0rem;padding-bottom:.6rem}
+.my_travel.transfer{margin-bottom:-1.6rem}
+.my_travel.transfer > div > span:first-child{line-height:2.6rem;padding-bottom:2.3rem;}
+.my_travel.transfer .travel_place{line-height:2.0rem;font-size:1.8rem;font-weight:900;}
+.my_travel.transfer  .last_lt .travel_duration,
+.my_travel.transfer  .arrival .travel_time{padding-top:2rem}
+.travel_place{line-height:2.0rem;font-size:2.2rem;font-weight:700;}
+.travel_time{font-size:1.4rem;font-weight:500;}
+.travel_time.ready{color:#476EFF}
+.travel_duration{line-height:2rem;font-size:1.2rem;font-weight:400;color:#888;}
 
 /* icon */
 .ico{display:inline-block;overflow:hidden;background:center no-repeat;font-size:.1rem;color:transparent;vertical-align:middle}
@@ -267,6 +281,8 @@ div.txt_box{margin:3.2rem 0 2.4rem}
 .badge.gray{background:#e7e9ee;color:#3D4964}
 .badge.black{background:#000;color:#fff}
 .badge.min{padding:.1rem .5rem;font-size:1rem;line-height:1.4rem}
+.travel_by{line-height:2rem;font-size:1.4rem;font-weight:500;}
+.travel_by.srt::before{content:"srt";display:inline-block;width:4.5rem;height:1.1rem;margin:-0.3rem 0.1rem 0 0;vertical-align:middle;font-size:0;background:url("../images/contents_train/logo_srt_black.svg") no-repeat 0 0 / 100%;}
 
 /*button*/
 .btm_fixed {position:fixed;bottom:0;left:0;right:0;z-index:50;margin-top:0 !important;padding:1.6rem 1.6rem;background:#fff}
