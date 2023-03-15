@@ -241,10 +241,17 @@ let $popSpeed = 150;
 const popMotion = {
 	init : () => {
 		let $openBtn;
-		if($('.pop_wrap').hasClass('is_active')) popMotion.popOpen($('.pop_wrap.is_active'))
+		if($('.pop_wrap').hasClass('is_active')) {
+			let $popId = $('.pop_wrap.is_active').attr('id');
+			popMotion.popOpen($('.pop_wrap.is_active'))
+			console.log('test')
+			// console.log($("a[href='#" + $id + "']").length)
+		}
 		else $('.pop_wrap').attr('aria-hidden', 'true');
 
 		if($('.tooltip_area').length > 0) popMotion.tooltip();
+
+		
 
 		$(document).on('click','.j_pop_open', function(e){
 			e.preventDefault();
@@ -257,7 +264,13 @@ const popMotion = {
 			e.preventDefault();
 			let $pop = $(this).closest('.pop_wrap');
 			popMotion.popClose($pop);
-			$openBtn.focus(); // $("a[href='#" + $id + "']").focus();
+			// if($("a[href='#" + $id + "']").length > 1){
+			// 	console.log(2)
+			// 	$openBtn.focus();
+			// }else{
+			// 	console.log(1)
+			// 	$("a[href='#" + $id + "']").focus();
+			// }
 			if($('.pop_wrap').length > 1){
 				$('.pop_wrap.is_active .popup').attr('tabindex','0').focus();
 			}

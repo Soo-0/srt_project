@@ -216,7 +216,8 @@ ul.txt_dot > li, ul.txt_dash > li{margin-top:.8rem}
 .txt_list > li + li{margin-top:1.5rem;padding-top:1.5rem;border-top:1px dashed #ccc}
 .txt_list + .btn_wrap, div.txt_box + .btn_wrap{margin-top:2.4rem}
 div.txt_box{margin:3.2rem 0 2.4rem}
-.bdrT_box{margin:2.4rem 0 0;padding-top:1.6rem;border-top:.1rem solid #ccc}
+.bdrT_box{margin-top:1.6rem;padding-top:3.2rem;border-top:.1rem solid #ccc}
+.bdrT_box.ty2{margin-top:2.4rem;padding-top:1.6rem}
 .t_tit{font-size:1.8rem;line-height:2.6rem;font-weight:700}
 .t_txt{font-size:1.6rem;line-height:2.2rem}
 .t_txt + .t_txt{margin-top:.8rem}
@@ -265,7 +266,7 @@ div.txt_box{margin:3.2rem 0 2.4rem}
 .badge.min{padding:.1rem .5rem;font-size:1rem;line-height:1.4rem}
 
 /*button*/
-.btm_fixed {position:fixed;bottom:0;left:0;right:0;z-index:50;margin-top:0 !important;padding:1.6rem 1.6rem}
+.btm_fixed {position:fixed;bottom:0;left:0;right:0;z-index:50;margin-top:0 !important;padding:1.6rem 1.6rem;background:#fff}
 .btn_wrap{width:100%;text-align:center}
 .btn_wrap.flex{display:flex;justify-content:space-between}
 .btn_wrap.flex > .btn{flex:1}
@@ -499,7 +500,7 @@ body.pop_open{overflow:hidden}
 .pop_wrap .pop_head{position:relative;padding:1.6rem 4.2rem}
 .pop_wrap .pop_head .pop_tit{font-size:1.8rem;line-height:2.2rem;text-align:center}
 .pop_wrap .pop_cont{flex:1 1 auto;overflow:hidden auto;padding:2.4rem 2.4rem 4rem}
-.pop_wrap .pop_cont div.txt_box{margin-top:0}
+.pop_wrap .pop_cont div.txt_box{margin:0}
 .pop_wrap .pop_cont .box_gray + .inner{padding-top:3.2rem}
 .pop_wrap .pop_cont .box_gray + div.txt_box{margin-top:3.2rem}
 .pop_wrap .pop_btn{padding:0 1.6rem 1.6rem}
