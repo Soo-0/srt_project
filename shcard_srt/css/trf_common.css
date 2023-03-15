@@ -376,7 +376,7 @@ div.txt_box.ty2{margin:0 0 1.6rem}
 .checkbox input, .radio input{position:absolute;left:0;top:0;width:3.2rem;height:3.2rem;z-index:1;margin:0;padding:0;opacity:0}
 .checkbox input + i, .radio input + i{display:inline-block;position:relative;margin:0;width:3.2rem;height:3.2rem;vertical-align:middle}
 .checkbox input + i:before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:2.4rem;height:2.4rem;background:#fff;border:.1rem solid #CCC;border-radius:50%;box-sizing:border-box}
-.checkbox input + i:after{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%, -50%) rotateZ(-45deg);width:1.1rem;height:.7rem;margin-top:-.1rem;border:solid #ccc;border-width:0 0 .2rem .2rem}
+.checkbox input + i:after{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%, -50%) rotateZ(-45deg);width:1.1rem;height:.7rem;margin-top:-.2rem;border:solid #ccc;border-width:0 0 .2rem .2rem}
 .checkbox input:focus + i, .radio input:focus + i{outline:.1rem solid #476EFF}
 .checkbox input:checked + i:before{background:#476EFF;border-color:#476EFF}
 .checkbox input:checked + i:after{border-color:#fff}
@@ -434,7 +434,7 @@ div.txt_box.ty2{margin:0 0 1.6rem}
 /* 약관 */
 .agree_area{position:relative}
 .agree_list{margin-top:1.6rem;padding-top:3.2rem;border-top:1px solid #ccc}
-.agree_list > li{margin-top:1.2rem}
+.agree_list > li{position:relative;margin-top:1.2rem}
 .agree_list > li:first-child{margin-top:0}
 
 /* .pop_term_wrap {color:#333}
