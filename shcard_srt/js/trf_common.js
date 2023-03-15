@@ -336,11 +336,11 @@ const swiperArea = ()=>{
 		$(this).siblings('.swiper-btn-pause').show();
 		bannerSwiper.autoplay.start();
 		return false;
-	  });
-	  $('.swiper-btn-pause').on('click', function() {
+	});
+	$('.swiper-btn-pause').on('click', function() {
 		$(this).hide();
 		$(this).siblings('.swiper-btn-play').show();
 		bannerSwiper.autoplay.stop();
 		return false;
-	  });
+	});
 }

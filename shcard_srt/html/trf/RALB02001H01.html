@@ -11,14 +11,14 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="keywords" content="신한 SRT, 신한">
     <title>장바구니 | Srt</title>
-    <!-- pub style, js -->
+    <!-- s : pub style, js -->
     <link rel="stylesheet" href="../../css/trf_import.css" media="all" />
     <link rel="stylesheet" href="../../css/trf_operation.css" media="all" /><!-- 운영 css -->
     <script src="../../js/libs/jquery-3.6.3.min.js"></script>
     <script src="../../js/libs/jquery-ui.min.js"></script>
     <script src="../../js/libs/swiper-bundle.min.js"></script>
     <script src="../../js/trf_common.js"></script>
-    <!-- //pub style, js -->
+    <!-- e : pub style, js -->
 </head>
 <body>
     <!-- wrap -->
@@ -60,7 +60,7 @@
                                 </dl>
                                 <p class="txt_alert red">2022.00.00  13:59 까지 결제해주세요.</p>
                                 <div class="btn_wrap flex">
-                                    <a href="#" class="btn gray">예약 취소</a>
+                                    <a href="#alertPop" class="btn gray j_pop_open">예약 취소</a><!-- D : 팝업 오픈 시 해당 버튼에 j_pop_open class 추가 -->
                                     <a href="#" class="btn blue">결제하기</a>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@
                                 </dl>
                                 <p class="txt_alert red">2022.00.00  13:59 까지 결제해주세요.</p>
                                 <div class="btn_wrap flex">
-                                    <a href="#" class="btn gray">예약 취소</a>
+                                    <a href="#alertPop" class="btn gray j_pop_open">예약 취소</a><!-- D : 팝업 오픈 시 해당 버튼에 j_pop_open class 추가 -->
                                     <a href="#" class="btn blue">결제하기</a>
                                 </div>
                             </div>
@@ -115,5 +115,20 @@
         </div>
     </div>   
     <!-- // #wrap -->
+
+    <!-- 예약 취소 버튼 클릭시 alert 팝업 -->
+    <div id="alertPop" class="pop_wrap alert" aria-hidden="true">
+        <article class="popup">
+            <div class="pop_cont">
+                <div class="txt_box">
+                    <p class="txt taC">예약을 취소하시겠습니까?</p>
+                </div>
+            </div>
+            <div class="pop_btn btn_wrap flex ty2">
+                <a href="#" class="btn line gray j_pop_close">취소</a>
+                <a href="#" class="btn line blue j_pop_close">확인</a>
+            </div> 
+        </article>
+    </div>
 </body>
 </html>

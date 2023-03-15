@@ -187,7 +187,9 @@ ul.txt_dot > li, ul.txt_dash > li{margin-top:.8rem}
 .box_gray.full{margin:0 -2.4rem}
 .box_gray .txt{font-size:1.1rem;line-height:1.4rem;color:#999}
 .box_gray + .inner{padding-top:4rem}
-.boarding_info{display:flex;justify-content:space-evenly;align-items:center;padding:2.2rem 0;background:#3d4964;border-radius:.8rem;text-align:center}
+.boarding_info{display:flex;justify-content:center;align-items:center;width:100%;padding:2.2rem .2rem;background:#3d4964;border-radius:.8rem;text-align:center}
+.boarding_info > .boarding_item{width:calc(50% - 3rem);text-align:center}
+.boarding_info .btn_change{margin:0 .5rem}
 .boarding_info.ty2{background:#fff;box-shadow:0 .4rem 2.4rem rgb(0 0 0 / 8%)}
 .boarding_info.ty2 span{color:#888}
 .boarding_info.ty2 strong{color:#bbb}
@@ -197,7 +199,6 @@ ul.txt_dot > li, ul.txt_dash > li{margin-top:.8rem}
 
 /* list */
 [class^="tit_"] + .line_list{margin-top:1.2rem}
-/* [class^="tit_"] + .txt_list{margin-top:1.6rem} */
 [class^="tit_"] + .txt_list{margin-top:3.2rem}
 .line_list > li{padding:2rem 0;border-bottom:.1rem solid #eee}
 .line_list.pd32 > li{padding:3.2rem 0}
@@ -215,12 +216,13 @@ ul.txt_dot > li, ul.txt_dash > li{margin-top:.8rem}
 .txt_list > li + li{margin-top:1.5rem;padding-top:1.5rem;border-top:1px dashed #ccc}
 .txt_list + .btn_wrap, div.txt_box + .btn_wrap{margin-top:2.4rem}
 div.txt_box{margin:3.2rem 0 2.4rem}
-div.txt_box.ty2{margin:0 0 1.6rem}
-.txt_box .tit{font-size:1.8rem;line-height:2.6rem;font-weight:700}
-.txt_box .txt{font-size:1.6rem;line-height:2.2rem}
-.txt_box .txt_sub{margin-top:1.6rem;font-size:1.4rem;line-height:2rem;color:#888}
-.txt_box .txt + .txt{margin-top:.8rem}
-.txt_box .price{display:block;margin:1.6rem 0;font-size:2rem;line-height:2.8rem;font-weight:700;color:#476EFF}
+.bdrT_box{margin:2.4rem 0 0;padding-top:1.6rem;border-top:.1rem solid #ccc}
+.t_tit{font-size:1.8rem;line-height:2.6rem;font-weight:700}
+.t_txt{font-size:1.6rem;line-height:2.2rem}
+.t_txt + .t_txt{margin-top:.8rem}
+.t_txt + .t_txt_sub{margin-top:1.6rem}
+.t_txt_sub{font-size:1.4rem;line-height:2rem;color:#888}
+.t_price{display:block;margin:1.6rem 0;font-size:2rem;line-height:2.8rem;font-weight:700;color:#476EFF}
 
 /* ticket */
 .ticket_box{position:relative;overflow:hidden;border-radius:1.2rem}
@@ -497,11 +499,11 @@ body.pop_open{overflow:hidden}
 .pop_wrap .pop_head{position:relative;padding:1.6rem 4.2rem}
 .pop_wrap .pop_head .pop_tit{font-size:1.8rem;line-height:2.2rem;text-align:center}
 .pop_wrap .pop_cont{flex:1 1 auto;overflow:hidden auto;padding:2.4rem 2.4rem 4rem}
-.pop_wrap .pop_cont .box_gray.full{margin-top:-1.6rem}
+.pop_wrap .pop_cont div.txt_box{margin-top:0}
 .pop_wrap .pop_cont .box_gray + .inner{padding-top:3.2rem}
+.pop_wrap .pop_cont .box_gray + div.txt_box{margin-top:3.2rem}
 .pop_wrap .pop_btn{padding:0 1.6rem 1.6rem}
 .pop_wrap .btn_close{right:1.9rem}
-.pop_wrap div.txt_box{margin:0}
 .pop_wrap.full .popup{height:100%}
 .pop_wrap.full .pop_btn{padding:1.6rem 1.6rem}
 .pop_wrap.modal{align-items:flex-end}
@@ -509,6 +511,7 @@ body.pop_open{overflow:hidden}
 .pop_wrap.modal .pop_head{padding:2.3rem 6.4rem .9rem 2.4rem}
 .pop_wrap.modal .pop_head .pop_tit{text-align:left}
 .pop_wrap.modal .pop_cont{max-height:540px}
+.pop_wrap.modal .pop_cont .box_gray.full{margin:-2.4rem -2.4rem 0}
 .pop_wrap.modal .btn_close{top:2.1rem;transform:translateY(0)}
 .pop_wrap.alert{padding:0 4.2rem}
 .pop_wrap.alert .popup{border-radius:1.0rem;text-align:center}
@@ -590,7 +593,7 @@ body.pop_open{overflow:hidden}
 
 /* 기차예매 */
 .match_area{margin:2rem 0 4.8rem}
-
+.main_notiarea .event_banner{margin:1.6rem 0 4rem}
 
 
 @media only screen and (max-width:320px){
