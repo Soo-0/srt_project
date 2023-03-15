@@ -169,7 +169,7 @@ ul.txt_dot > li, ul.txt_dash > li{margin-top:.8rem}
 .dl_list.ty3 dt{color:#888}
 
 /* destination_item */
-.quick_match{display:flex;align-items:center;overflow-x:auto;margin-right:-2.4rem;padding-right:2.4rem}
+.quick_match{display:flex;align-items:center;overflow-x:auto;margin:0 -2.4rem 2rem 0;padding-right:2.4rem}
 .quick_match .destination_item{flex:0 0 auto}
 .quick_match .destination_item + .destination_item{margin-left:.6rem}
 .destination_item{display:flex;align-items:center}
@@ -208,6 +208,7 @@ ul.txt_dot > li, ul.txt_dash > li{margin-top:.8rem}
 .line_list + .txt_dot{margin-top:2.3rem}
 .box_list > li + li{margin-top:1.6rem}
 .box_list.pd12 > li + li{margin-top:1.2rem}
+.box_list + .btn_wrap{margin-top:2.4rem}
 .box_item{overflow:hidden;padding:2rem;border:.1rem solid #eee;border-radius:.8rem}
 .box_item .txt_alert{margin-top:2.4rem}
 .box_item .btn_wrap{margin-top:.8rem}
@@ -588,11 +589,8 @@ body.pop_open{overflow:hidden}
 .train_num .badge + .num{margin-left:.4rem}
 
 /* 기차예매 */
-.match_area{margin-top:2rem}
-.match_area .box_line{margin-top:2rem}
-.main_noti_area{margin-top:4.8rem}
-.main_noti_area .event_banner{margin-top:1.6rem}
-.main_noti_area + .btn_wrap{margin-top:4rem}
+.match_area{margin:2rem 0 4.8rem}
+
 
 
 @media only screen and (max-width:320px){
