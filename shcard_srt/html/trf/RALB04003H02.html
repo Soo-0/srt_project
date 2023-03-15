@@ -23,17 +23,25 @@
 <body>
     <!-- wrap -->
     <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <button type="button" class="btn_back">이전으로 가기</button>
+                <div class="title">약관 동의 팝업</div>
+                <button type="button" class="btn_close">닫기</button>
+            </div>
+        </header>
         <div id="container">
             <div id="contents">
                 <h2 id="pageTit" class="blind">약관 동의 팝업 본문 시작</h2>
                 <div class="inner">
+                    <a href="#pop_agree01" class="btn blue j_pop_open" role="button">약관 동의 팝업</a>
                 </div>
             </div>
         </div>
     </div>   
     <!-- // #wrap -->
     <!-- popup -->
-    <div id="modalPop" class="pop_wrap modal is_visible is_active" aria-hidden="true"><!-- 활성화 시 is_visible is_active class 추가 -->
+    <div id="pop_agree01" class="pop_wrap modal" aria-hidden="true"><!-- 활성화 시 is_visible is_active class 추가 -->
         <article class="popup">
             <div class="pop_head">
                 <h1 class="pop_tit">약관에 동의해주세요.</h1>

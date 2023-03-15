@@ -25,3 +25,6 @@ z-index 정의
 .purchase_date span + span{margin-left:.7rem;}
 
 
+/* 인원선택 팝업 */
+.count_wrap{display:flex;justify-content:space-between;}
+.count_wrap .counter_tit{display:flex;flex-direction:column;}
