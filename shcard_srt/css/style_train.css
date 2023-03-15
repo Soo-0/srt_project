@@ -93,3 +93,7 @@ z-index 정의
 /* 결제정보확인 */
 .btn_wrap + .tit_h4{margin-top:4rem;}
 .line_list + .checkbox{margin-top:1rem;}
+
+/* 약관팝업 */
+.agree_list .arr{position:absolute;top:calc(50% - 16px/2 - 1px);right:0;width:1.6rem;height:1.6rem;}
+.agree_list .arr::after{content:"";display:inline-block;width:100%;height:100%;position:absolute;top:calc(50% - 1.6rem/2 - 0.1rem);right:0;background:url("../images/common/ico_btn_agree_arr.svg") no-repeat 50% 50% / 0.5rem 0.9rem;}
