@@ -223,8 +223,8 @@ div.txt_box{margin:3.2rem 0 2.4rem}
 .t_tit{font-size:1.8rem;line-height:2.6rem;font-weight:700}
 .t_txt{font-size:1.6rem;line-height:2.2rem}
 .t_txt + .t_txt{margin-top:.8rem}
-.t_txt + .t_txt_sub{margin-top:1.6rem}
-.t_txt_sub{font-size:1.4rem;line-height:2rem;color:#888}
+.t_txt + .t_txt.sub{margin-top:1.6rem}
+.t_txt.sub{font-size:1.4rem;line-height:2rem;color:#888}
 .t_price{display:block;margin:1.6rem 0;font-size:2rem;line-height:2.8rem;font-weight:700;color:#476EFF}
 
 /* ticket */
@@ -299,14 +299,16 @@ div.txt_box{margin:3.2rem 0 2.4rem}
 .travel_by.srt::before{content:"srt";display:inline-block;width:4.5rem;height:1.1rem;margin:-0.3rem 0.1rem 0 0;vertical-align:middle;font-size:0;background:url("../images/contents_train/logo_srt_black.svg") no-repeat 0 0 / 100%;}
 
 /*button*/
-.btm_fixed {position:fixed;bottom:0;left:0;right:0;z-index:50;margin-top:0 !important;padding:1.6rem 1.6rem;background:#fff}
+.btm_fixed{position:fixed;bottom:0;left:0;right:0;z-index:50;margin-top:0 !important;padding:2rem 1.6rem 1.6rem;background:red;box-shadow:0 2px 4px rgb(48, 49, 51 / 10%);}
+.btm_fixed [class^="t_"]{display:block;text-align:center}
+.btm_fixed .btn_wrap{margin-top:1.2rem}
 .btn_wrap{width:100%;text-align:center}
 .btn_wrap.flex{display:flex;justify-content:space-between}
 .btn_wrap.flex > .btn{flex:1}
 .btn_wrap.flex > .btn + .btn{margin-left:.8rem}
 .btn_wrap.flex.ty2, .btn_wrap.flex.ty2 >.btn {margin:0}
 .btn_wrap.flex.ty2 >.btn{border-radius:0}
-.btn_wrap.btm_fixed{background:linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,0) 100%)}
+.btn_wrap.btm_fixed{padding:1.6rem 1.6rem;background:linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,0) 100%)}
 .btn{display:inline-flex;justify-content:center;align-items:center;overflow:hidden;position:relative;width:auto;padding:1.2rem 1.6rem;border:.1rem solid transparent;font-size:1.6rem;line-height:2.2rem;font-weight:500;border-radius:.4rem;text-align:center;vertical-align:middle;white-space:nowrap;text-decoration:none;box-sizing:border-box}
 .btn.min{min-width:5.6rem;height:4.0rem;padding:0 .6rem;font-size:1.2rem;line-height:1.2rem}
 .btn.blue{background:#476EFF;border-color:#476EFF;color:#fff}
